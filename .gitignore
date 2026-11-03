@@ -1,0 +1,6 @@
+eshop-sut/
+node_modules/
+.DS_Store
+*.log
+# repo public: giữ prompt nháp ở local để tránh bị chép
+HUONG_DAN_HW03.md
