@@ -12,6 +12,7 @@
 | 3 | P03 — Checklist IA-02 | OpenCode — DeepSeek V4.1 Flash Free | 04/11/2026 01:23 | [#3](#3) |
 | 4 | P04 — Checklist IA-03 | OpenCode — DeepSeek V4.1 Flash Free | 04/11/2026 01:27 | [#4](#4) |
 | 5 | P05 — Checklist IA-04 | OpenCode — DeepSeek V4.1 Flash Free | 04/11/2026 01:29 | [#5](#5) |
+| 6 | P05b — Review checklist (trùng / measurable / IA) | OpenCode — DeepSeek V4.1 Flash Free | 04/11/2026 01:43 | [#6](#6) |
 
 ---
 
@@ -1221,3 +1222,46 @@ Các element spec yêu cầu nhưng **không có** trong screenshot. Đây là i
 
 📝 Đã ghi log #5 vào report/ai-audit.md
 ```
+
+### 6
+- **Công cụ AI:** OpenCode — DeepSeek V4.1 Flash Free
+- **Ngày giờ:** 04/11/2026 01:43
+- **Bước:** P05b — Review checklist (trùng / measurable / IA)
+- **File đã đọc:** checklist/gui-checklist.xlsx
+- **File đã sửa:** report/ai-audit.md
+- **Ghi chú:** Checklist review có 67 item (IA-01: 17, IA-02: 17, IA-03: 17, IA-04: 16); sheet `Review` ghi 3 item đã xóa (IA-02-10, IA-04-14, IA-04-15).
+
+**Prompt:**
+```text
+Đây là checklist sau khi tôi review (<N> item). Check giúp: item trùng nhau, item không measurable, item xếp sai IA.
+KHÔNG thêm item mới. Chỉ trả về: | ID | Issue | Suggested fix |.
+<dán các cột ID, IA, Check, Expected Result>
+```
+
+**AI output:**
+```text
+| ID | Issue | Suggested fix |
+|---|---|---|
+| IA-04-05 | Trùng phần kiểm tra nội dung message với IA-02-06: cả hai đều yêu cầu message nêu rule bị thiếu. | Giữ IA-02-06 chỉ kiểm accept/reject; bỏ clause “message names…” khỏi IA-02-06. IA-04-05 là nơi duy nhất kiểm nội dung/độ chính xác của message. |
+| IA-04-06 | Trùng scenario duplicate email với IA-02-07: cả hai submit `test@eshop.com` và expect thông báo “email đã đăng ký”. | IA-02-07 chỉ kiểm reject + vẫn ở Register; IA-04-06 chỉ kiểm message không lộ raw DB/API/SQL. Hoặc gộp vào IA-02-07 và xóa IA-04-06. |
+| IA-04-08 | Trùng assertion “info box hiển thị OTP” với IA-02-12. | IA-02-12 chỉ kiểm OTP đúng 6 digits + input nhận 6, từ chối 5/7; IA-04-08 chỉ kiểm presentation (info/success, không phải error, còn hiển thị khi nhập). |
+| IA-04-09 | Trùng assertion “inline error, không alert” với IA-02-14. | IA-02-14 chỉ kiểm vị trí above submit + không `window.alert`; IA-04-09 chỉ kiểm nội dung lỗi OTP + giữ nguyên email/OTP để retry. |
+| IA-04-12 | Trùng assertion “invalid phone error” với IA-02-15. | IA-02-15 chỉ kiểm accept/reject + persistence; IA-04-12 chỉ kiểm message specificity + server failure. Bỏ “with a message” khỏi IA-02-15. |
+| IA-04-04 | Trùng assertion “navigates to `/login`” với IA-03-13; clause redirect cũng thuộc IA-03. | Bỏ clause redirect khỏi IA-04-04; chỉ giữ success message. Nếu giữ timing, định nghĩa thời gian hiển thị tối thiểu thay vì “before or while redirecting”. |
+| IA-01-11 | Trộn visual (IA-01) với behavior “cannot be edited” (IA-02); behavior này trùng IA-02-16. | Bỏ “cannot be edited” khỏi IA-01-11; chỉ giữ visual distinction/geometry. Behavior read-only giữ ở IA-02-16. |
+| IA-02-18 | Expected “browser offers save/fill” phụ thuộc password manager/browser settings, không deterministic. | Bỏ clause browser offer; chỉ kiểm `autocomplete` attribute trong DOM. |
+| IA-03-04 | “0 (or a documented empty-cart state)” cho hai kết quả; “documented” không định nghĩa. | Chốt một expected: badge hiện `0` khi empty, hoặc badge ẩn khi empty. Bỏ “or a documented empty-cart state”. |
+| IA-03-06 | Screen = Login nhưng Check nói “from any G1 screen”; không verify được “any” chỉ từ Login. | Đổi Screen thành “All G1 screens” hoặc đổi Check/Expected thành “from Login”. |
+| IA-03-12 | “clear message or restores step 2” + Back “step 1/previous” + “no dead end”: nhiều outcome, không có tiêu chí pass/fail duy nhất. | Chỉ giữ một hành vi: Refresh → step 1 (email trống); bỏ phần Back. Bỏ “clear message” chung chung. |
+| IA-03-14 | “Home or the originally requested page” / “`/` (or the return URL)” không xác định. | Chốt `/` nếu app không có return URL; hoặc định nghĩa rõ case return URL. |
+| IA-03-16 | “redirect to `/login` or clear login prompt” — hai outcome, “clear” chủ quan. | Chốt một: redirect `/login` (hoặc prompt với text cụ thể). Bỏ “or”. |
+| IA-03-17 | “Home or Profile” — hai outcome. | Chốt một đích (ví dụ `/`). Bỏ “Home or Profile”. |
+| IA-02-05 | “no account is created” không kiểm trực tiếp trên UI; mâu thuẫn với việc đã bỏ “user count unchanged” ở IA-02-07. | Đổi expected thành: sau mismatch, đăng nhập bằng credential vừa submit phải thất bại; hoặc bỏ clause “no account is created”. |
+| IA-03-03 | “active style” không định nghĩa. | Định nghĩa cụ thể: `aria-current="page"` + style (màu/underline/background) khác item thường. |
+| IA-04-17 | “screen reader announces” phụ thuộc AT/browser, khó deterministic. | Kiểm `role`/`aria-live` trong DOM + accessibility tree; manual screen reader chỉ là optional, không làm tiêu chí pass/fail duy nhất. |
+| IA-01-05 | “neutral/outline or otherwise clearly secondary” chủ quan. | Định nghĩa style cụ thể (ví dụ: nền trắng, border xám, không xanh/đỏ) thay vì “otherwise clearly secondary”. |
+| IA-04-16 | “immediately” không có mốc thời gian. | Định nghĩa “immediately” = button disabled/spinner trước khi request hoàn tất; dùng DevTools throttling để quan sát. |
+| IA-04-13 | Order History là FR-11, ngoài scope G1; IA-04-14/15 đã bị xóa vì lý do này nhưng IA-04-13 còn. | Xóa khỏi checklist G1; nếu cần thì chuyển sang checklist FR-11. |
+```
+
+📝 Đã ghi log #6 vào report/ai-audit.md
