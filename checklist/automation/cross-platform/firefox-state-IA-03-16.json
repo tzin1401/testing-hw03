@@ -1,0 +1,22 @@
+{
+  "id": "IA-03-16",
+  "state": {
+    "url": "http://localhost:5173/profile",
+    "token": null,
+    "fields": [],
+    "otp": false,
+    "main": "Vui lòng đăng nhập",
+    "header": "EShop\nGiỏ hàng\nĐăng nhập\nĐăng ký",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "scrollY": 0
+  },
+  "account": {
+    "name": "Cross firefox Tester",
+    "email": "tia0316.1793772840627.0@test.local",
+    "password": "Abc12345 "
+  },
+  "selector": "main"
+}

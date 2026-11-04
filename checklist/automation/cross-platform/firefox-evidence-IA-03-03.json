@@ -1,0 +1,30 @@
+{
+  "path": "screenshots/cross-platform/firefox_IA-03-03.png",
+  "mode": "chrome context, real browser address bar",
+  "action": "load URL, restore auth with independent API fixture, fill controls",
+  "alert": null,
+  "actual": {
+    "url": "http://localhost:5173/register",
+    "main": "Đăng Ký Tài Khoản\nHọ Tên\nEmail\nMật khẩu\n\nYêu cầu: Tối thiểu 8 ký tự, có chữ hoa, chữ thường, số và ký tự đặc biệt.\n\nĐăng Ký\nĐã có tài khoản? Đăng nhập",
+    "fields": [
+      {
+        "value": "",
+        "type": "text"
+      },
+      {
+        "value": "",
+        "type": "text"
+      },
+      {
+        "value": "",
+        "type": "password"
+      }
+    ],
+    "head": "EShop\nGiỏ hàng\nĐăng nhập\nĐăng ký",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    }
+  },
+  "capturedAt": "2026-11-04T13:13:08+0700"
+}

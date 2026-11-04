@@ -1,0 +1,33 @@
+{
+  "id": "IA-01-13",
+  "state": {
+    "url": "http://localhost:5173/login",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NDA5LCJyb2xlIjoidXNlciIsImlhdCI6MTc5Mzc3MzU0NH0.ORTXX21UvvXPhvePt3Xr3X-uMC2qNC4rfHHfjAUgpnw",
+    "fields": [
+      {
+        "value": "",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "value": "",
+        "type": "text",
+        "disabled": false
+      }
+    ],
+    "otp": false,
+    "main": "Đăng Ký\nUsername\nMật khẩu\nQuên mật khẩu?\nSign In\nChưa có tài khoản? Đăng ký ngay",
+    "header": "EShop\nGiỏ hàng\nChào, NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN\nThoát",
+    "viewport": {
+      "width": 902,
+      "height": 1730
+    },
+    "scrollY": 0
+  },
+  "account": {
+    "name": "NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN",
+    "email": "tia0113.1793773541182.0@test.local",
+    "password": "Abc12345 "
+  },
+  "selector": "header a[href=\"/profile\"]"
+}

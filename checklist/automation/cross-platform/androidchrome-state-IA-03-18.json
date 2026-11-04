@@ -1,0 +1,38 @@
+{
+  "id": "IA-03-18",
+  "state": {
+    "url": "http://localhost:5173/register",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzgyLCJyb2xlIjoidXNlciIsImlhdCI6MTc5Mzc3MzMxMX0.VibwesyaqDl9MApL6sFCsdHLa1jjtBQ7-pGySEwbn08",
+    "fields": [
+      {
+        "value": "",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "value": "",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "value": "",
+        "type": "password",
+        "disabled": false
+      }
+    ],
+    "otp": false,
+    "main": "Đăng Ký Tài Khoản\nHọ Tên\nEmail\nMật khẩu\n\nYêu cầu: Tối thiểu 8 ký tự, có chữ hoa, chữ thường, số và ký tự đặc biệt.\n\nĐăng Ký\nĐã có tài khoản? Đăng nhập",
+    "header": "EShop\nGiỏ hàng\nChào, Chrome Tester\nThoát",
+    "viewport": {
+      "width": 412,
+      "height": 790
+    },
+    "scrollY": 0
+  },
+  "account": {
+    "name": "Chrome Tester",
+    "email": "tia0318.1793773308785.0@test.local",
+    "password": "Abc12345 "
+  },
+  "selector": "main form"
+}

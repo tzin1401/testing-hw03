@@ -1,0 +1,33 @@
+{
+  "id": "IA-04-02",
+  "state": {
+    "url": "http://localhost:5173/login",
+    "token": null,
+    "fields": [
+      {
+        "value": "tia0402.1793772860748.0@test.local",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "value": "Wrong123!",
+        "type": "text",
+        "disabled": false
+      }
+    ],
+    "otp": false,
+    "main": "Đăng Ký\nUsername\nMật khẩu\nQuên mật khẩu?\nSign In\nChưa có tài khoản? Đăng ký ngay\nĐăng nhập thất bại. Vui lòng kiểm tra lại.",
+    "header": "EShop\nGiỏ hàng\nĐăng nhập\nĐăng ký",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "scrollY": 0
+  },
+  "account": {
+    "name": "Cross firefox Tester",
+    "email": "tia0402.1793772860748.0@test.local",
+    "password": "Abc12345 "
+  },
+  "selector": "main .bg-red-100"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "IA-03-17",
+  "state": {
+    "url": "http://localhost:5173/login",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjQ0LCJyb2xlIjoidXNlciIsImlhdCI6MTc5Mzc3Mjg0NX0.s_k2U0zM42p4Yd1-4W8o0ZH-ZSJ9_0b6Ds0kgJ7wnKI",
+    "fields": [
+      {
+        "value": "",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "value": "",
+        "type": "text",
+        "disabled": false
+      }
+    ],
+    "otp": false,
+    "main": "Đăng Ký\nUsername\nMật khẩu\nQuên mật khẩu?\nSign In\nChưa có tài khoản? Đăng ký ngay",
+    "header": "EShop\nGiỏ hàng\nChào, Cross firefox Tester\nThoát",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "scrollY": 0
+  },
+  "account": {
+    "name": "Cross firefox Tester",
+    "email": "tia0317.1793772844832.0@test.local",
+    "password": "Abc12345 "
+  },
+  "selector": "main form"
+}

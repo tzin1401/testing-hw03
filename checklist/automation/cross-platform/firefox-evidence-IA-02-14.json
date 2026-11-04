@@ -1,0 +1,26 @@
+{
+  "path": "screenshots/cross-platform/firefox_IA-02-14.png",
+  "mode": "chrome context, real browser address bar",
+  "action": "load URL, restore auth with independent API fixture, fill controls; submit form, capture dialog then dismiss",
+  "alert": "Mã OTP không đúng hoặc có lỗi xảy ra.",
+  "actual": {
+    "url": "http://localhost:5173/forgot-password",
+    "main": "Quên Mật Khẩu\nMã OTP của bạn là: 2556\nMã OTP (4 số)\nMật khẩu mới\nĐặt lại mật khẩu← Quay lại",
+    "fields": [
+      {
+        "value": "000000",
+        "type": "text"
+      },
+      {
+        "value": "Newpass123 ",
+        "type": "password"
+      }
+    ],
+    "head": "EShop\nGiỏ hàng\nĐăng nhập\nĐăng ký",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    }
+  },
+  "capturedAt": "2026-11-04T13:12:10+0700"
+}

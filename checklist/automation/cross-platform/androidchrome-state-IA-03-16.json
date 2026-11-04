@@ -1,0 +1,22 @@
+{
+  "id": "IA-03-16",
+  "state": {
+    "url": "http://localhost:5173/profile",
+    "token": null,
+    "fields": [],
+    "otp": false,
+    "main": "Vui lòng đăng nhập",
+    "header": "EShop\nGiỏ hàng\nĐăng nhập\nĐăng ký",
+    "viewport": {
+      "width": 412,
+      "height": 790
+    },
+    "scrollY": 0
+  },
+  "account": {
+    "name": "Chrome Tester",
+    "email": "tia0316.1793773297176.0@test.local",
+    "password": "Abc12345 "
+  },
+  "selector": "main"
+}

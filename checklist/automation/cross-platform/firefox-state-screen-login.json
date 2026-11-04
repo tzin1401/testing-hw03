@@ -1,0 +1,32 @@
+{
+  "id": "screen-login",
+  "state": {
+    "url": "http://localhost:5173/login",
+    "token": null,
+    "fields": [
+      {
+        "value": "",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "value": "",
+        "type": "text",
+        "disabled": false
+      }
+    ],
+    "otp": false,
+    "main": "Đăng Ký\nUsername\nMật khẩu\nQuên mật khẩu?\nSign In\nChưa có tài khoản? Đăng ký ngay",
+    "header": "EShop\nGiỏ hàng\nĐăng nhập\nĐăng ký",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "scrollY": 0
+  },
+  "account": {
+    "name": "Overview firefox",
+    "email": "overview.firefox.1793773266051@test.local",
+    "password": "Abc12345 "
+  }
+}

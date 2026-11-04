@@ -1,0 +1,33 @@
+{
+  "id": "IA-02-14",
+  "state": {
+    "url": "http://localhost:5173/forgot-password",
+    "token": null,
+    "fields": [
+      {
+        "value": "000000",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "value": "Newpass123 ",
+        "type": "password",
+        "disabled": false
+      }
+    ],
+    "otp": true,
+    "main": "Quên Mật Khẩu\nMã OTP của bạn là: 5181\nMã OTP (4 số)\nMật khẩu mới\nĐặt lại mật khẩu← Quay lại",
+    "header": "EShop\nGiỏ hàng\nĐăng nhập\nĐăng ký",
+    "viewport": {
+      "width": 412,
+      "height": 790
+    },
+    "scrollY": 56
+  },
+  "account": {
+    "name": "Chrome Tester",
+    "email": "tia0214.1793773110442.0@test.local",
+    "password": "Abc12345 "
+  },
+  "selector": "main form"
+}

@@ -1,0 +1,42 @@
+{
+  "id": "screen-profile",
+  "state": {
+    "url": "http://localhost:5173/profile",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzY2LCJyb2xlIjoidXNlciIsImlhdCI6MTc5Mzc3MzI3Mn0.nxvx6PywDt_ZGlWM3ZrZp62NLdo4xHFIOvwh6YDvzIk",
+    "fields": [
+      {
+        "value": "overview.firefox.1793773266051@test.local",
+        "type": "text",
+        "disabled": true
+      },
+      {
+        "value": "Overview firefox",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "value": "",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "value": "",
+        "type": "textarea",
+        "disabled": false
+      }
+    ],
+    "otp": false,
+    "main": "Hồ sơ của bạn\nEmail (Không đổi)\nHọ Tên\nSố điện thoại\nĐịa chỉ giao hàng\nCập nhật\nLịch sử đơn hàng\n\nBạn chưa có đơn hàng nào.",
+    "header": "EShop\nGiỏ hàng\nChào, Overview firefox\nThoát",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "scrollY": 0
+  },
+  "account": {
+    "name": "Overview firefox",
+    "email": "overview.firefox.1793773266051@test.local",
+    "password": "Abc12345 "
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "android": "15",
+  "sdk": "35",
+  "device": "sdk_gphone64_x86_64",
+  "avd": "Pixel_9\nOK",
+  "screen": "Physical size: 1080x2424",
+  "browser": {
+    "Android-Package": "com.android.chrome",
+    "Browser": "Chrome/124.0.6367.219",
+    "Protocol-Version": "1.3",
+    "User-Agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36",
+    "V8-Version": "12.4.254.16",
+    "WebKit-Version": "537.36 (@7741f71cbce3b7dfe3eb5890976d2596364b0733)",
+    "webSocketDebuggerUrl": "ws://localhost:9222/devtools/browser"
+  },
+  "capturedAt": "2026-11-04T13:26:36.591909+07:00"
+}

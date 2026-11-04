@@ -1,0 +1,34 @@
+{
+  "path": "screenshots/cross-platform/firefox_screen-profile.png",
+  "mode": "chrome context, real browser address bar",
+  "action": "load URL, restore auth with independent API fixture, fill controls",
+  "alert": null,
+  "actual": {
+    "url": "http://localhost:5173/profile",
+    "main": "Hồ sơ của bạn\nEmail (Không đổi)\nHọ Tên\nSố điện thoại\nĐịa chỉ giao hàng\nCập nhật\nLịch sử đơn hàng\n\nBạn chưa có đơn hàng nào.",
+    "fields": [
+      {
+        "value": "evidence.screen-profile.1793773273162172672@test.local",
+        "type": "text"
+      },
+      {
+        "value": "Overview firefox",
+        "type": "text"
+      },
+      {
+        "value": "",
+        "type": "text"
+      },
+      {
+        "value": "",
+        "type": "textarea"
+      }
+    ],
+    "head": "EShop\nGiỏ hàng\nChào, Overview firefox\nThoát",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    }
+  },
+  "capturedAt": "2026-11-04T13:21:14+0700"
+}

@@ -1,0 +1,17 @@
+{
+  "path": "screenshots/cross-platform/androidchrome_IA-03-16.png",
+  "mode": "adb exec-out screencap -p, full device",
+  "state": {
+    "url": "http://localhost:5173/profile",
+    "token": null,
+    "fields": [],
+    "otp": false,
+    "main": "Vui lòng đăng nhập",
+    "header": "EShop\nGiỏ hàng\nĐăng nhập\nĐăng ký",
+    "viewport": {
+      "width": 412,
+      "height": 790
+    },
+    "scrollY": 0
+  }
+}

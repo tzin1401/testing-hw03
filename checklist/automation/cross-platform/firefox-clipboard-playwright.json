@@ -1,0 +1,200 @@
+{
+  "config": {
+    "argv": [
+      "/usr/bin/node",
+      "/tmp/eshop-playwright/node_modules/.bin/playwright",
+      "test",
+      "-c",
+      "checklist/automation/playwright.cross.config.js",
+      "--project",
+      "firefox",
+      "--grep",
+      "IA-02-21 "
+    ],
+    "configFile": "/home/zinn/zinn/testing/hw03/checklist/automation/playwright.cross.config.js",
+    "rootDir": "/home/zinn/zinn/testing/hw03/checklist/automation",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/home/zinn/zinn/testing/hw03/checklist/automation/cross-platform/firefox-clipboard-test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/home/zinn/zinn/testing/hw03/checklist/automation",
+        "testIgnore": [],
+        "testMatch": [
+          "run-firefox.spec.js"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/home/zinn/zinn/testing/hw03/checklist/automation/cross-platform/firefox-clipboard-test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "androidchrome",
+        "name": "androidchrome",
+        "testDir": "/home/zinn/zinn/testing/hw03/checklist/automation",
+        "testIgnore": [],
+        "testMatch": [
+          "run-androidchrome.spec.js"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/home/zinn/zinn/testing/hw03/checklist/automation/cross-platform/firefox-clipboard-test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "firefox",
+        "testDir": "/home/zinn/zinn/testing/hw03/checklist/automation",
+        "snapshotDir": "/home/zinn/zinn/testing/hw03/checklist/automation",
+        "testIgnore": [],
+        "testMatch": "run-firefox.spec.js",
+        "timeout": 120000,
+        "use": {
+          "baseURL": "http://localhost:5173",
+          "actionTimeout": 10000,
+          "navigationTimeout": 20000,
+          "screenshot": "off",
+          "trace": "off",
+          "browserName": "firefox",
+          "viewport": {
+            "width": 1280,
+            "height": 800
+          }
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "firefox"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "line",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "/home/zinn/zinn/testing/hw03/checklist/automation/cross-platform/firefox-clipboard-playwright.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "run-firefox.spec.js",
+      "file": "run-firefox-shared.cjs",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "IA-02-21 The OTP field accepts a pasted value.",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "MANUAL: Automation không hoàn tất: Clipboard Firefox chưa xác minh được: selected=3310; clipboard=\"\"; cần kiểm Copy/Paste native bằng tay",
+                  "location": {
+                    "file": "/home/zinn/zinn/testing/hw03/checklist/automation/run-firefox-shared.cjs",
+                    "line": 138,
+                    "column": 27
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 3314,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-04T06:22:23.345Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "MANUAL: Automation không hoàn tất: Clipboard Firefox chưa xác minh được: selected=3310; clipboard=\"\"; cần kiểm Copy/Paste native bằng tay",
+                      "location": {
+                        "file": "/home/zinn/zinn/testing/hw03/checklist/automation/run-firefox-shared.cjs",
+                        "line": 138,
+                        "column": 27
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "execution",
+                      "contentType": "application/json",
+                      "body": "ewogICJpZCI6ICJJQS0wMi0yMSIsCiAgImlhIjogIklBLTAyIEZvcm1zIiwKICAicmVzdWx0IjogIk1BTlVBTCIsCiAgIm1ldGhvZCI6ICJDbGlwYm9hcmQgY29weSBjb2RlOyBDdHJsK1YgduG7m2kgc3BhY2VzIHLhu5NpIHJlc2V0IiwKICAiYWN0dWFsIjogIkVycm9yOiBDbGlwYm9hcmQgRmlyZWZveCBjaMawYSB4w6FjIG1pbmggxJHGsOG7o2M6IHNlbGVjdGVkPTMzMTA7IGNsaXBib2FyZD1cIlwiOyBj4bqnbiBraeG7g20gQ29weS9QYXN0ZSBuYXRpdmUgYuG6sW5nIHRheVxuICAgIGF0IC9ob21lL3ppbm4vemlubi90ZXN0aW5nL2h3MDMvY2hlY2tsaXN0L2F1dG9tYXRpb24vcnVuLWZpcmVmb3gtc2hhcmVkLmNqczo5NjoxNTJcbiAgICBhdCAvdG1wL2VzaG9wLXBsYXl3cmlnaHQvbm9kZV9tb2R1bGVzL3BsYXl3cmlnaHQvbGliL3dvcmtlci93b3JrZXJQcm9jZXNzRW50cnkuanM6MTY1NDo5XG4gICAgYXQgL3RtcC9lc2hvcC1wbGF5d3JpZ2h0L25vZGVfbW9kdWxlcy9wbGF5d3JpZ2h0L2xpYi93b3JrZXIvd29ya2VyUHJvY2Vzc0VudHJ5LmpzOjExMzQ6MTFcbiAgICBhdCBUaW1lb3V0TWFuYWdlci53aXRoUnVubmFibGUgKC90bXAvZXNob3AtcGxheXdyaWdodC9ub2RlX21vZHVsZXMvcGxheXdyaWdodC9saWIvd29ya2VyL3dvcmtlclByb2Nlc3NFbnRyeS5qczo0MDM6MTQpXG4gICAgYXQgVGVzdEluZm9JbXBsLl9ydW5XaXRoVGltZW91dCAoL3RtcC9lc2hvcC1wbGF5d3JpZ2h0L25vZGVfbW9kdWxlcy9wbGF5d3JpZ2h0L2xpYi93b3JrZXIvd29ya2VyUHJvY2Vzc0VudHJ5LmpzOjExMzI6NylcbiAgICBhdCAvdG1wL2VzaG9wLXBsYXl3cmlnaHQvbm9kZV9tb2R1bGVzL3BsYXl3cmlnaHQvbGliL3dvcmtlci93b3JrZXJQcm9jZXNzRW50cnkuanM6MTY1Mjo3XG4gICAgYXQgV29ya2VyTWFpbi5fcnVuVGVzdCAoL3RtcC9lc2hvcC1wbGF5d3JpZ2h0L25vZGVfbW9kdWxlcy9wbGF5d3JpZ2h0L2xpYi93b3JrZXIvd29ya2VyUHJvY2Vzc0VudHJ5LmpzOjE2MjU6NSlcbiAgICBhdCBXb3JrZXJNYWluLnJ1blRlc3RHcm91cCAoL3RtcC9lc2hvcC1wbGF5d3JpZ2h0L25vZGVfbW9kdWxlcy9wbGF5d3JpZ2h0L2xpYi93b3JrZXIvd29ya2VyUHJvY2Vzc0VudHJ5LmpzOjE1MjA6OSlcbiAgICBhdCBwcm9jZXNzLjxhbm9ueW1vdXM+ICgvdG1wL2VzaG9wLXBsYXl3cmlnaHQvbm9kZV9tb2R1bGVzL3BsYXl3cmlnaHQvbGliL2NvbW1vbi9pbmRleC5qczoxOTU1OjI1KSIsCiAgIm5vdGVzIjogIk1BTlVBTDogQXV0b21hdGlvbiBraMO0bmcgaG/DoG4gdOG6pXQ6IENsaXBib2FyZCBGaXJlZm94IGNoxrBhIHjDoWMgbWluaCDEkcaw4bujYzogc2VsZWN0ZWQ9MzMxMDsgY2xpcGJvYXJkPVwiXCI7IGPhuqduIGtp4buDbSBDb3B5L1Bhc3RlIG5hdGl2ZSBi4bqxbmcgdGF5XG5RdWFuIHPDoXQ6IEVycm9yOiBDbGlwYm9hcmQgRmlyZWZveCBjaMawYSB4w6FjIG1pbmggxJHGsOG7o2M6IHNlbGVjdGVkPTMzMTA7IGNsaXBib2FyZD1cIlwiOyBj4bqnbiBraeG7g20gQ29weS9QYXN0ZSBuYXRpdmUgYuG6sW5nIHRheVxuICAgIGF0IC9ob21lL3ppbm4vemlubi90ZXN0aW5nL2h3MDMvY2hlY2tsaXN0L2F1dG9tYXRpb24vcnVuLWZpcmVmb3gtc2hhcmVkLmNqczo5NjoxNTJcbiAgICBhdCAvdG1wL2VzaG9wLXBsYXl3cmlnaHQvbm9kZV9tb2R1bGVzL3BsYXl3cmlnaHQvbGliL3dvcmtlci93b3JrZXJQcm9jZXNzRW50cnkuanM6MTY1NDo5XG4gICAgYXQgL3RtcC9lc2hvcC1wbGF5d3JpZ2h0L25vZGVfbW9kdWxlcy9wbGF5d3JpZ2h0L2xpYi93b3JrZXIvd29ya2VyUHJvY2Vzc0VudHJ5LmpzOjExMzQ6MTFcbiAgICBhdCBUaW1lb3V0TWFuYWdlci53aXRoUnVubmFibGUgKC90bXAvZXNob3AtcGxheXdyaWdodC9ub2RlX21vZHVsZXMvcGxheXdyaWdodC9saWIvd29ya2VyL3dvcmtlclByb2Nlc3NFbnRyeS5qczo0MDM6MTQpXG4gICAgYXQgVGVzdEluZm9JbXBsLl9ydW5XaXRoVGltZW91dCAoL3RtcC9lc2hvcC1wbGF5d3JpZ2h0L25vZGVfbW9kdWxlcy9wbGF5d3JpZ2h0L2xpYi93b3JrZXIvd29ya2VyUHJvY2Vzc0VudHJ5LmpzOjExMzI6NylcbiAgICBhdCAvdG1wL2VzaG9wLXBsYXl3cmlnaHQvbm9kZV9tb2R1bGVzL3BsYXl3cmlnaHQvbGliL3dvcmtlci93b3JrZXJQcm9jZXNzRW50cnkuanM6MTY1Mjo3XG4gICAgYXQgV29ya2VyTWFpbi5fcnVuVGVzdCAoL3RtcC9lc2hvcC1wbGF5d3JpZ2h0L25vZGVfbW9kdWxlcy9wbGF5d3JpZ2h0L2xpYi93b3JrZXIvd29ya2VyUHJvY2Vzc0VudHJ5LmpzOjE2MjU6NSlcbiAgICBhdCBXb3JrZXJNYWluLnJ1blRlc3RHcm91cCAoL3RtcC9lc2hvcC1wbGF5d3JpZ2h0L25vZGVfbW9kdWxlcy9wbGF5d3JpZ2h0L2xpYi93b3JrZXIvd29ya2VyUHJvY2Vzc0VudHJ5LmpzOjE1MjA6OSlcbiAgICBhdCBwcm9jZXNzLjxhbm9ueW1vdXM+ICgvdG1wL2VzaG9wLXBsYXl3cmlnaHQvbm9kZV9tb2R1bGVzL3BsYXl3cmlnaHQvbGliL2NvbW1vbi9pbmRleC5qczoxOTU1OjI1KSIsCiAgInBsYXRmb3JtIjogImZpcmVmb3giLAogICJpbmNvbXBsZXRlIjogZmFsc2UsCiAgInNjcmVlbnNob3QiOiAiIiwKICAiZW1haWwiOiAidGlhMDIyMS4xNzkzNzczMzQ1NjQwLjBAdGVzdC5sb2NhbCIsCiAgImRpYWxvZ3MiOiBbXSwKICAicmVxdWVzdHMiOiBbCiAgICB7CiAgICAgICJ1cmwiOiAiaHR0cDovL2xvY2FsaG9zdDozMDAwL2FwaS9mb3Jnb3QtcGFzc3dvcmQiLAogICAgICAibWV0aG9kIjogIlBPU1QiLAogICAgICAiZGF0YSI6ICJ7XCJlbWFpbFwiOlwidGlhMDIyMS4xNzkzNzczMzQ1NjQwLjBAdGVzdC5sb2NhbFwifSIsCiAgICAgICJhdCI6IDE3OTM3NzMzNDcwNDYKICAgIH0KICBdLAogICJyZXNwb25zZXMiOiBbCiAgICB7CiAgICAgICJ1cmwiOiAiaHR0cDovL2xvY2FsaG9zdDozMDAwL2FwaS9mb3Jnb3QtcGFzc3dvcmQiLAogICAgICAic3RhdHVzIjogMjAwLAogICAgICAiZGF0YSI6IHsKICAgICAgICAibWVzc2FnZSI6ICJNw6MgxJHhurd0IGzhuqFpIG3huq10IGto4bqpdSDEkcOjIMSRxrDhu6NjIHThuqFvIiwKICAgICAgICAicmVzZXRUb2tlbiI6ICIzMzEwIgogICAgICB9CiAgICB9CiAgXSwKICAiZXhlY3V0ZWRBdCI6ICIyMDI2LTExLTA0VDA2OjIyOjI3LjQ0NloiCn0="
+                    }
+                  ]
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "20aa10028eee7ab2bb5c-cb80e222db3ce698564b",
+          "file": "run-firefox-shared.cjs",
+          "line": 24,
+          "column": 2
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-04T06:22:22.340Z",
+    "duration": 5781.285,
+    "expected": 0,
+    "skipped": 1,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

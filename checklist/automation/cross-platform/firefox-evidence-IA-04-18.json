@@ -1,0 +1,22 @@
+{
+  "path": "screenshots/cross-platform/firefox_IA-04-18.png",
+  "mode": "chrome context, real browser address bar",
+  "action": "load URL, restore auth with independent API fixture, fill controls; offline API failure equivalent to 503",
+  "alert": null,
+  "actual": {
+    "url": "http://localhost:5173/",
+    "main": "Danh sách sản phẩm\nTìm\niPhone 15 Pro Max\n\n30,000,000 VND\n\nXem chi tiết\nThêm vào giỏ\nSamsung Galaxy S24 Ultra\n\n28,000,000 VND\n\nXem chi tiết\nThêm vào giỏ\nMacBook Pro M3\n\n45,000,000 VND\n\nXem chi tiết\nThêm vào giỏ\nTai nghe AirPods Pro 2\n\n6,000,000 VND\n\nXem chi tiết\nThêm vào giỏ\nBàn phím cơ Keychron Q1\n\n4,000,000 VND\n\nXem chi tiết\nThêm vào giỏ\nHiển thị 5 sản phẩm",
+    "fields": [
+      {
+        "value": "",
+        "type": "text"
+      }
+    ],
+    "head": "EShop\nGiỏ hàng\nChào, Chrome Tester\nThoát",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    }
+  },
+  "capturedAt": "2026-11-04T13:16:07+0700"
+}

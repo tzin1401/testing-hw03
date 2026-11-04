@@ -1,0 +1,800 @@
+{
+  "images": 111,
+  "allOverlaysVisible": true,
+  "modes": {
+    "chrome context, real browser address bar": 55,
+    "adb exec-out screencap -p, full device": 56
+  },
+  "platforms": {
+    "firefox": {
+      "failed": 50,
+      "overviews": 5,
+      "images": [
+        {
+          "file": "firefox_IA-01-01.png",
+          "width": 1280,
+          "height": 885,
+          "yellowSamples": 935,
+          "mode": "chrome context, real browser address bar"
+        },
+        {
+          "file": "firefox_IA-01-02.png",
+          "width": 1280,
+          "height": 885,
+          "yellowSamples": 935,
+          "mode": "chrome context, real browser address bar"
+        },
+        {
+          "file": "firefox_IA-01-03.png",
+          "width": 1280,
+          "height": 885,
+          "yellowSamples": 935,
+          "mode": "chrome context, real browser address bar"
+        },
+        {
+          "file": "firefox_IA-01-04.png",
+          "width": 1280,
+          "height": 885,
+          "yellowSamples": 982,
+          "mode": "chrome context, real browser address bar"
+        },
+        {
+          "file": "firefox_IA-01-05.png",
+          "width": 1280,
+          "height": 885,
+          "yellowSamples": 1051,
+          "mode": "chrome context, real browser address bar"
+        },
+        {
+          "file": "firefox_IA-01-06.png",
+          "width": 1280,
+          "height": 885,
+          "yellowSamples": 935,
+          "mode": "chrome context, real browser address bar"
+        },
+        {
+          "file": "firefox_IA-01-08.png",
+          "width": 1280,
+          "height": 885,
+          "yellowSamples": 982,
+          "mode": "chrome context, real browser address bar"
+        },
+        {
+          "file": "firefox_IA-01-14.png",
+          "width": 1280,
+          "height": 885,
+          "yellowSamples": 935,
+          "mode": "chrome context, real browser address bar"
+        },
+        {
+          "file": "firefox_IA-01-18.png",
+          "width": 1280,
+          "height": 885,
+          "yellowSamples": 965,
+          "mode": "chrome context, real browser address bar"
+        },
+        {
+          "file": "firefox_IA-01-20.png",
+          "width": 1280,
+          "height": 885,
+          "yellowSamples": 965,
+          "mode": "chrome context, real browser address bar"
+        },
+        {
+          "file": "firefox_IA-02-01.png",
+          "width": 1280,
+          "height": 885,
+          "yellowSamples": 935,
+          "mode": "chrome context, real browser address bar"
+        },
+        {
+          "file": "firefox_IA-02-02.png",
+          "width": 1280,
+          "height": 885,
+          "yellowSamples": 935,
+          "mode": "chrome context, real browser address bar"
+        },
+        {
+          "file": "firefox_IA-02-03.png",
+          "width": 1280,
+          "height": 885,
+          "yellowSamples": 935,
+          "mode": "chrome context, real browser address bar"
+        },
+        {
+          "file": "firefox_IA-02-04.png",
+          "width": 1280,
+          "height": 885,
+          "yellowSamples": 935,
+          "mode": "chrome context, real browser address bar"
+        },
+        {
+          "file": "firefox_IA-02-05.png",
+          "width": 1280,
+          "height": 885,
+          "yellowSamples": 982,
+          "mode": "chrome context, real browser address bar"
+        },
+        {
+          "file": "firefox_IA-02-06.png",
+          "width": 1280,
+          "height": 885,
+          "yellowSamples": 982,
+          "mode": "chrome context, real browser address bar"
+        },
+        {
+          "file": "firefox_IA-02-07.png",
+          "width": 1280,
+          "height": 885,
+          "yellowSamples": 935,
+          "mode": "chrome context, real browser address bar"
+        },
+        {
+          "file": "firefox_IA-02-08.png",
+          "width": 1280,
+          "height": 885,
+          "yellowSamples": 935,
+          "mode": "chrome context, real browser address bar"
+        },
+        {
+          "file": "firefox_IA-02-09.png",
+          "width": 1280,
+          "height": 885,
+          "yellowSamples": 1051,
+          "mode": "chrome context, real browser address bar"
+        },
+        {
+          "file": "firefox_IA-02-11.png",
+          "width": 1280,
+          "height": 885,
+          "yellowSamples": 1051,
+          "mode": "chrome context, real browser address bar"
+        },
+        {
+          "file": "firefox_IA-02-12.png",
+          "width": 1280,
+          "height": 885,
+          "yellowSamples": 1051,
+          "mode": "chrome context, real browser address bar"
+        },
+        {
+          "file": "firefox_IA-02-13.png",
+          "width": 1280,
+          "height": 885,
+          "yellowSamples": 1051,
+          "mode": "chrome context, real browser address bar"
+        },
+        {
+          "file": "firefox_IA-02-14.png",
+          "width": 1280,
+          "height": 885,
+          "yellowSamples": 1051,
+          "mode": "chrome context, real browser address bar"
+        },
+        {
+          "file": "firefox_IA-02-15.png",
+          "width": 1280,
+          "height": 885,
+          "yellowSamples": 965,
+          "mode": "chrome context, real browser address bar"
+        },
+        {
+          "file": "firefox_IA-02-18.png",
+          "width": 1280,
+          "height": 885,
+          "yellowSamples": 935,
+          "mode": "chrome context, real browser address bar"
+        },
+        {
+          "file": "firefox_IA-02-19.png",
+          "width": 1280,
+          "height": 885,
+          "yellowSamples": 935,
+          "mode": "chrome context, real browser address bar"
+        },
+        {
+          "file": "firefox_IA-02-20.png",
+          "width": 1280,
+          "height": 885,
+          "yellowSamples": 1051,
+          "mode": "chrome context, real browser address bar"
+        },
+        {
+          "file": "firefox_IA-02-22.png",
+          "width": 1280,
+          "height": 885,
+          "yellowSamples": 965,
+          "mode": "chrome context, real browser address bar"
+        },
+        {
+          "file": "firefox_IA-03-03.png",
+          "width": 1280,
+          "height": 885,
+          "yellowSamples": 982,
+          "mode": "chrome context, real browser address bar"
+        },
+        {
+          "file": "firefox_IA-03-04.png",
+          "width": 1280,
+          "height": 885,
+          "yellowSamples": 965,
+          "mode": "chrome context, real browser address bar"
+        },
+        {
+          "file": "firefox_IA-03-05.png",
+          "width": 1280,
+          "height": 885,
+          "yellowSamples": 965,
+          "mode": "chrome context, real browser address bar"
+        },
+        {
+          "file": "firefox_IA-03-07.png",
+          "width": 1280,
+          "height": 885,
+          "yellowSamples": 1051,
+          "mode": "chrome context, real browser address bar"
+        },
+        {
+          "file": "firefox_IA-03-10.png",
+          "width": 1280,
+          "height": 885,
+          "yellowSamples": 1051,
+          "mode": "chrome context, real browser address bar"
+        },
+        {
+          "file": "firefox_IA-03-12.png",
+          "width": 1280,
+          "height": 885,
+          "yellowSamples": 1051,
+          "mode": "chrome context, real browser address bar"
+        },
+        {
+          "file": "firefox_IA-03-16.png",
+          "width": 1280,
+          "height": 885,
+          "yellowSamples": 965,
+          "mode": "chrome context, real browser address bar"
+        },
+        {
+          "file": "firefox_IA-03-17.png",
+          "width": 1280,
+          "height": 885,
+          "yellowSamples": 935,
+          "mode": "chrome context, real browser address bar"
+        },
+        {
+          "file": "firefox_IA-03-18.png",
+          "width": 1280,
+          "height": 885,
+          "yellowSamples": 982,
+          "mode": "chrome context, real browser address bar"
+        },
+        {
+          "file": "firefox_IA-04-02.png",
+          "width": 1280,
+          "height": 885,
+          "yellowSamples": 935,
+          "mode": "chrome context, real browser address bar"
+        },
+        {
+          "file": "firefox_IA-04-03.png",
+          "width": 1280,
+          "height": 885,
+          "yellowSamples": 935,
+          "mode": "chrome context, real browser address bar"
+        },
+        {
+          "file": "firefox_IA-04-04.png",
+          "width": 1280,
+          "height": 885,
+          "yellowSamples": 935,
+          "mode": "chrome context, real browser address bar"
+        },
+        {
+          "file": "firefox_IA-04-05.png",
+          "width": 1280,
+          "height": 885,
+          "yellowSamples": 982,
+          "mode": "chrome context, real browser address bar"
+        },
+        {
+          "file": "firefox_IA-04-06.png",
+          "width": 1280,
+          "height": 885,
+          "yellowSamples": 935,
+          "mode": "chrome context, real browser address bar"
+        },
+        {
+          "file": "firefox_IA-04-07.png",
+          "width": 1280,
+          "height": 885,
+          "yellowSamples": 1051,
+          "mode": "chrome context, real browser address bar"
+        },
+        {
+          "file": "firefox_IA-04-11.png",
+          "width": 1280,
+          "height": 885,
+          "yellowSamples": 965,
+          "mode": "chrome context, real browser address bar"
+        },
+        {
+          "file": "firefox_IA-04-12.png",
+          "width": 1280,
+          "height": 885,
+          "yellowSamples": 965,
+          "mode": "chrome context, real browser address bar"
+        },
+        {
+          "file": "firefox_IA-04-13.png",
+          "width": 1280,
+          "height": 885,
+          "yellowSamples": 965,
+          "mode": "chrome context, real browser address bar"
+        },
+        {
+          "file": "firefox_IA-04-16.png",
+          "width": 1280,
+          "height": 885,
+          "yellowSamples": 935,
+          "mode": "chrome context, real browser address bar"
+        },
+        {
+          "file": "firefox_IA-04-17.png",
+          "width": 1280,
+          "height": 885,
+          "yellowSamples": 935,
+          "mode": "chrome context, real browser address bar"
+        },
+        {
+          "file": "firefox_IA-04-18.png",
+          "width": 1280,
+          "height": 885,
+          "yellowSamples": 907,
+          "mode": "chrome context, real browser address bar"
+        },
+        {
+          "file": "firefox_IA-04-20.png",
+          "width": 1280,
+          "height": 885,
+          "yellowSamples": 965,
+          "mode": "chrome context, real browser address bar"
+        },
+        {
+          "file": "firefox_screen-login.png",
+          "width": 1280,
+          "height": 885,
+          "yellowSamples": 935,
+          "mode": "chrome context, real browser address bar"
+        },
+        {
+          "file": "firefox_screen-register.png",
+          "width": 1280,
+          "height": 885,
+          "yellowSamples": 982,
+          "mode": "chrome context, real browser address bar"
+        },
+        {
+          "file": "firefox_screen-forgot-step1.png",
+          "width": 1280,
+          "height": 885,
+          "yellowSamples": 1051,
+          "mode": "chrome context, real browser address bar"
+        },
+        {
+          "file": "firefox_screen-forgot-step2.png",
+          "width": 1280,
+          "height": 885,
+          "yellowSamples": 1051,
+          "mode": "chrome context, real browser address bar"
+        },
+        {
+          "file": "firefox_screen-profile.png",
+          "width": 1280,
+          "height": 885,
+          "yellowSamples": 965,
+          "mode": "chrome context, real browser address bar"
+        }
+      ]
+    },
+    "androidchrome": {
+      "failed": 51,
+      "overviews": 5,
+      "images": [
+        {
+          "file": "androidchrome_IA-01-01.png",
+          "width": 1080,
+          "height": 2424,
+          "yellowSamples": 10098,
+          "mode": "adb exec-out screencap -p, full device"
+        },
+        {
+          "file": "androidchrome_IA-01-02.png",
+          "width": 1080,
+          "height": 2424,
+          "yellowSamples": 10098,
+          "mode": "adb exec-out screencap -p, full device"
+        },
+        {
+          "file": "androidchrome_IA-01-03.png",
+          "width": 1080,
+          "height": 2424,
+          "yellowSamples": 10098,
+          "mode": "adb exec-out screencap -p, full device"
+        },
+        {
+          "file": "androidchrome_IA-01-04.png",
+          "width": 1080,
+          "height": 2424,
+          "yellowSamples": 10060,
+          "mode": "adb exec-out screencap -p, full device"
+        },
+        {
+          "file": "androidchrome_IA-01-05.png",
+          "width": 1080,
+          "height": 2424,
+          "yellowSamples": 9966,
+          "mode": "adb exec-out screencap -p, full device"
+        },
+        {
+          "file": "androidchrome_IA-01-06.png",
+          "width": 1080,
+          "height": 2424,
+          "yellowSamples": 10098,
+          "mode": "adb exec-out screencap -p, full device"
+        },
+        {
+          "file": "androidchrome_IA-01-08.png",
+          "width": 1080,
+          "height": 2424,
+          "yellowSamples": 10060,
+          "mode": "adb exec-out screencap -p, full device"
+        },
+        {
+          "file": "androidchrome_IA-01-12.png",
+          "width": 1080,
+          "height": 2424,
+          "yellowSamples": 10082,
+          "mode": "adb exec-out screencap -p, full device"
+        },
+        {
+          "file": "androidchrome_IA-01-13.png",
+          "width": 1080,
+          "height": 2424,
+          "yellowSamples": 9853,
+          "mode": "adb exec-out screencap -p, full device"
+        },
+        {
+          "file": "androidchrome_IA-01-18.png",
+          "width": 1080,
+          "height": 2424,
+          "yellowSamples": 9853,
+          "mode": "adb exec-out screencap -p, full device"
+        },
+        {
+          "file": "androidchrome_IA-01-20.png",
+          "width": 1080,
+          "height": 2424,
+          "yellowSamples": 9853,
+          "mode": "adb exec-out screencap -p, full device"
+        },
+        {
+          "file": "androidchrome_IA-02-01.png",
+          "width": 1080,
+          "height": 2424,
+          "yellowSamples": 10098,
+          "mode": "adb exec-out screencap -p, full device"
+        },
+        {
+          "file": "androidchrome_IA-02-02.png",
+          "width": 1080,
+          "height": 2424,
+          "yellowSamples": 10098,
+          "mode": "adb exec-out screencap -p, full device"
+        },
+        {
+          "file": "androidchrome_IA-02-03.png",
+          "width": 1080,
+          "height": 2424,
+          "yellowSamples": 9853,
+          "mode": "adb exec-out screencap -p, full device"
+        },
+        {
+          "file": "androidchrome_IA-02-04.png",
+          "width": 1080,
+          "height": 2424,
+          "yellowSamples": 10098,
+          "mode": "adb exec-out screencap -p, full device"
+        },
+        {
+          "file": "androidchrome_IA-02-05.png",
+          "width": 1080,
+          "height": 2424,
+          "yellowSamples": 10060,
+          "mode": "adb exec-out screencap -p, full device"
+        },
+        {
+          "file": "androidchrome_IA-02-06.png",
+          "width": 1080,
+          "height": 2424,
+          "yellowSamples": 9834,
+          "mode": "adb exec-out screencap -p, full device"
+        },
+        {
+          "file": "androidchrome_IA-02-07.png",
+          "width": 1080,
+          "height": 2424,
+          "yellowSamples": 9853,
+          "mode": "adb exec-out screencap -p, full device"
+        },
+        {
+          "file": "androidchrome_IA-02-08.png",
+          "width": 1080,
+          "height": 2424,
+          "yellowSamples": 10098,
+          "mode": "adb exec-out screencap -p, full device"
+        },
+        {
+          "file": "androidchrome_IA-02-09.png",
+          "width": 1080,
+          "height": 2424,
+          "yellowSamples": 9966,
+          "mode": "adb exec-out screencap -p, full device"
+        },
+        {
+          "file": "androidchrome_IA-02-11.png",
+          "width": 1080,
+          "height": 2424,
+          "yellowSamples": 9966,
+          "mode": "adb exec-out screencap -p, full device"
+        },
+        {
+          "file": "androidchrome_IA-02-12.png",
+          "width": 1080,
+          "height": 2424,
+          "yellowSamples": 9966,
+          "mode": "adb exec-out screencap -p, full device"
+        },
+        {
+          "file": "androidchrome_IA-02-13.png",
+          "width": 1080,
+          "height": 2424,
+          "yellowSamples": 9966,
+          "mode": "adb exec-out screencap -p, full device"
+        },
+        {
+          "file": "androidchrome_IA-02-14.png",
+          "width": 1080,
+          "height": 2424,
+          "yellowSamples": 9966,
+          "mode": "adb exec-out screencap -p, full device"
+        },
+        {
+          "file": "androidchrome_IA-02-15.png",
+          "width": 1080,
+          "height": 2424,
+          "yellowSamples": 9853,
+          "mode": "adb exec-out screencap -p, full device"
+        },
+        {
+          "file": "androidchrome_IA-02-18.png",
+          "width": 1080,
+          "height": 2424,
+          "yellowSamples": 10098,
+          "mode": "adb exec-out screencap -p, full device"
+        },
+        {
+          "file": "androidchrome_IA-02-19.png",
+          "width": 1080,
+          "height": 2424,
+          "yellowSamples": 10098,
+          "mode": "adb exec-out screencap -p, full device"
+        },
+        {
+          "file": "androidchrome_IA-02-20.png",
+          "width": 1080,
+          "height": 2424,
+          "yellowSamples": 9966,
+          "mode": "adb exec-out screencap -p, full device"
+        },
+        {
+          "file": "androidchrome_IA-02-22.png",
+          "width": 1080,
+          "height": 2424,
+          "yellowSamples": 10082,
+          "mode": "adb exec-out screencap -p, full device"
+        },
+        {
+          "file": "androidchrome_IA-03-03.png",
+          "width": 1080,
+          "height": 2424,
+          "yellowSamples": 10060,
+          "mode": "adb exec-out screencap -p, full device"
+        },
+        {
+          "file": "androidchrome_IA-03-04.png",
+          "width": 1080,
+          "height": 2424,
+          "yellowSamples": 10082,
+          "mode": "adb exec-out screencap -p, full device"
+        },
+        {
+          "file": "androidchrome_IA-03-05.png",
+          "width": 1080,
+          "height": 2424,
+          "yellowSamples": 10082,
+          "mode": "adb exec-out screencap -p, full device"
+        },
+        {
+          "file": "androidchrome_IA-03-07.png",
+          "width": 1080,
+          "height": 2424,
+          "yellowSamples": 9966,
+          "mode": "adb exec-out screencap -p, full device"
+        },
+        {
+          "file": "androidchrome_IA-03-10.png",
+          "width": 1080,
+          "height": 2424,
+          "yellowSamples": 9966,
+          "mode": "adb exec-out screencap -p, full device"
+        },
+        {
+          "file": "androidchrome_IA-03-12.png",
+          "width": 1080,
+          "height": 2424,
+          "yellowSamples": 9966,
+          "mode": "adb exec-out screencap -p, full device"
+        },
+        {
+          "file": "androidchrome_IA-03-16.png",
+          "width": 1080,
+          "height": 2424,
+          "yellowSamples": 10082,
+          "mode": "adb exec-out screencap -p, full device"
+        },
+        {
+          "file": "androidchrome_IA-03-17.png",
+          "width": 1080,
+          "height": 2424,
+          "yellowSamples": 10098,
+          "mode": "adb exec-out screencap -p, full device"
+        },
+        {
+          "file": "androidchrome_IA-03-18.png",
+          "width": 1080,
+          "height": 2424,
+          "yellowSamples": 10060,
+          "mode": "adb exec-out screencap -p, full device"
+        },
+        {
+          "file": "androidchrome_IA-04-02.png",
+          "width": 1080,
+          "height": 2424,
+          "yellowSamples": 10098,
+          "mode": "adb exec-out screencap -p, full device"
+        },
+        {
+          "file": "androidchrome_IA-04-03.png",
+          "width": 1080,
+          "height": 2424,
+          "yellowSamples": 10098,
+          "mode": "adb exec-out screencap -p, full device"
+        },
+        {
+          "file": "androidchrome_IA-04-04.png",
+          "width": 1080,
+          "height": 2424,
+          "yellowSamples": 10098,
+          "mode": "adb exec-out screencap -p, full device"
+        },
+        {
+          "file": "androidchrome_IA-04-05.png",
+          "width": 1080,
+          "height": 2424,
+          "yellowSamples": 10060,
+          "mode": "adb exec-out screencap -p, full device"
+        },
+        {
+          "file": "androidchrome_IA-04-06.png",
+          "width": 1080,
+          "height": 2424,
+          "yellowSamples": 10098,
+          "mode": "adb exec-out screencap -p, full device"
+        },
+        {
+          "file": "androidchrome_IA-04-07.png",
+          "width": 1080,
+          "height": 2424,
+          "yellowSamples": 9966,
+          "mode": "adb exec-out screencap -p, full device"
+        },
+        {
+          "file": "androidchrome_IA-04-11.png",
+          "width": 1080,
+          "height": 2424,
+          "yellowSamples": 10082,
+          "mode": "adb exec-out screencap -p, full device"
+        },
+        {
+          "file": "androidchrome_IA-04-12.png",
+          "width": 1080,
+          "height": 2424,
+          "yellowSamples": 10082,
+          "mode": "adb exec-out screencap -p, full device"
+        },
+        {
+          "file": "androidchrome_IA-04-13.png",
+          "width": 1080,
+          "height": 2424,
+          "yellowSamples": 9853,
+          "mode": "adb exec-out screencap -p, full device"
+        },
+        {
+          "file": "androidchrome_IA-04-16.png",
+          "width": 1080,
+          "height": 2424,
+          "yellowSamples": 9853,
+          "mode": "adb exec-out screencap -p, full device"
+        },
+        {
+          "file": "androidchrome_IA-04-17.png",
+          "width": 1080,
+          "height": 2424,
+          "yellowSamples": 9853,
+          "mode": "adb exec-out screencap -p, full device"
+        },
+        {
+          "file": "androidchrome_IA-04-18.png",
+          "width": 1080,
+          "height": 2424,
+          "yellowSamples": 9853,
+          "mode": "adb exec-out screencap -p, full device"
+        },
+        {
+          "file": "androidchrome_IA-04-20.png",
+          "width": 1080,
+          "height": 2424,
+          "yellowSamples": 9853,
+          "mode": "adb exec-out screencap -p, full device"
+        },
+        {
+          "file": "androidchrome_screen-login.png",
+          "width": 1080,
+          "height": 2424,
+          "yellowSamples": 9853,
+          "mode": "adb exec-out screencap -p, full device"
+        },
+        {
+          "file": "androidchrome_screen-register.png",
+          "width": 1080,
+          "height": 2424,
+          "yellowSamples": 9834,
+          "mode": "adb exec-out screencap -p, full device"
+        },
+        {
+          "file": "androidchrome_screen-forgot-step1.png",
+          "width": 1080,
+          "height": 2424,
+          "yellowSamples": 9729,
+          "mode": "adb exec-out screencap -p, full device"
+        },
+        {
+          "file": "androidchrome_screen-forgot-step2.png",
+          "width": 1080,
+          "height": 2424,
+          "yellowSamples": 9729,
+          "mode": "adb exec-out screencap -p, full device"
+        },
+        {
+          "file": "androidchrome_screen-profile.png",
+          "width": 1080,
+          "height": 2424,
+          "yellowSamples": 9853,
+          "mode": "adb exec-out screencap -p, full device"
+        }
+      ]
+    }
+  },
+  "validatedAt": "2026-11-04T13:30:08.484088+07:00"
+}

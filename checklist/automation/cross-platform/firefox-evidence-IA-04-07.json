@@ -1,0 +1,22 @@
+{
+  "path": "screenshots/cross-platform/firefox_IA-04-07.png",
+  "mode": "chrome context, real browser address bar",
+  "action": "load URL, restore auth with independent API fixture, fill controls; submit form, capture dialog then dismiss",
+  "alert": "Lỗi: User not found",
+  "actual": {
+    "url": "http://localhost:5173/forgot-password",
+    "main": "Quên Mật Khẩu\nNhập Email của bạn\nLấy mã OTP",
+    "fields": [
+      {
+        "value": "evidence.ia-04-07.1793772896374344010@test.local.unknown",
+        "type": "text"
+      }
+    ],
+    "head": "EShop\nGiỏ hàng\nĐăng nhập\nĐăng ký",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    }
+  },
+  "capturedAt": "2026-11-04T13:14:57+0700"
+}

@@ -1,0 +1,13 @@
+{
+  "browser": "157.0.1",
+  "selenium": "4.52.0",
+  "driver": "0.37.1",
+  "systemAccess": "geckodriver --allow-system-access (passes privileged flag internally)",
+  "viewport": {
+    "innerWidth": 1280,
+    "innerHeight": 800,
+    "outerWidth": 1332,
+    "outerHeight": 937
+  },
+  "started": "2026-11-04T13:07:37+0700"
+}

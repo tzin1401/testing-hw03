@@ -48,3 +48,4 @@ Thống kê: `is:issue label:"type: bug"` trên https://github.com/tzin1401/test
 | [#40](https://github.com/tzin1401/testing-hw03/issues/40) | [BUG][ui] Submit buttons have no loading state and allow duplicate requests | `type: bug` `severity: major` `priority: P2` `status: new` `module: ui` |
 | [#41](https://github.com/tzin1401/testing-hw03/issues/41) | [BUG][ui] Feedback messages are not exposed to assistive technology | `type: bug` `severity: minor` `priority: P3` `status: new` `module: ui` |
 | [#42](https://github.com/tzin1401/testing-hw03/issues/42) | [BUG][ui] Server failure messages are inconsistent and raw | `type: bug` `severity: minor` `priority: P3` `status: new` `module: ui` |
+| [#43](https://github.com/tzin1401/testing-hw03/issues/43) | [BUG][navigation] Long user name pushes the logout button off-screen on Android Chrome (Task 3, chỉ Android) | `type: bug` `severity: major` `priority: P2` `status: new` `module: navigation` |

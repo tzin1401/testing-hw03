@@ -1,0 +1,34 @@
+{
+  "path": "screenshots/cross-platform/firefox_IA-01-20.png",
+  "mode": "chrome context, real browser address bar",
+  "action": "load URL, restore auth with independent API fixture, fill controls",
+  "alert": null,
+  "actual": {
+    "url": "http://localhost:5173/profile",
+    "main": "Hồ sơ của bạn\nEmail (Không đổi)\nHọ Tên\nSố điện thoại\nĐịa chỉ giao hàng\nCập nhật\nLịch sử đơn hàng\n\nBạn chưa có đơn hàng nào.",
+    "fields": [
+      {
+        "value": "evidence.ia-01-20.1793773210436302181@test.local",
+        "type": "text"
+      },
+      {
+        "value": "<b>x</b>",
+        "type": "text"
+      },
+      {
+        "value": "912345678",
+        "type": "text"
+      },
+      {
+        "value": "123 Đường thử nghiệm",
+        "type": "textarea"
+      }
+    ],
+    "head": "EShop\nGiỏ hàng\nChào, x\nThoát",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    }
+  },
+  "capturedAt": "2026-11-04T13:20:11+0700"
+}

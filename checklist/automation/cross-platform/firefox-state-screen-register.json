@@ -1,0 +1,37 @@
+{
+  "id": "screen-register",
+  "state": {
+    "url": "http://localhost:5173/register",
+    "token": null,
+    "fields": [
+      {
+        "value": "",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "value": "",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "value": "",
+        "type": "password",
+        "disabled": false
+      }
+    ],
+    "otp": false,
+    "main": "Đăng Ký Tài Khoản\nHọ Tên\nEmail\nMật khẩu\n\nYêu cầu: Tối thiểu 8 ký tự, có chữ hoa, chữ thường, số và ký tự đặc biệt.\n\nĐăng Ký\nĐã có tài khoản? Đăng nhập",
+    "header": "EShop\nGiỏ hàng\nĐăng nhập\nĐăng ký",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "scrollY": 0
+  },
+  "account": {
+    "name": "Overview firefox",
+    "email": "overview.firefox.1793773266051@test.local",
+    "password": "Abc12345 "
+  }
+}

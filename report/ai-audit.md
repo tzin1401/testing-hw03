@@ -14,6 +14,7 @@
 | 5 | P05 — Checklist IA-04 | OpenCode — DeepSeek V4.1 Flash Free | 04/11/2026 01:29 | [#5](#5) |
 | 6 | P05b — Review checklist (trùng / measurable / IA) | OpenCode — DeepSeek V4.1 Flash Free | 04/11/2026 01:43 | [#6](#6) |
 | 7 | P06 — Thực thi Chrome GUI checklist | Codex — GPT-6 | 04/11/2026 02:02 | [#7](#7) |
+| 8 | P07 — Thực thi Firefox và Android Chrome | Codex — GPT-6 | 04/11/2026 13:04 | [#8](#8) |
 
 ---
 
@@ -1333,4 +1334,78 @@ Không tạo GitHub Issue, không commit. Ghi vào log
 Có 51 ảnh lỗi. MANUAL: IA-01-16, IA-01-17, IA-01-19. Đã giữ nguyên các cột khác, định dạng và dropdown.
 
 📝 Đã ghi log #7 vào report/ai-audit.md
+```
+
+### 8
+- **Công cụ AI:** Codex — GPT-6
+- **Ngày giờ:** 04/11/2026 13:04
+- **Bước:** P07 — Thực thi Firefox và Android Chrome
+- **File đã tạo/sửa:** checklist/gui-checklist.xlsx; checklist/execution-cross-platform.md; checklist/automation/run-firefox.spec.js; checklist/automation/run-androidchrome.spec.js; checklist/automation/playwright.cross.config.js; checklist/automation/cross-platform/ (adapter dùng chung suite Chrome, Selenium evidence server, overviews, writer/validator, JSON/log môi trường và kết quả, snapshot/hash bảo toàn); screenshots/cross-platform/ (111 PNG); report/ai-audit.md
+
+**Prompt:**
+```text
+Bạn là test automation agent. Hãy THỰC THI lại GUI checklist trên 2 platform mới cho EShop: Firefox (desktop) và Android Chrome (emulator). Tái sử dụng tối đa script Chrome đã có. Không thiết kế lại checklist.
+
+## Input
+- Checklist: checklist/gui-checklist.xlsx, sheet "Checklist" (79 item). Cột kết quả cần ghi: "Firefox" và "Android Chrome".
+- Script Chrome đã chạy xong: checklist/automation/run-chrome.spec.js, playwright.config.js, write-results.py; báo cáo checklist/execution-chrome.md (đọc để biết cách kiểm từng item, dữ liệu test, password hợp lệ thực tế "Abc12345 ").
+- SUT: web http://localhost:5173, API http://localhost:3000 (đang chạy, KHÔNG restart, KHÔNG sửa eshop-sut/).
+- Máy: Ubuntu, Wayland. Firefox 157 cài bằng snap (/snap/bin/firefox, /snap/bin/geckodriver). Android SDK ở ~/Android/Sdk; emulator Pixel_9 (Android 15, emulator-5554) đang chạy, Chrome trong emulator đã qua màn hình chào.
+
+## Platform 1 — Firefox
+1. Chạy lại toàn bộ suite bằng Playwright project "firefox" (cài bằng `npx playwright install firefox` nếu thiếu). Tạo file checklist/automation/run-firefox.spec.js hoặc thêm project vào config, dùng chung logic test với Chrome. Viewport 1280x800.
+2. Ghi rõ trong báo cáo: Playwright Firefox là bản Gecko riêng của Playwright (ghi version), không phải Firefox 157 đã cài.
+3. Ảnh bằng chứng phải thấy THANH ĐỊA CHỈ THẬT: dùng Firefox 157 đã cài qua Selenium (Python, geckodriver snap), mở đúng URL/state của item, chèn overlay, rồi chụp cả cửa sổ trình duyệt bằng chrome context:
+     driver.set_context(driver.CONTEXT_CHROME); driver.save_screenshot(path); driver.set_context(driver.CONTEXT_CONTENT)
+   (nếu Firefox yêu cầu, thêm argument `--remote-allow-system-access`). Nếu chrome context không chụp được thì dùng page screenshot và ghi rõ lý do trong báo cáo.
+
+## Platform 2 — Android Chrome (emulator)
+1. Port forwarding (chạy lại nếu emulator mới bật):
+     ~/Android/Sdk/platform-tools/adb reverse tcp:5173 tcp:5173 && ~/Android/Sdk/platform-tools/adb reverse tcp:3000 tcp:3000
+     ~/Android/Sdk/platform-tools/adb forward tcp:9222 localabstract:chrome_devtools_remote
+2. Điều khiển Chrome trong emulator bằng Playwright `chromium.connectOverCDP('http://localhost:9222')`, dùng context/page có sẵn, mở http://localhost:5173 (KHÔNG dùng 10.0.2.2). Viewport là màn hình thật của Pixel_9, không set lại.
+3. Item không áp dụng trên mobile (ví dụ phụ thuộc phím Tab/bàn phím vật lý, hover, Ctrl+zoom) ghi "N/A" kèm lý do. Item có tương đương trên mobile thì kiểm theo tương đương và ghi rõ cách kiểm.
+4. Ảnh bằng chứng chụp CẢ MÀN HÌNH THIẾT BỊ (thấy thanh địa chỉ Chrome Android) bằng:
+     ~/Android/Sdk/platform-tools/adb exec-out screencap -p > <file>.png
+   sau khi đã chèn overlay qua CDP.
+
+## Overlay (cả 2 platform, chèn trước mỗi lần chụp)
+document.body.insertAdjacentHTML('beforeend','<div style="position:fixed;bottom:8px;right:8px;z-index:99999;background:#ff0;color:#000;padding:4px 8px;font:bold 13px sans-serif">23120190 · Nguyễn Lê Thế Vinh · 23120190@student.hcmus.edu.vn · <PLATFORM> · '+location.href+'</div>')
+<PLATFORM> = "Firefox <version> · Ubuntu" hoặc "Android Chrome <version> · Pixel_9 Android 15 (emulator)".
+
+## Ảnh cần chụp (lưu ở screenshots/cross-platform/)
+- Mỗi platform chụp 1 ảnh tổng quan cho mỗi màn hình: login, register, forgot-step1, forgot-step2, profile → <platform>_screen-<tên>.png
+- Mỗi item Failed trên platform đó → <platform>_<ID>.png
+  (<platform> = firefox hoặc androidchrome)
+
+## Ghi kết quả vào Excel
+- Dùng openpyxl. CHỈ ghi cột "Firefox", "Android Chrome" (Passed/Failed/N/A) và nối thêm vào cột "Notes" một dòng dạng "[Firefox] …" / "[Android Chrome] …" khi Failed, N/A hoặc khác kết quả Chrome. KHÔNG xóa nội dung Notes cũ, KHÔNG sửa cột Chrome, Expo Go, Screenshot, Bug ID hay bất kỳ cột nào khác. Giữ nguyên định dạng, dropdown, hyperlink.
+- Item không tự động hóa được tin cậy: để trống ô, ghi "[<platform>] MANUAL: <lý do>" vào Notes.
+- Cập nhật sheet "Summary": thêm cột Passed/Failed/N/A/MANUAL cho từng platform.
+
+## Báo cáo
+Tạo checklist/execution-cross-platform.md gồm:
+- Môi trường từng platform (OS/device, browser + version, Playwright/Selenium version, ngày giờ).
+- Lệnh chạy lại.
+- Bảng so sánh: | ID | Chrome | Firefox | Android Chrome | Ghi chú khác biệt |
+- Danh sách item cho kết quả KHÁC Chrome (đây là phát hiện chính của cross-platform testing), mỗi item kèm nguyên nhân dự đoán.
+- Danh sách item MANUAL và N/A.
+
+Không tạo GitHub Issue, không commit, không sửa các file của lượt chạy Chrome. Ghi vào log
+```
+
+**AI output:**
+```text
+Đã chạy 79 item trên mỗi platform và cập nhật [Excel](/home/zinn/zinn/testing/hw03/checklist/gui-checklist.xlsx), [báo cáo](/home/zinn/zinn/testing/hw03/checklist/execution-cross-platform.md).
+
+| Platform | Passed | Failed | N/A | MANUAL |
+|---|---:|---:|---:|---:|
+| Firefox | 24 | 50 | 0 | 5 |
+| Android Chrome | 21 | 51 | 5 | 2 |
+
+Khác biệt layout chính: Android Failed ở **IA-01-12, IA-01-13**, trong khi Chrome Passed. Đã lưu **111 ảnh** có thanh địa chỉ thật.
+
+Giữ nguyên kết quả Chrome, Notes cũ, định dạng, dropdown và hyperlink.
+
+📝 Đã ghi log #8 vào report/ai-audit.md
 ```

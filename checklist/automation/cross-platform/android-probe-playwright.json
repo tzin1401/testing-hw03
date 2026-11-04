@@ -1,0 +1,197 @@
+{
+  "config": {
+    "argv": [
+      "/usr/bin/node",
+      "/tmp/eshop-playwright/node_modules/.bin/playwright",
+      "test",
+      "-c",
+      "checklist/automation/playwright.cross.config.js",
+      "--project",
+      "androidchrome",
+      "--grep",
+      "IA-01-01 "
+    ],
+    "configFile": "/home/zinn/zinn/testing/hw03/checklist/automation/playwright.cross.config.js",
+    "rootDir": "/home/zinn/zinn/testing/hw03/checklist/automation",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/home/zinn/zinn/testing/hw03/checklist/automation/cross-platform/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/home/zinn/zinn/testing/hw03/checklist/automation",
+        "testIgnore": [],
+        "testMatch": [
+          "run-firefox.spec.js"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/home/zinn/zinn/testing/hw03/checklist/automation/cross-platform/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "androidchrome",
+        "name": "androidchrome",
+        "testDir": "/home/zinn/zinn/testing/hw03/checklist/automation",
+        "testIgnore": [],
+        "testMatch": [
+          "run-androidchrome.spec.js"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/home/zinn/zinn/testing/hw03/checklist/automation/cross-platform/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "androidchrome",
+        "testDir": "/home/zinn/zinn/testing/hw03/checklist/automation",
+        "snapshotDir": "/home/zinn/zinn/testing/hw03/checklist/automation",
+        "testIgnore": [],
+        "testMatch": "run-androidchrome.spec.js",
+        "timeout": 120000,
+        "use": {
+          "baseURL": "http://localhost:5173",
+          "actionTimeout": 10000,
+          "navigationTimeout": 20000,
+          "screenshot": "off",
+          "trace": "off",
+          "browserName": "chromium",
+          "viewport": null
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "androidchrome"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "line",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "/home/zinn/zinn/testing/hw03/checklist/automation/cross-platform/android-probe-playwright.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "run-androidchrome.spec.js",
+      "file": "run-androidchrome-shared.cjs",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "IA-01-01 The account field label uses the Vietnamese term defined by the screen's requirement, not an English alternative.",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "MANUAL: Automation không hoàn tất: page.goto: Protocol error (Page.navigate): Cannot navigate to invalid URL\nCall log:\n\u001b[2m  - navigating to \"/login\", waiting until \"load\"\u001b[22m\n",
+                  "location": {
+                    "file": "/home/zinn/zinn/testing/hw03/checklist/automation/run-androidchrome-shared.cjs",
+                    "line": 141,
+                    "column": 27
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "androidchrome",
+              "projectName": "androidchrome",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 2353,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-04T06:10:16.369Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "MANUAL: Automation không hoàn tất: page.goto: Protocol error (Page.navigate): Cannot navigate to invalid URL\nCall log:\n\u001b[2m  - navigating to \"/login\", waiting until \"load\"\u001b[22m\n",
+                      "location": {
+                        "file": "/home/zinn/zinn/testing/hw03/checklist/automation/run-androidchrome-shared.cjs",
+                        "line": 141,
+                        "column": 27
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "execution",
+                      "contentType": "application/json",
+                      "body": "ewogICJpZCI6ICJJQS0wMS0wMSIsCiAgImlhIjogIklBLTAxIEdlbmVyYWwgVUkgc3RhbmRhcmRzIiwKICAicmVzdWx0IjogIk1BTlVBTCIsCiAgIm1ldGhvZCI6ICLEkOG7jWMgdGV4dCBuaMOjbiBMb2dpbiB0cm9uZyBET00iLAogICJhY3R1YWwiOiAicGFnZS5nb3RvOiBQcm90b2NvbCBlcnJvciAoUGFnZS5uYXZpZ2F0ZSk6IENhbm5vdCBuYXZpZ2F0ZSB0byBpbnZhbGlkIFVSTFxuQ2FsbCBsb2c6XG5cdTAwMWJbMm0gIC0gbmF2aWdhdGluZyB0byBcIi9sb2dpblwiLCB3YWl0aW5nIHVudGlsIFwibG9hZFwiXHUwMDFiWzIybVxuXG4gICAgYXQgZ28gKC9ob21lL3ppbm4vemlubi90ZXN0aW5nL2h3MDMvY2hlY2tsaXN0L2F1dG9tYXRpb24vcnVuLWFuZHJvaWRjaHJvbWUtc2hhcmVkLmNqczozNDozOSlcbiAgICBhdCAvaG9tZS96aW5uL3ppbm4vdGVzdGluZy9odzAzL2NoZWNrbGlzdC9hdXRvbWF0aW9uL3J1bi1hbmRyb2lkY2hyb21lLXNoYXJlZC5janM6NjM6NjciLAogICJub3RlcyI6ICJNQU5VQUw6IEF1dG9tYXRpb24ga2jDtG5nIGhvw6BuIHThuqV0OiBwYWdlLmdvdG86IFByb3RvY29sIGVycm9yIChQYWdlLm5hdmlnYXRlKTogQ2Fubm90IG5hdmlnYXRlIHRvIGludmFsaWQgVVJMXG5DYWxsIGxvZzpcblx1MDAxYlsybSAgLSBuYXZpZ2F0aW5nIHRvIFwiL2xvZ2luXCIsIHdhaXRpbmcgdW50aWwgXCJsb2FkXCJcdTAwMWJbMjJtXG5cblF1YW4gc8OhdDogcGFnZS5nb3RvOiBQcm90b2NvbCBlcnJvciAoUGFnZS5uYXZpZ2F0ZSk6IENhbm5vdCBuYXZpZ2F0ZSB0byBpbnZhbGlkIFVSTFxuQ2FsbCBsb2c6XG5cdTAwMWJbMm0gIC0gbmF2aWdhdGluZyB0byBcIi9sb2dpblwiLCB3YWl0aW5nIHVudGlsIFwibG9hZFwiXHUwMDFiWzIybVxuXG4gICAgYXQgZ28gKC9ob21lL3ppbm4vemlubi90ZXN0aW5nL2h3MDMvY2hlY2tsaXN0L2F1dG9tYXRpb24vcnVuLWFuZHJvaWRjaHJvbWUtc2hhcmVkLmNqczozNDozOSlcbiAgICBhdCAvaG9tZS96aW5uL3ppbm4vdGVzdGluZy9odzAzL2NoZWNrbGlzdC9hdXRvbWF0aW9uL3J1bi1hbmRyb2lkY2hyb21lLXNoYXJlZC5janM6NjM6NjciLAogICJwbGF0Zm9ybSI6ICJhbmRyb2lkY2hyb21lIiwKICAiaW5jb21wbGV0ZSI6IGZhbHNlLAogICJzY3JlZW5zaG90IjogIiIsCiAgImVtYWlsIjogInRpYTAxMDEuMTc5Mzc3MjYxODIyMS4wQHRlc3QubG9jYWwiLAogICJkaWFsb2dzIjogW10sCiAgInJlcXVlc3RzIjogW10sCiAgInJlc3BvbnNlcyI6IFtdLAogICJleGVjdXRlZEF0IjogIjIwMjYtMTEtMDRUMDY6MTA6MTguODIxWiIKfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "939a9cffaeb3bef61f55-12434f98f5625194756a",
+          "file": "run-androidchrome-shared.cjs",
+          "line": 24,
+          "column": 2
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-04T06:10:15.299Z",
+    "duration": 3592.8999999999996,
+    "expected": 0,
+    "skipped": 1,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

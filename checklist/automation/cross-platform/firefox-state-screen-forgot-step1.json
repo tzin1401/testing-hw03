@@ -1,0 +1,27 @@
+{
+  "id": "screen-forgot-step1",
+  "state": {
+    "url": "http://localhost:5173/forgot-password",
+    "token": null,
+    "fields": [
+      {
+        "value": "",
+        "type": "text",
+        "disabled": false
+      }
+    ],
+    "otp": false,
+    "main": "Quên Mật Khẩu\nNhập Email của bạn\nLấy mã OTP",
+    "header": "EShop\nGiỏ hàng\nĐăng nhập\nĐăng ký",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "scrollY": 0
+  },
+  "account": {
+    "name": "Overview firefox",
+    "email": "overview.firefox.1793773266051@test.local",
+    "password": "Abc12345 "
+  }
+}

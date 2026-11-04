@@ -1,0 +1,43 @@
+{
+  "id": "IA-04-13",
+  "state": {
+    "url": "http://localhost:5173/profile",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjgzLCJyb2xlIjoidXNlciIsImlhdCI6MTc5Mzc3MjkyNn0.d-90AbocYXIXSdJjcoUv2ORp5vqPWpHtJuikQ-K4WWU",
+    "fields": [
+      {
+        "value": "tia0413.1793772924505.0@test.local",
+        "type": "text",
+        "disabled": true
+      },
+      {
+        "value": "Chrome Tester",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "value": "",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "value": "",
+        "type": "textarea",
+        "disabled": false
+      }
+    ],
+    "otp": false,
+    "main": "Hồ sơ của bạn\nEmail (Không đổi)\nHọ Tên\nSố điện thoại\nĐịa chỉ giao hàng\nCập nhật\nLịch sử đơn hàng\n\nBạn chưa có đơn hàng nào.",
+    "header": "EShop\nGiỏ hàng\nChào, Chrome Tester\nThoát",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "scrollY": 0
+  },
+  "account": {
+    "name": "Chrome Tester",
+    "email": "tia0413.1793772924505.0@test.local",
+    "password": "Abc12345 "
+  },
+  "selector": "main > div > div:nth-child(2)"
+}

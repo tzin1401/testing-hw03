@@ -1,0 +1,12 @@
+{
+  "os": "Linux 7.0.0-42-generic",
+  "browser": "124.0.6367.219",
+  "playwright": "1.64.1",
+  "executedAt": "2026-11-04T06:27:07.724Z",
+  "viewport": {
+    "width": 412,
+    "height": 790,
+    "dpr": 2.625
+  },
+  "platform": "androidchrome"
+}

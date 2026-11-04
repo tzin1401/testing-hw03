@@ -1,0 +1,26 @@
+{
+  "path": "screenshots/cross-platform/firefox_IA-04-03.png",
+  "mode": "chrome context, real browser address bar",
+  "action": "load URL, restore auth with independent API fixture, fill controls; submit invalid login; edit password",
+  "alert": null,
+  "actual": {
+    "url": "http://localhost:5173/login",
+    "main": "Đăng Ký\nUsername\nMật khẩu\nQuên mật khẩu?\nSign In\nChưa có tài khoản? Đăng ký ngay\nĐăng nhập thất bại. Vui lòng kiểm tra lại.",
+    "fields": [
+      {
+        "value": "evidence.ia-04-03.1793772869298877613@test.local",
+        "type": "text"
+      },
+      {
+        "value": "Abc12345 ",
+        "type": "text"
+      }
+    ],
+    "head": "EShop\nGiỏ hàng\nĐăng nhập\nĐăng ký",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    }
+  },
+  "capturedAt": "2026-11-04T13:14:30+0700"
+}

@@ -1,0 +1,43 @@
+{
+  "id": "IA-01-18",
+  "state": {
+    "url": "http://localhost:5173/profile",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NDEwLCJyb2xlIjoidXNlciIsImlhdCI6MTc5Mzc3MzU1NX0._S2NwPUcWLzz0PLPZ2UlOWTBMhw_Uvz-IiuWafFZqZE",
+    "fields": [
+      {
+        "value": "tia0118.1793773553283.0@test.local",
+        "type": "text",
+        "disabled": true
+      },
+      {
+        "value": "Nguyễn Lê Thế Vinh",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "value": "912345678",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "value": "123 Đường thử nghiệm",
+        "type": "textarea",
+        "disabled": false
+      }
+    ],
+    "otp": false,
+    "main": "Hồ sơ của bạn\nEmail (Không đổi)\nHọ Tên\nSố điện thoại\nĐịa chỉ giao hàng\nCập nhật\nLịch sử đơn hàng\n\nBạn chưa có đơn hàng nào.",
+    "header": "EShop\nGiỏ hàng\nChào, Chrome Tester\nThoát",
+    "viewport": {
+      "width": 412,
+      "height": 790
+    },
+    "scrollY": 88.38095092773438
+  },
+  "account": {
+    "name": "Chrome Tester",
+    "email": "tia0118.1793773553283.0@test.local",
+    "password": "Abc12345 "
+  },
+  "selector": "header a[href=\"/profile\"]"
+}

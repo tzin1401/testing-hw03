@@ -1,0 +1,34 @@
+{
+  "path": "screenshots/cross-platform/firefox_IA-04-11.png",
+  "mode": "chrome context, real browser address bar",
+  "action": "load URL, restore auth with independent API fixture, fill controls; submit form, capture dialog then dismiss",
+  "alert": "Cập nhật thành công!",
+  "actual": {
+    "url": "http://localhost:5173/profile",
+    "main": "Hồ sơ của bạn\nEmail (Không đổi)\nHọ Tên\nSố điện thoại\nĐịa chỉ giao hàng\nCập nhật\nLịch sử đơn hàng\n\nBạn chưa có đơn hàng nào.",
+    "fields": [
+      {
+        "value": "evidence.ia-04-11.1793772909847426103@test.local",
+        "type": "text"
+      },
+      {
+        "value": "Tên Đã Lưu",
+        "type": "text"
+      },
+      {
+        "value": "912345678",
+        "type": "text"
+      },
+      {
+        "value": "123 Đường thử nghiệm",
+        "type": "textarea"
+      }
+    ],
+    "head": "EShop\nGiỏ hàng\nChào, Chrome Tester\nThoát",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    }
+  },
+  "capturedAt": "2026-11-04T13:15:10+0700"
+}

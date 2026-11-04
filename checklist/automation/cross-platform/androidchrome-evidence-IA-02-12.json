@@ -1,0 +1,28 @@
+{
+  "path": "screenshots/cross-platform/androidchrome_IA-02-12.png",
+  "mode": "adb exec-out screencap -p, full device",
+  "state": {
+    "url": "http://localhost:5173/forgot-password",
+    "token": null,
+    "fields": [
+      {
+        "value": "",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "value": "",
+        "type": "password",
+        "disabled": false
+      }
+    ],
+    "otp": true,
+    "main": "Quên Mật Khẩu\nMã OTP của bạn là: 9497\nMã OTP (4 số)\nMật khẩu mới\nĐặt lại mật khẩu← Quay lại",
+    "header": "EShop\nGiỏ hàng\nĐăng nhập\nĐăng ký",
+    "viewport": {
+      "width": 412,
+      "height": 790
+    },
+    "scrollY": 0
+  }
+}

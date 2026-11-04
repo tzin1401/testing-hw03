@@ -1,0 +1,33 @@
+{
+  "id": "IA-02-08",
+  "state": {
+    "url": "http://localhost:5173/login",
+    "token": null,
+    "fields": [
+      {
+        "value": "tia0208.1793773085324.0@test.local",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "value": "Wrong123!",
+        "type": "text",
+        "disabled": false
+      }
+    ],
+    "otp": false,
+    "main": "Đăng Ký\nUsername\nMật khẩu\nQuên mật khẩu?\nSign In\nChưa có tài khoản? Đăng ký ngay\nĐăng nhập thất bại. Vui lòng kiểm tra lại.",
+    "header": "EShop\nGiỏ hàng\nĐăng nhập\nĐăng ký",
+    "viewport": {
+      "width": 412,
+      "height": 790
+    },
+    "scrollY": 33.52381134033203
+  },
+  "account": {
+    "name": "Chrome Tester",
+    "email": "tia0208.1793773085324.0@test.local",
+    "password": "Abc12345 "
+  },
+  "selector": "main .bg-red-100"
+}

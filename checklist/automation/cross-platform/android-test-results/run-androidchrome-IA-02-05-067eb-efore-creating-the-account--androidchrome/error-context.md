@@ -1,0 +1,59 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: run-androidchrome.spec.js >> IA-02-05 Registration requires a confirmation-password field and rejects a mismatch before creating the account.
+- Location: checklist/automation/run-androidchrome-shared.cjs:24:2
+
+# Error details
+
+```
+Error: Labels=["Họ Tên","Email","Mật khẩu"]; confirmation field=false; không có trường để nhập mismatch/matching
+
+expect(received).toBe(expected) // Object.is equality
+
+Expected: false
+Received: true
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=f3e1]:
+  - generic [ref=f3e3]:
+    - banner [ref=f3e4]:
+      - link "EShop" [ref=f3e5] [cursor=pointer]:
+        - /url: /
+      - navigation [ref=f3e6]:
+        - link "Giỏ hàng" [ref=f3e7] [cursor=pointer]:
+          - /url: /cart
+        - link "Đăng nhập" [ref=f3e8] [cursor=pointer]:
+          - /url: /login
+        - link "Đăng ký" [ref=f3e9] [cursor=pointer]:
+          - /url: /register
+    - main [ref=f3e10]:
+      - generic [ref=f3e11]:
+        - heading "Đăng Ký Tài Khoản" [level=2] [ref=f3e12]
+        - generic [ref=f3e13]:
+          - generic [ref=f3e14]:
+            - generic [ref=f3e15]: Họ Tên
+            - textbox [ref=f3e16]
+          - generic [ref=f3e17]:
+            - generic [ref=f3e18]: Email
+            - textbox [ref=f3e19]
+          - generic [ref=f3e20]:
+            - generic [ref=f3e21]: Mật khẩu
+            - textbox [ref=f3e22]
+            - paragraph [ref=f3e23]: "Yêu cầu: Tối thiểu 8 ký tự, có chữ hoa, chữ thường, số và ký tự đặc biệt."
+          - button "Đăng Ký" [ref=f3e24] [cursor=pointer]
+          - generic [ref=f3e25]:
+            - text: Đã có tài khoản?
+            - link "Đăng nhập" [ref=f3e26] [cursor=pointer]:
+              - /url: /login
+    - contentinfo [ref=f3e27]: © 2026 EShop SUT. Dành cho mục đích kiểm thử.
+  - generic [ref=f3e28]: 23120190 · Nguyễn Lê Thế Vinh · 23120190@student.hcmus.edu.vn · Android Chrome 124.0.6367.219 · Pixel_9 Android 15 (emulator) · http://localhost:5173/register
+```

@@ -1,0 +1,988 @@
+{
+  "config": {
+    "argv": [
+      "/usr/bin/node",
+      "/tmp/eshop-playwright/node_modules/.bin/playwright",
+      "test",
+      "-c",
+      "checklist/automation/playwright.cross.config.js",
+      "--project",
+      "firefox",
+      "--grep",
+      "IA-(01-(01|02|03|04|05|06|08|14|15|18|20)|02-01|04-19) "
+    ],
+    "configFile": "/home/zinn/zinn/testing/hw03/checklist/automation/playwright.cross.config.js",
+    "rootDir": "/home/zinn/zinn/testing/hw03/checklist/automation",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/home/zinn/zinn/testing/hw03/checklist/automation/cross-platform/firefox-recheck-test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/home/zinn/zinn/testing/hw03/checklist/automation",
+        "testIgnore": [],
+        "testMatch": [
+          "run-firefox.spec.js"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/home/zinn/zinn/testing/hw03/checklist/automation/cross-platform/firefox-recheck-test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "androidchrome",
+        "name": "androidchrome",
+        "testDir": "/home/zinn/zinn/testing/hw03/checklist/automation",
+        "testIgnore": [],
+        "testMatch": [
+          "run-androidchrome.spec.js"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/home/zinn/zinn/testing/hw03/checklist/automation/cross-platform/firefox-recheck-test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "firefox",
+        "testDir": "/home/zinn/zinn/testing/hw03/checklist/automation",
+        "snapshotDir": "/home/zinn/zinn/testing/hw03/checklist/automation",
+        "testIgnore": [],
+        "testMatch": "run-firefox.spec.js",
+        "timeout": 120000,
+        "use": {
+          "baseURL": "http://localhost:5173",
+          "actionTimeout": 10000,
+          "navigationTimeout": 20000,
+          "screenshot": "off",
+          "trace": "off",
+          "browserName": "firefox",
+          "viewport": {
+            "width": 1280,
+            "height": 800
+          }
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "firefox"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "line",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "/home/zinn/zinn/testing/hw03/checklist/automation/cross-platform/firefox-recheck-playwright.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "run-firefox.spec.js",
+      "file": "run-firefox-shared.cjs",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "IA-01-01 The account field label uses the Vietnamese term defined by the screen's requirement, not an English alternative.",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 2325,
+                  "error": {
+                    "message": "Error: Label=\"Username\"\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m",
+                    "stack": "Error: Label=\"Username\"\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n    at /home/zinn/zinn/testing/hw03/checklist/automation/run-firefox-shared.cjs:139:31",
+                    "location": {
+                      "file": "/home/zinn/zinn/testing/hw03/checklist/automation/run-firefox-shared.cjs",
+                      "column": 31,
+                      "line": 139
+                    }
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/zinn/zinn/testing/hw03/checklist/automation/run-firefox-shared.cjs",
+                        "column": 31,
+                        "line": 139
+                      },
+                      "message": "Error: Label=\"Username\"\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n    at /home/zinn/zinn/testing/hw03/checklist/automation/run-firefox-shared.cjs:139:31"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-04T06:19:04.006Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "execution",
+                      "contentType": "application/json",
+                      "body": "ewogICJpZCI6ICJJQS0wMS0wMSIsCiAgImlhIjogIklBLTAxIEdlbmVyYWwgVUkgc3RhbmRhcmRzIiwKICAicmVzdWx0IjogIkZhaWxlZCIsCiAgIm1ldGhvZCI6ICLEkOG7jWMgdGV4dCBuaMOjbiBMb2dpbiB0cm9uZyBET00iLAogICJhY3R1YWwiOiAiTGFiZWw9XCJVc2VybmFtZVwiIiwKICAibm90ZXMiOiAiTGFiZWw9XCJVc2VybmFtZVwiIiwKICAicGxhdGZvcm0iOiAiZmlyZWZveCIsCiAgImluY29tcGxldGUiOiBmYWxzZSwKICAic2NyZWVuc2hvdCI6ICJzY3JlZW5zaG90cy9jcm9zcy1wbGF0Zm9ybS9maXJlZm94X0lBLTAxLTAxLnBuZyIsCiAgImVtYWlsIjogInRpYTAxMDEuMTc5Mzc3MzE0NTcxMy4wQHRlc3QubG9jYWwiLAogICJkaWFsb2dzIjogW10sCiAgInJlcXVlc3RzIjogW10sCiAgInJlc3BvbnNlcyI6IFtdLAogICJleGVjdXRlZEF0IjogIjIwMjYtMTEtMDRUMDY6MTk6MDYuOTU3WiIKfQ=="
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/zinn/zinn/testing/hw03/checklist/automation/cross-platform/firefox-recheck-test-results/run-firefox-IA-01-01-The-a-def93-not-an-English-alternative--firefox/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/zinn/zinn/testing/hw03/checklist/automation/run-firefox-shared.cjs",
+                    "column": 31,
+                    "line": 139
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "20aa10028eee7ab2bb5c-cf8079f251df3136b886",
+          "file": "run-firefox-shared.cjs",
+          "line": 24,
+          "column": 2
+        },
+        {
+          "title": "IA-01-02 The submit button uses a Vietnamese action label consistent with the rest of the interface.",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 4154,
+                  "error": {
+                    "message": "Error: Submit=\"Sign In\"\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m",
+                    "stack": "Error: Submit=\"Sign In\"\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n    at /home/zinn/zinn/testing/hw03/checklist/automation/run-firefox-shared.cjs:139:31",
+                    "location": {
+                      "file": "/home/zinn/zinn/testing/hw03/checklist/automation/run-firefox-shared.cjs",
+                      "column": 31,
+                      "line": 139
+                    }
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/zinn/zinn/testing/hw03/checklist/automation/run-firefox-shared.cjs",
+                        "column": 31,
+                        "line": 139
+                      },
+                      "message": "Error: Submit=\"Sign In\"\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n    at /home/zinn/zinn/testing/hw03/checklist/automation/run-firefox-shared.cjs:139:31"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-04T06:19:08.055Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "execution",
+                      "contentType": "application/json",
+                      "body": "ewogICJpZCI6ICJJQS0wMS0wMiIsCiAgImlhIjogIklBLTAxIEdlbmVyYWwgVUkgc3RhbmRhcmRzIiwKICAicmVzdWx0IjogIkZhaWxlZCIsCiAgIm1ldGhvZCI6ICLEkOG7jWMgdGV4dCBzdWJtaXQgTG9naW4iLAogICJhY3R1YWwiOiAiU3VibWl0PVwiU2lnbiBJblwiIiwKICAibm90ZXMiOiAiU3VibWl0PVwiU2lnbiBJblwiIiwKICAicGxhdGZvcm0iOiAiZmlyZWZveCIsCiAgImluY29tcGxldGUiOiBmYWxzZSwKICAic2NyZWVuc2hvdCI6ICJzY3JlZW5zaG90cy9jcm9zcy1wbGF0Zm9ybS9maXJlZm94X0lBLTAxLTAyLnBuZyIsCiAgImVtYWlsIjogInRpYTAxMDIuMTc5Mzc3MzE1MDU3Ny4wQHRlc3QubG9jYWwiLAogICJkaWFsb2dzIjogW10sCiAgInJlcXVlc3RzIjogW10sCiAgInJlc3BvbnNlcyI6IFtdLAogICJleGVjdXRlZEF0IjogIjIwMjYtMTEtMDRUMDY6MTk6MTIuODI2WiIKfQ=="
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/zinn/zinn/testing/hw03/checklist/automation/cross-platform/firefox-recheck-test-results/run-firefox-IA-01-02-The-s-330a5--the-rest-of-the-interface--firefox/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/zinn/zinn/testing/hw03/checklist/automation/run-firefox-shared.cjs",
+                    "column": 31,
+                    "line": 139
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "20aa10028eee7ab2bb5c-30d34af5a4100e6f20d1",
+          "file": "run-firefox-shared.cjs",
+          "line": 24,
+          "column": 2
+        },
+        {
+          "title": "IA-01-03 The page heading text describes the current screen, not another screen.",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 3790,
+                  "error": {
+                    "message": "Error: Heading=\"Đăng Ký\"\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m",
+                    "stack": "Error: Heading=\"Đăng Ký\"\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n    at /home/zinn/zinn/testing/hw03/checklist/automation/run-firefox-shared.cjs:139:31",
+                    "location": {
+                      "file": "/home/zinn/zinn/testing/hw03/checklist/automation/run-firefox-shared.cjs",
+                      "column": 31,
+                      "line": 139
+                    }
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/zinn/zinn/testing/hw03/checklist/automation/run-firefox-shared.cjs",
+                        "column": 31,
+                        "line": 139
+                      },
+                      "message": "Error: Heading=\"Đăng Ký\"\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n    at /home/zinn/zinn/testing/hw03/checklist/automation/run-firefox-shared.cjs:139:31"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-04T06:19:15.019Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "execution",
+                      "contentType": "application/json",
+                      "body": "ewogICJpZCI6ICJJQS0wMS0wMyIsCiAgImlhIjogIklBLTAxIEdlbmVyYWwgVUkgc3RhbmRhcmRzIiwKICAicmVzdWx0IjogIkZhaWxlZCIsCiAgIm1ldGhvZCI6ICLEkOG7jWMgaGVhZGluZyBMb2dpbiIsCiAgImFjdHVhbCI6ICJIZWFkaW5nPVwixJDEg25nIEvDvVwiIiwKICAibm90ZXMiOiAiSGVhZGluZz1cIsSQxINuZyBLw71cIiIsCiAgInBsYXRmb3JtIjogImZpcmVmb3giLAogICJpbmNvbXBsZXRlIjogZmFsc2UsCiAgInNjcmVlbnNob3QiOiAic2NyZWVuc2hvdHMvY3Jvc3MtcGxhdGZvcm0vZmlyZWZveF9JQS0wMS0wMy5wbmciLAogICJlbWFpbCI6ICJ0aWEwMTAzLjE3OTM3NzMxNTc4MjQuMEB0ZXN0LmxvY2FsIiwKICAiZGlhbG9ncyI6IFtdLAogICJyZXF1ZXN0cyI6IFtdLAogICJyZXNwb25zZXMiOiBbXSwKICAiZXhlY3V0ZWRBdCI6ICIyMDI2LTExLTA0VDA2OjE5OjIwLjAyOVoiCn0="
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/zinn/zinn/testing/hw03/checklist/automation/cross-platform/firefox-recheck-test-results/run-firefox-IA-01-03-The-p-97eb0--screen-not-another-screen--firefox/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/zinn/zinn/testing/hw03/checklist/automation/run-firefox-shared.cjs",
+                    "column": 31,
+                    "line": 139
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "20aa10028eee7ab2bb5c-4f180826a9e0389a544c",
+          "file": "run-firefox-shared.cjs",
+          "line": 24,
+          "column": 2
+        },
+        {
+          "title": "IA-01-04 A positive submit action uses the standard blue action colour.",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 4287,
+                  "error": {
+                    "message": "Error: Submit background=rgb(239, 68, 68); blue token=rgb(37, 99, 235)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m",
+                    "stack": "Error: Submit background=rgb(239, 68, 68); blue token=rgb(37, 99, 235)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n    at /home/zinn/zinn/testing/hw03/checklist/automation/run-firefox-shared.cjs:139:31",
+                    "location": {
+                      "file": "/home/zinn/zinn/testing/hw03/checklist/automation/run-firefox-shared.cjs",
+                      "column": 31,
+                      "line": 139
+                    }
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/zinn/zinn/testing/hw03/checklist/automation/run-firefox-shared.cjs",
+                        "column": 31,
+                        "line": 139
+                      },
+                      "message": "Error: Submit background=rgb(239, 68, 68); blue token=rgb(37, 99, 235)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n    at /home/zinn/zinn/testing/hw03/checklist/automation/run-firefox-shared.cjs:139:31"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-04T06:19:21.679Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "execution",
+                      "contentType": "application/json",
+                      "body": "ewogICJpZCI6ICJJQS0wMS0wNCIsCiAgImlhIjogIklBLTAxIEdlbmVyYWwgVUkgc3RhbmRhcmRzIiwKICAicmVzdWx0IjogIkZhaWxlZCIsCiAgIm1ldGhvZCI6ICJTbyBjb21wdXRlZCBiYWNrZ3JvdW5kIHbhu5tpIGJsdWUtNjAwIiwKICAiYWN0dWFsIjogIlN1Ym1pdCBiYWNrZ3JvdW5kPXJnYigyMzksIDY4LCA2OCk7IGJsdWUgdG9rZW49cmdiKDM3LCA5OSwgMjM1KSIsCiAgIm5vdGVzIjogIlN1Ym1pdCBiYWNrZ3JvdW5kPXJnYigyMzksIDY4LCA2OCk7IGJsdWUgdG9rZW49cmdiKDM3LCA5OSwgMjM1KSIsCiAgInBsYXRmb3JtIjogImZpcmVmb3giLAogICJpbmNvbXBsZXRlIjogZmFsc2UsCiAgInNjcmVlbnNob3QiOiAic2NyZWVuc2hvdHMvY3Jvc3MtcGxhdGZvcm0vZmlyZWZveF9JQS0wMS0wNC5wbmciLAogICJlbWFpbCI6ICJ0aWEwMTA0LjE3OTM3NzMxNjQ1ODMuMEB0ZXN0LmxvY2FsIiwKICAiZGlhbG9ncyI6IFtdLAogICJyZXF1ZXN0cyI6IFtdLAogICJyZXNwb25zZXMiOiBbXSwKICAiZXhlY3V0ZWRBdCI6ICIyMDI2LTExLTA0VDA2OjE5OjI2LjkyNloiCn0="
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/zinn/zinn/testing/hw03/checklist/automation/cross-platform/firefox-recheck-test-results/run-firefox-IA-01-04-A-pos-3cea6-tandard-blue-action-colour--firefox/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/zinn/zinn/testing/hw03/checklist/automation/run-firefox-shared.cjs",
+                    "column": 31,
+                    "line": 139
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "20aa10028eee7ab2bb5c-e26acd854e715063f7bf",
+          "file": "run-firefox-shared.cjs",
+          "line": 24,
+          "column": 2
+        },
+        {
+          "title": "IA-01-05 Primary and secondary actions are visually distinguishable; the positive primary action uses blue.",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 5305,
+                  "error": {
+                    "message": "Error: Primary=rgb(22, 163, 74); secondary=rgb(22, 163, 74)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m",
+                    "stack": "Error: Primary=rgb(22, 163, 74); secondary=rgb(22, 163, 74)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n    at /home/zinn/zinn/testing/hw03/checklist/automation/run-firefox-shared.cjs:139:31",
+                    "location": {
+                      "file": "/home/zinn/zinn/testing/hw03/checklist/automation/run-firefox-shared.cjs",
+                      "column": 31,
+                      "line": 139
+                    }
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/zinn/zinn/testing/hw03/checklist/automation/run-firefox-shared.cjs",
+                        "column": 31,
+                        "line": 139
+                      },
+                      "message": "Error: Primary=rgb(22, 163, 74); secondary=rgb(22, 163, 74)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n    at /home/zinn/zinn/testing/hw03/checklist/automation/run-firefox-shared.cjs:139:31"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-04T06:19:28.677Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "execution",
+                      "contentType": "application/json",
+                      "body": "ewogICJpZCI6ICJJQS0wMS0wNSIsCiAgImlhIjogIklBLTAxIEdlbmVyYWwgVUkgc3RhbmRhcmRzIiwKICAicmVzdWx0IjogIkZhaWxlZCIsCiAgIm1ldGhvZCI6ICJSZXF1ZXN0IE9UUDsgxJFvIG3DoHUgaGFpIGJ1dHRvbiBzdGVwIDIiLAogICJhY3R1YWwiOiAiUHJpbWFyeT1yZ2IoMjIsIDE2MywgNzQpOyBzZWNvbmRhcnk9cmdiKDIyLCAxNjMsIDc0KSIsCiAgIm5vdGVzIjogIlByaW1hcnk9cmdiKDIyLCAxNjMsIDc0KTsgc2Vjb25kYXJ5PXJnYigyMiwgMTYzLCA3NCkiLAogICJwbGF0Zm9ybSI6ICJmaXJlZm94IiwKICAiaW5jb21wbGV0ZSI6IGZhbHNlLAogICJzY3JlZW5zaG90IjogInNjcmVlbnNob3RzL2Nyb3NzLXBsYXRmb3JtL2ZpcmVmb3hfSUEtMDEtMDUucG5nIiwKICAiZW1haWwiOiAidGlhMDEwNS4xNzkzNzczMTcxNTAzLjBAdGVzdC5sb2NhbCIsCiAgImRpYWxvZ3MiOiBbXSwKICAicmVxdWVzdHMiOiBbCiAgICB7CiAgICAgICJ1cmwiOiAiaHR0cDovL2xvY2FsaG9zdDozMDAwL2FwaS9mb3Jnb3QtcGFzc3dvcmQiLAogICAgICAibWV0aG9kIjogIlBPU1QiLAogICAgICAiZGF0YSI6ICJ7XCJlbWFpbFwiOlwidGlhMDEwNS4xNzkzNzczMTcxNTAzLjBAdGVzdC5sb2NhbFwifSIsCiAgICAgICJhdCI6IDE3OTM3NzMxNzI4MTAKICAgIH0KICBdLAogICJyZXNwb25zZXMiOiBbCiAgICB7CiAgICAgICJ1cmwiOiAiaHR0cDovL2xvY2FsaG9zdDozMDAwL2FwaS9mb3Jnb3QtcGFzc3dvcmQiLAogICAgICAic3RhdHVzIjogMjAwLAogICAgICAiZGF0YSI6IHsKICAgICAgICAibWVzc2FnZSI6ICJNw6MgxJHhurd0IGzhuqFpIG3huq10IGto4bqpdSDEkcOjIMSRxrDhu6NjIHThuqFvIiwKICAgICAgICAicmVzZXRUb2tlbiI6ICI0NjkyIgogICAgICB9CiAgICB9CiAgXSwKICAiZXhlY3V0ZWRBdCI6ICIyMDI2LTExLTA0VDA2OjE5OjM0Ljg1MFoiCn0="
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/zinn/zinn/testing/hw03/checklist/automation/cross-platform/firefox-recheck-test-results/run-firefox-IA-01-05-Prima-32e30-e-primary-action-uses-blue--firefox/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/zinn/zinn/testing/hw03/checklist/automation/run-firefox-shared.cjs",
+                    "column": 31,
+                    "line": 139
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "20aa10028eee7ab2bb5c-8023cb5d75433566673e",
+          "file": "run-firefox-shared.cjs",
+          "line": 24,
+          "column": 2
+        },
+        {
+          "title": "IA-01-06 Each page has exactly one `<h1>` describing the page; section headings use `<h2>`.",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 6876,
+                  "error": {
+                    "message": "Error: /login: h1=[]; headings=[\"Đăng Ký\"]\n/register: h1=[]; headings=[\"Đăng Ký Tài Khoản\"]\n/forgot-password: h1=[]; headings=[\"Quên Mật Khẩu\"]\n/forgot-password#step2: h1=[]; headings=[\"Quên Mật Khẩu\"]\n/profile: h1=[]; headings=[\"Hồ sơ của bạn\",\"Lịch sử đơn hàng\"]\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m",
+                    "stack": "Error: /login: h1=[]; headings=[\"Đăng Ký\"]\n/register: h1=[]; headings=[\"Đăng Ký Tài Khoản\"]\n/forgot-password: h1=[]; headings=[\"Quên Mật Khẩu\"]\n/forgot-password#step2: h1=[]; headings=[\"Quên Mật Khẩu\"]\n/profile: h1=[]; headings=[\"Hồ sơ của bạn\",\"Lịch sử đơn hàng\"]\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n    at /home/zinn/zinn/testing/hw03/checklist/automation/run-firefox-shared.cjs:139:31",
+                    "location": {
+                      "file": "/home/zinn/zinn/testing/hw03/checklist/automation/run-firefox-shared.cjs",
+                      "column": 31,
+                      "line": 139
+                    }
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/zinn/zinn/testing/hw03/checklist/automation/run-firefox-shared.cjs",
+                        "column": 31,
+                        "line": 139
+                      },
+                      "message": "Error: /login: h1=[]; headings=[\"Đăng Ký\"]\n/register: h1=[]; headings=[\"Đăng Ký Tài Khoản\"]\n/forgot-password: h1=[]; headings=[\"Quên Mật Khẩu\"]\n/forgot-password#step2: h1=[]; headings=[\"Quên Mật Khẩu\"]\n/profile: h1=[]; headings=[\"Hồ sơ của bạn\",\"Lịch sử đơn hàng\"]\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n    at /home/zinn/zinn/testing/hw03/checklist/automation/run-firefox-shared.cjs:139:31"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-04T06:19:36.403Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "execution",
+                      "contentType": "application/json",
+                      "body": "ewogICJpZCI6ICJJQS0wMS0wNiIsCiAgImlhIjogIklBLTAxIEdlbmVyYWwgVUkgc3RhbmRhcmRzIiwKICAicmVzdWx0IjogIkZhaWxlZCIsCiAgIm1ldGhvZCI6ICLEkOG6v20gaDEgdsOgIGtp4buDbSBu4buZaSBkdW5nIHRyw6puIDUgbcOgbiBow6xuaCIsCiAgImFjdHVhbCI6ICIvbG9naW46IGgxPVtdOyBoZWFkaW5ncz1bXCLEkMSDbmcgS8O9XCJdXG4vcmVnaXN0ZXI6IGgxPVtdOyBoZWFkaW5ncz1bXCLEkMSDbmcgS8O9IFTDoGkgS2hv4bqjblwiXVxuL2ZvcmdvdC1wYXNzd29yZDogaDE9W107IGhlYWRpbmdzPVtcIlF1w6puIE3huq10IEto4bqpdVwiXVxuL2ZvcmdvdC1wYXNzd29yZCNzdGVwMjogaDE9W107IGhlYWRpbmdzPVtcIlF1w6puIE3huq10IEto4bqpdVwiXVxuL3Byb2ZpbGU6IGgxPVtdOyBoZWFkaW5ncz1bXCJI4buTIHPGoSBj4bunYSBi4bqhblwiLFwiTOG7i2NoIHPhu60gxJHGoW4gaMOgbmdcIl0iLAogICJub3RlcyI6ICIvbG9naW46IGgxPVtdOyBoZWFkaW5ncz1bXCLEkMSDbmcgS8O9XCJdXG4vcmVnaXN0ZXI6IGgxPVtdOyBoZWFkaW5ncz1bXCLEkMSDbmcgS8O9IFTDoGkgS2hv4bqjblwiXVxuL2ZvcmdvdC1wYXNzd29yZDogaDE9W107IGhlYWRpbmdzPVtcIlF1w6puIE3huq10IEto4bqpdVwiXVxuL2ZvcmdvdC1wYXNzd29yZCNzdGVwMjogaDE9W107IGhlYWRpbmdzPVtcIlF1w6puIE3huq10IEto4bqpdVwiXVxuL3Byb2ZpbGU6IGgxPVtdOyBoZWFkaW5ncz1bXCJI4buTIHPGoSBj4bunYSBi4bqhblwiLFwiTOG7i2NoIHPhu60gxJHGoW4gaMOgbmdcIl0iLAogICJwbGF0Zm9ybSI6ICJmaXJlZm94IiwKICAiaW5jb21wbGV0ZSI6IGZhbHNlLAogICJzY3JlZW5zaG90IjogInNjcmVlbnNob3RzL2Nyb3NzLXBsYXRmb3JtL2ZpcmVmb3hfSUEtMDEtMDYucG5nIiwKICAiZW1haWwiOiAidGlhMDEwNi4xNzkzNzczMTc5NzkwLjBAdGVzdC5sb2NhbCIsCiAgImRpYWxvZ3MiOiBbXSwKICAicmVxdWVzdHMiOiBbCiAgICB7CiAgICAgICJ1cmwiOiAiaHR0cDovL2xvY2FsaG9zdDozMDAwL2FwaS9mb3Jnb3QtcGFzc3dvcmQiLAogICAgICAibWV0aG9kIjogIlBPU1QiLAogICAgICAiZGF0YSI6ICJ7XCJlbWFpbFwiOlwidGlhMDEwNi4xNzkzNzczMTc5NzkwLjBAdGVzdC5sb2NhbFwifSIsCiAgICAgICJhdCI6IDE3OTM3NzMxODI5ODAKICAgIH0sCiAgICB7CiAgICAgICJ1cmwiOiAiaHR0cDovL2xvY2FsaG9zdDozMDAwL2FwaS9sb2dpbiIsCiAgICAgICJtZXRob2QiOiAiUE9TVCIsCiAgICAgICJkYXRhIjogIntcImVtYWlsXCI6XCJ0aWEwMTA2LjE3OTM3NzMxNzk3OTAuMEB0ZXN0LmxvY2FsXCIsXCJwYXNzd29yZFwiOlwiQWJjMTIzNDUgXCJ9IiwKICAgICAgImF0IjogMTc5Mzc3MzE4Mzg2NgogICAgfQogIF0sCiAgInJlc3BvbnNlcyI6IFsKICAgIHsKICAgICAgInVybCI6ICJodHRwOi8vbG9jYWxob3N0OjMwMDAvYXBpL2ZvcmdvdC1wYXNzd29yZCIsCiAgICAgICJzdGF0dXMiOiAyMDAsCiAgICAgICJkYXRhIjogewogICAgICAgICJtZXNzYWdlIjogIk3DoyDEkeG6t3QgbOG6oWkgbeG6rXQga2jhuql1IMSRw6MgxJHGsOG7o2MgdOG6oW8iLAogICAgICAgICJyZXNldFRva2VuIjogIjQ1ODUiCiAgICAgIH0KICAgIH0sCiAgICB7CiAgICAgICJ1cmwiOiAiaHR0cDovL2xvY2FsaG9zdDozMDAwL2FwaS9sb2dpbiIsCiAgICAgICJzdGF0dXMiOiAyMDAsCiAgICAgICJkYXRhIjogewogICAgICAgICJtZXNzYWdlIjogIkxvZ2luIHN1Y2Nlc3NmdWwiLAogICAgICAgICJ0b2tlbiI6ICJleUpoYkdjaU9pSklVekkxTmlJc0luUjVjQ0k2SWtwWFZDSjkuZXlKcFpDSTZNelF3TENKeWIyeGxJam9pZFhObGNpSXNJbWxoZENJNk1UYzVNemMzTXpFNE0zMC5lakxuQ1hyV3lyQ2lqMGxUWHpUSFAwZVJmN0lsR2FvWEhsM21uU3E4MEtzIiwKICAgICAgICAidXNlciI6IHsKICAgICAgICAgICJpZCI6IDM0MCwKICAgICAgICAgICJuYW1lIjogIkNocm9tZSBUZXN0ZXIiLAogICAgICAgICAgImVtYWlsIjogInRpYTAxMDYuMTc5Mzc3MzE3OTc5MC4wQHRlc3QubG9jYWwiLAogICAgICAgICAgInBhc3N3b3JkIjogIkFiYzEyMzQ1ICIsCiAgICAgICAgICAicm9sZSI6ICJ1c2VyIiwKICAgICAgICAgICJsb2dpbl9hdHRlbXB0cyI6IDAsCiAgICAgICAgICAibG9ja2VkX3VudGlsIjogbnVsbCwKICAgICAgICAgICJyZXNldF90b2tlbiI6ICI0NTg1IiwKICAgICAgICAgICJzaGlwcGluZ19hZGRyZXNzIjogbnVsbCwKICAgICAgICAgICJwaG9uZSI6IG51bGwKICAgICAgICB9CiAgICAgIH0KICAgIH0sCiAgICB7CiAgICAgICJ1cmwiOiAiaHR0cDovL2xvY2FsaG9zdDozMDAwL2FwaS9wcm9kdWN0cz9zZWFyY2g9IiwKICAgICAgInN0YXR1cyI6IDIwMCwKICAgICAgImRhdGEiOiBbCiAgICAgICAgewogICAgICAgICAgImlkIjogMSwKICAgICAgICAgICJuYW1lIjogImlQaG9uZSAxNSBQcm8gTWF4IiwKICAgICAgICAgICJwcmljZSI6IDMwMDAwMDAwLAogICAgICAgICAgImRlc2NyaXB0aW9uIjogIsSQaeG7h24gdGhv4bqhaSBjYW8gY+G6pXAgY+G7p2EgQXBwbGUiLAogICAgICAgICAgImltYWdlVXJsIjogImh0dHBzOi8vcGxhY2Vob2xkLmNvLzMwMHgzMDAvcG5nP3RleHQ9aVBob25lKzE1IiwKICAgICAgICAgICJjYXRlZ29yeV9pZCI6IDEKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICJpZCI6IDIsCiAgICAgICAgICAibmFtZSI6ICJTYW1zdW5nIEdhbGF4eSBTMjQgVWx0cmEiLAogICAgICAgICAgInByaWNlIjogMjgwMDAwMDAsCiAgICAgICAgICAiZGVzY3JpcHRpb24iOiAiTcOgbiBow6xuaCBoaeG7g24gdGjhu4sgeHXhuqV0IHPhuq9jLCBjYW1lcmEgc2nDqnUgem9vbSIsCiAgICAgICAgICAiaW1hZ2VVcmwiOiAiaHR0cHM6Ly9wbGFjZWhvbGQuY28vMzAweDMwMC9wbmc/dGV4dD1TYW1zdW5nK1MyNCIsCiAgICAgICAgICAiY2F0ZWdvcnlfaWQiOiAxCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAiaWQiOiAzLAogICAgICAgICAgIm5hbWUiOiAiTWFjQm9vayBQcm8gTTMiLAogICAgICAgICAgInByaWNlIjogNDUwMDAwMDAsCiAgICAgICAgICAiZGVzY3JpcHRpb24iOiAiTGFwdG9wIGNodXnDqm4gbmdoaeG7h3AgbeG6oW5oIG3hur0iLAogICAgICAgICAgImltYWdlVXJsIjogImh0dHBzOi8vcGxhY2Vob2xkLmNvLzMwMHgzMDAvcG5nP3RleHQ9TWFjYm9vaytQcm8iLAogICAgICAgICAgImNhdGVnb3J5X2lkIjogMgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgImlkIjogNCwKICAgICAgICAgICJuYW1lIjogIlRhaSBuZ2hlIEFpclBvZHMgUHJvIDIiLAogICAgICAgICAgInByaWNlIjogNjAwMDAwMCwKICAgICAgICAgICJkZXNjcmlwdGlvbiI6ICJDaOG7kW5nIOG7k24gY2jhu6cgxJHhu5luZyB4deG6pXQgc+G6r2MiLAogICAgICAgICAgImltYWdlVXJsIjogImh0dHBzOi8vcGxhY2Vob2xkLmNvLzMwMHgzMDAvcG5nP3RleHQ9QWlyUG9kcytQcm8iLAogICAgICAgICAgImNhdGVnb3J5X2lkIjogMwogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgImlkIjogNSwKICAgICAgICAgICJuYW1lIjogIkLDoG4gcGjDrW0gY8ahIEtleWNocm9uIFExIiwKICAgICAgICAgICJwcmljZSI6IDQwMDAwMDAsCiAgICAgICAgICAiZGVzY3JpcHRpb24iOiAiR8O1IGPhu7FjIHPGsOG7m25nLCB0aGnhur90IGvhur8ga2ltIGxv4bqhaSIsCiAgICAgICAgICAiaW1hZ2VVcmwiOiAiaHR0cHM6Ly9wbGFjZWhvbGQuY28vMzAweDMwMC9wbmc/dGV4dD1LZXljaHJvbitRMSIsCiAgICAgICAgICAiY2F0ZWdvcnlfaWQiOiAzCiAgICAgICAgfQogICAgICBdCiAgICB9LAogICAgewogICAgICAidXJsIjogImh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC9hcGkvdXNlcnMvbWUiLAogICAgICAic3RhdHVzIjogMjAwLAogICAgICAiZGF0YSI6IHsKICAgICAgICAiaWQiOiAzNDAsCiAgICAgICAgIm5hbWUiOiAiQ2hyb21lIFRlc3RlciIsCiAgICAgICAgImVtYWlsIjogInRpYTAxMDYuMTc5Mzc3MzE3OTc5MC4wQHRlc3QubG9jYWwiLAogICAgICAgICJwYXNzd29yZCI6ICJBYmMxMjM0NSAiLAogICAgICAgICJyb2xlIjogInVzZXIiLAogICAgICAgICJsb2dpbl9hdHRlbXB0cyI6IDAsCiAgICAgICAgImxvY2tlZF91bnRpbCI6IG51bGwsCiAgICAgICAgInJlc2V0X3Rva2VuIjogIjQ1ODUiLAogICAgICAgICJzaGlwcGluZ19hZGRyZXNzIjogbnVsbCwKICAgICAgICAicGhvbmUiOiBudWxsCiAgICAgIH0KICAgIH0sCiAgICB7CiAgICAgICJ1cmwiOiAiaHR0cDovL2xvY2FsaG9zdDozMDAwL2FwaS9wcm9kdWN0cz9zZWFyY2g9IiwKICAgICAgInN0YXR1cyI6IDIwMCwKICAgICAgImRhdGEiOiBbCiAgICAgICAgewogICAgICAgICAgImlkIjogMSwKICAgICAgICAgICJuYW1lIjogImlQaG9uZSAxNSBQcm8gTWF4IiwKICAgICAgICAgICJwcmljZSI6IDMwMDAwMDAwLAogICAgICAgICAgImRlc2NyaXB0aW9uIjogIsSQaeG7h24gdGhv4bqhaSBjYW8gY+G6pXAgY+G7p2EgQXBwbGUiLAogICAgICAgICAgImltYWdlVXJsIjogImh0dHBzOi8vcGxhY2Vob2xkLmNvLzMwMHgzMDAvcG5nP3RleHQ9aVBob25lKzE1IiwKICAgICAgICAgICJjYXRlZ29yeV9pZCI6IDEKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICJpZCI6IDIsCiAgICAgICAgICAibmFtZSI6ICJTYW1zdW5nIEdhbGF4eSBTMjQgVWx0cmEiLAogICAgICAgICAgInByaWNlIjogMjgwMDAwMDAsCiAgICAgICAgICAiZGVzY3JpcHRpb24iOiAiTcOgbiBow6xuaCBoaeG7g24gdGjhu4sgeHXhuqV0IHPhuq9jLCBjYW1lcmEgc2nDqnUgem9vbSIsCiAgICAgICAgICAiaW1hZ2VVcmwiOiAiaHR0cHM6Ly9wbGFjZWhvbGQuY28vMzAweDMwMC9wbmc/dGV4dD1TYW1zdW5nK1MyNCIsCiAgICAgICAgICAiY2F0ZWdvcnlfaWQiOiAxCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAiaWQiOiAzLAogICAgICAgICAgIm5hbWUiOiAiTWFjQm9vayBQcm8gTTMiLAogICAgICAgICAgInByaWNlIjogNDUwMDAwMDAsCiAgICAgICAgICAiZGVzY3JpcHRpb24iOiAiTGFwdG9wIGNodXnDqm4gbmdoaeG7h3AgbeG6oW5oIG3hur0iLAogICAgICAgICAgImltYWdlVXJsIjogImh0dHBzOi8vcGxhY2Vob2xkLmNvLzMwMHgzMDAvcG5nP3RleHQ9TWFjYm9vaytQcm8iLAogICAgICAgICAgImNhdGVnb3J5X2lkIjogMgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgImlkIjogNCwKICAgICAgICAgICJuYW1lIjogIlRhaSBuZ2hlIEFpclBvZHMgUHJvIDIiLAogICAgICAgICAgInByaWNlIjogNjAwMDAwMCwKICAgICAgICAgICJkZXNjcmlwdGlvbiI6ICJDaOG7kW5nIOG7k24gY2jhu6cgxJHhu5luZyB4deG6pXQgc+G6r2MiLAogICAgICAgICAgImltYWdlVXJsIjogImh0dHBzOi8vcGxhY2Vob2xkLmNvLzMwMHgzMDAvcG5nP3RleHQ9QWlyUG9kcytQcm8iLAogICAgICAgICAgImNhdGVnb3J5X2lkIjogMwogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgImlkIjogNSwKICAgICAgICAgICJuYW1lIjogIkLDoG4gcGjDrW0gY8ahIEtleWNocm9uIFExIiwKICAgICAgICAgICJwcmljZSI6IDQwMDAwMDAsCiAgICAgICAgICAiZGVzY3JpcHRpb24iOiAiR8O1IGPhu7FjIHPGsOG7m25nLCB0aGnhur90IGvhur8ga2ltIGxv4bqhaSIsCiAgICAgICAgICAiaW1hZ2VVcmwiOiAiaHR0cHM6Ly9wbGFjZWhvbGQuY28vMzAweDMwMC9wbmc/dGV4dD1LZXljaHJvbitRMSIsCiAgICAgICAgICAiY2F0ZWdvcnlfaWQiOiAzCiAgICAgICAgfQogICAgICBdCiAgICB9LAogICAgewogICAgICAidXJsIjogImh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC9hcGkvdXNlcnMvbWUiLAogICAgICAic3RhdHVzIjogMjAwLAogICAgICAiZGF0YSI6IHsKICAgICAgICAiaWQiOiAzNDAsCiAgICAgICAgIm5hbWUiOiAiQ2hyb21lIFRlc3RlciIsCiAgICAgICAgImVtYWlsIjogInRpYTAxMDYuMTc5Mzc3MzE3OTc5MC4wQHRlc3QubG9jYWwiLAogICAgICAgICJwYXNzd29yZCI6ICJBYmMxMjM0NSAiLAogICAgICAgICJyb2xlIjogInVzZXIiLAogICAgICAgICJsb2dpbl9hdHRlbXB0cyI6IDAsCiAgICAgICAgImxvY2tlZF91bnRpbCI6IG51bGwsCiAgICAgICAgInJlc2V0X3Rva2VuIjogIjQ1ODUiLAogICAgICAgICJzaGlwcGluZ19hZGRyZXNzIjogbnVsbCwKICAgICAgICAicGhvbmUiOiBudWxsCiAgICAgIH0KICAgIH0sCiAgICB7CiAgICAgICJ1cmwiOiAiaHR0cDovL2xvY2FsaG9zdDozMDAwL2FwaS9vcmRlcnMvbXktb3JkZXJzIiwKICAgICAgInN0YXR1cyI6IDIwMCwKICAgICAgImRhdGEiOiBbXQogICAgfSwKICAgIHsKICAgICAgInVybCI6ICJodHRwOi8vbG9jYWxob3N0OjMwMDAvYXBpL29yZGVycy9teS1vcmRlcnMiLAogICAgICAic3RhdHVzIjogMjAwLAogICAgICAiZGF0YSI6IFtdCiAgICB9CiAgXSwKICAiZXhlY3V0ZWRBdCI6ICIyMDI2LTExLTA0VDA2OjE5OjQ0LjY3NVoiCn0="
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/zinn/zinn/testing/hw03/checklist/automation/cross-platform/firefox-recheck-test-results/run-firefox-IA-01-06-Each--624ef-ge-section-headings-use-h2--firefox/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/zinn/zinn/testing/hw03/checklist/automation/run-firefox-shared.cjs",
+                    "column": 31,
+                    "line": 139
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "20aa10028eee7ab2bb5c-74ad04de084fdae17e41",
+          "file": "run-firefox-shared.cjs",
+          "line": 24,
+          "column": 2
+        },
+        {
+          "title": "IA-01-08 Secondary help text is readable: at least 12px and a contrast ratio of at least 4.5:1 against its background.",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 3381,
+                  "error": {
+                    "message": "Error: Hint font-size=12px; color=rgb(156, 163, 175); background=rgb(255, 255, 255); contrast=2.539:1\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m",
+                    "stack": "Error: Hint font-size=12px; color=rgb(156, 163, 175); background=rgb(255, 255, 255); contrast=2.539:1\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n    at /home/zinn/zinn/testing/hw03/checklist/automation/run-firefox-shared.cjs:139:31",
+                    "location": {
+                      "file": "/home/zinn/zinn/testing/hw03/checklist/automation/run-firefox-shared.cjs",
+                      "column": 31,
+                      "line": 139
+                    }
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/zinn/zinn/testing/hw03/checklist/automation/run-firefox-shared.cjs",
+                        "column": 31,
+                        "line": 139
+                      },
+                      "message": "Error: Hint font-size=12px; color=rgb(156, 163, 175); background=rgb(255, 255, 255); contrast=2.539:1\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n    at /home/zinn/zinn/testing/hw03/checklist/automation/run-firefox-shared.cjs:139:31"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-04T06:19:45.754Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "execution",
+                      "contentType": "application/json",
+                      "body": "ewogICJpZCI6ICJJQS0wMS0wOCIsCiAgImlhIjogIklBLTAxIEdlbmVyYWwgVUkgc3RhbmRhcmRzIiwKICAicmVzdWx0IjogIkZhaWxlZCIsCiAgIm1ldGhvZCI6ICJXQ0FHIHJlbGF0aXZlIGx1bWluYW5jZSB04burIGNvbXB1dGVkIGZvcmVncm91bmQvYmFja2dyb3VuZCIsCiAgImFjdHVhbCI6ICJIaW50IGZvbnQtc2l6ZT0xMnB4OyBjb2xvcj1yZ2IoMTU2LCAxNjMsIDE3NSk7IGJhY2tncm91bmQ9cmdiKDI1NSwgMjU1LCAyNTUpOyBjb250cmFzdD0yLjUzOToxIiwKICAibm90ZXMiOiAiSGludCBmb250LXNpemU9MTJweDsgY29sb3I9cmdiKDE1NiwgMTYzLCAxNzUpOyBiYWNrZ3JvdW5kPXJnYigyNTUsIDI1NSwgMjU1KTsgY29udHJhc3Q9Mi41Mzk6MSIsCiAgInBsYXRmb3JtIjogImZpcmVmb3giLAogICJpbmNvbXBsZXRlIjogZmFsc2UsCiAgInNjcmVlbnNob3QiOiAic2NyZWVuc2hvdHMvY3Jvc3MtcGxhdGZvcm0vZmlyZWZveF9JQS0wMS0wOC5wbmciLAogICJlbWFpbCI6ICJ0aWEwMTA4LjE3OTM3NzMxODg2MTkuMEB0ZXN0LmxvY2FsIiwKICAiZGlhbG9ncyI6IFtdLAogICJyZXF1ZXN0cyI6IFtdLAogICJyZXNwb25zZXMiOiBbXSwKICAiZXhlY3V0ZWRBdCI6ICIyMDI2LTExLTA0VDA2OjE5OjUwLjA3OFoiCn0="
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/zinn/zinn/testing/hw03/checklist/automation/cross-platform/firefox-recheck-test-results/run-firefox-IA-01-08-Secon-b4133-5-1-against-its-background--firefox/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/zinn/zinn/testing/hw03/checklist/automation/run-firefox-shared.cjs",
+                    "column": 31,
+                    "line": 139
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "20aa10028eee7ab2bb5c-ca4283ce429f6e754528",
+          "file": "run-firefox-shared.cjs",
+          "line": 24,
+          "column": 2
+        },
+        {
+          "title": "IA-01-14 Keyboard Tab order follows the visual top-to-bottom, left-to-right order; the submit button is not focused before the fields.",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 3024,
+                  "error": {
+                    "message": "Error: Initial Tab={\"tag\":\"BUTTON\",\"text\":\"Sign In\",\"tabIndex\":1}; from Email=[\"input0\",\"input1\",\"Quên mật khẩu?\",\"Đăng ký ngay\",\"Đăng ký ngay\"]; submit tabIndex=1\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m",
+                    "stack": "Error: Initial Tab={\"tag\":\"BUTTON\",\"text\":\"Sign In\",\"tabIndex\":1}; from Email=[\"input0\",\"input1\",\"Quên mật khẩu?\",\"Đăng ký ngay\",\"Đăng ký ngay\"]; submit tabIndex=1\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n    at /home/zinn/zinn/testing/hw03/checklist/automation/run-firefox-shared.cjs:139:31",
+                    "location": {
+                      "file": "/home/zinn/zinn/testing/hw03/checklist/automation/run-firefox-shared.cjs",
+                      "column": 31,
+                      "line": 139
+                    }
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/zinn/zinn/testing/hw03/checklist/automation/run-firefox-shared.cjs",
+                        "column": 31,
+                        "line": 139
+                      },
+                      "message": "Error: Initial Tab={\"tag\":\"BUTTON\",\"text\":\"Sign In\",\"tabIndex\":1}; from Email=[\"input0\",\"input1\",\"Quên mật khẩu?\",\"Đăng ký ngay\",\"Đăng ký ngay\"]; submit tabIndex=1\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n    at /home/zinn/zinn/testing/hw03/checklist/automation/run-firefox-shared.cjs:139:31"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-04T06:19:51.218Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "execution",
+                      "contentType": "application/json",
+                      "body": "ewogICJpZCI6ICJJQS0wMS0xNCIsCiAgImlhIjogIklBLTAxIEdlbmVyYWwgVUkgc3RhbmRhcmRzIiwKICAicmVzdWx0IjogIkZhaWxlZCIsCiAgIm1ldGhvZCI6ICJUYWIgdGjhuq10IHThu6sgZG9jdW1lbnQgdsOgIHThu6sgZW1haWw7IGtp4buDbSB0YWJJbmRleCIsCiAgImFjdHVhbCI6ICJJbml0aWFsIFRhYj17XCJ0YWdcIjpcIkJVVFRPTlwiLFwidGV4dFwiOlwiU2lnbiBJblwiLFwidGFiSW5kZXhcIjoxfTsgZnJvbSBFbWFpbD1bXCJpbnB1dDBcIixcImlucHV0MVwiLFwiUXXDqm4gbeG6rXQga2jhuql1P1wiLFwixJDEg25nIGvDvSBuZ2F5XCIsXCLEkMSDbmcga8O9IG5nYXlcIl07IHN1Ym1pdCB0YWJJbmRleD0xIiwKICAibm90ZXMiOiAiSW5pdGlhbCBUYWI9e1widGFnXCI6XCJCVVRUT05cIixcInRleHRcIjpcIlNpZ24gSW5cIixcInRhYkluZGV4XCI6MX07IGZyb20gRW1haWw9W1wiaW5wdXQwXCIsXCJpbnB1dDFcIixcIlF1w6puIG3huq10IGto4bqpdT9cIixcIsSQxINuZyBrw70gbmdheVwiLFwixJDEg25nIGvDvSBuZ2F5XCJdOyBzdWJtaXQgdGFiSW5kZXg9MSIsCiAgInBsYXRmb3JtIjogImZpcmVmb3giLAogICJpbmNvbXBsZXRlIjogZmFsc2UsCiAgInNjcmVlbnNob3QiOiAic2NyZWVuc2hvdHMvY3Jvc3MtcGxhdGZvcm0vZmlyZWZveF9JQS0wMS0xNC5wbmciLAogICJlbWFpbCI6ICJ0aWEwMTE0LjE3OTM3NzMxOTM5NjYuMEB0ZXN0LmxvY2FsIiwKICAiZGlhbG9ncyI6IFtdLAogICJyZXF1ZXN0cyI6IFtdLAogICJyZXNwb25zZXMiOiBbXSwKICAiZXhlY3V0ZWRBdCI6ICIyMDI2LTExLTA0VDA2OjE5OjU1LjQxN1oiCn0="
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/zinn/zinn/testing/hw03/checklist/automation/cross-platform/firefox-recheck-test-results/run-firefox-IA-01-14-Keybo-e8066--focused-before-the-fields--firefox/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/zinn/zinn/testing/hw03/checklist/automation/run-firefox-shared.cjs",
+                    "column": 31,
+                    "line": 139
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "20aa10028eee7ab2bb5c-074fc95d3e43aef858dd",
+          "file": "run-firefox-shared.cjs",
+          "line": 24,
+          "column": 2
+        },
+        {
+          "title": "IA-01-15 Disabled fields are skipped and the remaining controls follow the visual order.",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2892,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-04T06:19:56.551Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "execution",
+                      "contentType": "application/json",
+                      "body": "ewogICJpZCI6ICJJQS0wMS0xNSIsCiAgImlhIjogIklBLTAxIEdlbmVyYWwgVUkgc3RhbmRhcmRzIiwKICAicmVzdWx0IjogIlBhc3NlZCIsCiAgIm1ldGhvZCI6ICJUYWIvU2hpZnQrVGFiIHRo4bqtdCB0cm9uZyBQcm9maWxlIiwKICAiYWN0dWFsIjogIlRhYj1bXCJmaWVsZDFcIixcImZpZWxkMlwiLFwiZmllbGQzXCIsXCJD4bqtcCBuaOG6rXRcIl07IHJldHVybiB0byBzdWJtaXQ9dHJ1ZTsgZGlzYWJsZWQgZW1haWw9dHJ1ZSIsCiAgIm5vdGVzIjogIlRhYj1bXCJmaWVsZDFcIixcImZpZWxkMlwiLFwiZmllbGQzXCIsXCJD4bqtcCBuaOG6rXRcIl07IHJldHVybiB0byBzdWJtaXQ9dHJ1ZTsgZGlzYWJsZWQgZW1haWw9dHJ1ZSIsCiAgInBsYXRmb3JtIjogImZpcmVmb3giLAogICJpbmNvbXBsZXRlIjogZmFsc2UsCiAgInNjcmVlbnNob3QiOiAiIiwKICAiZW1haWwiOiAidGlhMDExNS4xNzkzNzczMTk4NTIxLjBAdGVzdC5sb2NhbCIsCiAgImRpYWxvZ3MiOiBbXSwKICAicmVxdWVzdHMiOiBbCiAgICB7CiAgICAgICJ1cmwiOiAiaHR0cDovL2xvY2FsaG9zdDozMDAwL2FwaS9sb2dpbiIsCiAgICAgICJtZXRob2QiOiAiUE9TVCIsCiAgICAgICJkYXRhIjogIntcImVtYWlsXCI6XCJ0aWEwMTE1LjE3OTM3NzMxOTg1MjEuMEB0ZXN0LmxvY2FsXCIsXCJwYXNzd29yZFwiOlwiQWJjMTIzNDUgXCJ9IiwKICAgICAgImF0IjogMTc5Mzc3MzE5OTcxNgogICAgfQogIF0sCiAgInJlc3BvbnNlcyI6IFsKICAgIHsKICAgICAgInVybCI6ICJodHRwOi8vbG9jYWxob3N0OjMwMDAvYXBpL2xvZ2luIiwKICAgICAgInN0YXR1cyI6IDIwMCwKICAgICAgImRhdGEiOiB7CiAgICAgICAgIm1lc3NhZ2UiOiAiTG9naW4gc3VjY2Vzc2Z1bCIsCiAgICAgICAgInRva2VuIjogImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUpwWkNJNk16UTVMQ0p5YjJ4bElqb2lkWE5sY2lJc0ltbGhkQ0k2TVRjNU16YzNNekU1T1gwLmxFU3VLdW5vd1BUZDRBZmdVQko2LVF3UVYxTGZoUlhWZHJjRE52Tk1OTTAiLAogICAgICAgICJ1c2VyIjogewogICAgICAgICAgImlkIjogMzQ5LAogICAgICAgICAgIm5hbWUiOiAiQ2hyb21lIFRlc3RlciIsCiAgICAgICAgICAiZW1haWwiOiAidGlhMDExNS4xNzkzNzczMTk4NTIxLjBAdGVzdC5sb2NhbCIsCiAgICAgICAgICAicGFzc3dvcmQiOiAiQWJjMTIzNDUgIiwKICAgICAgICAgICJyb2xlIjogInVzZXIiLAogICAgICAgICAgImxvZ2luX2F0dGVtcHRzIjogMCwKICAgICAgICAgICJsb2NrZWRfdW50aWwiOiBudWxsLAogICAgICAgICAgInJlc2V0X3Rva2VuIjogbnVsbCwKICAgICAgICAgICJzaGlwcGluZ19hZGRyZXNzIjogbnVsbCwKICAgICAgICAgICJwaG9uZSI6IG51bGwKICAgICAgICB9CiAgICAgIH0KICAgIH0sCiAgICB7CiAgICAgICJ1cmwiOiAiaHR0cDovL2xvY2FsaG9zdDozMDAwL2FwaS91c2Vycy9tZSIsCiAgICAgICJzdGF0dXMiOiAyMDAsCiAgICAgICJkYXRhIjogewogICAgICAgICJpZCI6IDM0OSwKICAgICAgICAibmFtZSI6ICJDaHJvbWUgVGVzdGVyIiwKICAgICAgICAiZW1haWwiOiAidGlhMDExNS4xNzkzNzczMTk4NTIxLjBAdGVzdC5sb2NhbCIsCiAgICAgICAgInBhc3N3b3JkIjogIkFiYzEyMzQ1ICIsCiAgICAgICAgInJvbGUiOiAidXNlciIsCiAgICAgICAgImxvZ2luX2F0dGVtcHRzIjogMCwKICAgICAgICAibG9ja2VkX3VudGlsIjogbnVsbCwKICAgICAgICAicmVzZXRfdG9rZW4iOiBudWxsLAogICAgICAgICJzaGlwcGluZ19hZGRyZXNzIjogbnVsbCwKICAgICAgICAicGhvbmUiOiBudWxsCiAgICAgIH0KICAgIH0sCiAgICB7CiAgICAgICJ1cmwiOiAiaHR0cDovL2xvY2FsaG9zdDozMDAwL2FwaS9wcm9kdWN0cz9zZWFyY2g9IiwKICAgICAgInN0YXR1cyI6IDIwMCwKICAgICAgImRhdGEiOiBbCiAgICAgICAgewogICAgICAgICAgImlkIjogMSwKICAgICAgICAgICJuYW1lIjogImlQaG9uZSAxNSBQcm8gTWF4IiwKICAgICAgICAgICJwcmljZSI6IDMwMDAwMDAwLAogICAgICAgICAgImRlc2NyaXB0aW9uIjogIsSQaeG7h24gdGhv4bqhaSBjYW8gY+G6pXAgY+G7p2EgQXBwbGUiLAogICAgICAgICAgImltYWdlVXJsIjogImh0dHBzOi8vcGxhY2Vob2xkLmNvLzMwMHgzMDAvcG5nP3RleHQ9aVBob25lKzE1IiwKICAgICAgICAgICJjYXRlZ29yeV9pZCI6IDEKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICJpZCI6IDIsCiAgICAgICAgICAibmFtZSI6ICJTYW1zdW5nIEdhbGF4eSBTMjQgVWx0cmEiLAogICAgICAgICAgInByaWNlIjogMjgwMDAwMDAsCiAgICAgICAgICAiZGVzY3JpcHRpb24iOiAiTcOgbiBow6xuaCBoaeG7g24gdGjhu4sgeHXhuqV0IHPhuq9jLCBjYW1lcmEgc2nDqnUgem9vbSIsCiAgICAgICAgICAiaW1hZ2VVcmwiOiAiaHR0cHM6Ly9wbGFjZWhvbGQuY28vMzAweDMwMC9wbmc/dGV4dD1TYW1zdW5nK1MyNCIsCiAgICAgICAgICAiY2F0ZWdvcnlfaWQiOiAxCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAiaWQiOiAzLAogICAgICAgICAgIm5hbWUiOiAiTWFjQm9vayBQcm8gTTMiLAogICAgICAgICAgInByaWNlIjogNDUwMDAwMDAsCiAgICAgICAgICAiZGVzY3JpcHRpb24iOiAiTGFwdG9wIGNodXnDqm4gbmdoaeG7h3AgbeG6oW5oIG3hur0iLAogICAgICAgICAgImltYWdlVXJsIjogImh0dHBzOi8vcGxhY2Vob2xkLmNvLzMwMHgzMDAvcG5nP3RleHQ9TWFjYm9vaytQcm8iLAogICAgICAgICAgImNhdGVnb3J5X2lkIjogMgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgImlkIjogNCwKICAgICAgICAgICJuYW1lIjogIlRhaSBuZ2hlIEFpclBvZHMgUHJvIDIiLAogICAgICAgICAgInByaWNlIjogNjAwMDAwMCwKICAgICAgICAgICJkZXNjcmlwdGlvbiI6ICJDaOG7kW5nIOG7k24gY2jhu6cgxJHhu5luZyB4deG6pXQgc+G6r2MiLAogICAgICAgICAgImltYWdlVXJsIjogImh0dHBzOi8vcGxhY2Vob2xkLmNvLzMwMHgzMDAvcG5nP3RleHQ9QWlyUG9kcytQcm8iLAogICAgICAgICAgImNhdGVnb3J5X2lkIjogMwogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgImlkIjogNSwKICAgICAgICAgICJuYW1lIjogIkLDoG4gcGjDrW0gY8ahIEtleWNocm9uIFExIiwKICAgICAgICAgICJwcmljZSI6IDQwMDAwMDAsCiAgICAgICAgICAiZGVzY3JpcHRpb24iOiAiR8O1IGPhu7FjIHPGsOG7m25nLCB0aGnhur90IGvhur8ga2ltIGxv4bqhaSIsCiAgICAgICAgICAiaW1hZ2VVcmwiOiAiaHR0cHM6Ly9wbGFjZWhvbGQuY28vMzAweDMwMC9wbmc/dGV4dD1LZXljaHJvbitRMSIsCiAgICAgICAgICAiY2F0ZWdvcnlfaWQiOiAzCiAgICAgICAgfQogICAgICBdCiAgICB9LAogICAgewogICAgICAidXJsIjogImh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC9hcGkvcHJvZHVjdHM/c2VhcmNoPSIsCiAgICAgICJzdGF0dXMiOiAyMDAsCiAgICAgICJkYXRhIjogWwogICAgICAgIHsKICAgICAgICAgICJpZCI6IDEsCiAgICAgICAgICAibmFtZSI6ICJpUGhvbmUgMTUgUHJvIE1heCIsCiAgICAgICAgICAicHJpY2UiOiAzMDAwMDAwMCwKICAgICAgICAgICJkZXNjcmlwdGlvbiI6ICLEkGnhu4duIHRob+G6oWkgY2FvIGPhuqVwIGPhu6dhIEFwcGxlIiwKICAgICAgICAgICJpbWFnZVVybCI6ICJodHRwczovL3BsYWNlaG9sZC5jby8zMDB4MzAwL3BuZz90ZXh0PWlQaG9uZSsxNSIsCiAgICAgICAgICAiY2F0ZWdvcnlfaWQiOiAxCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAiaWQiOiAyLAogICAgICAgICAgIm5hbWUiOiAiU2Ftc3VuZyBHYWxheHkgUzI0IFVsdHJhIiwKICAgICAgICAgICJwcmljZSI6IDI4MDAwMDAwLAogICAgICAgICAgImRlc2NyaXB0aW9uIjogIk3DoG4gaMOsbmggaGnhu4NuIHRo4buLIHh14bqldCBz4bqvYywgY2FtZXJhIHNpw6p1IHpvb20iLAogICAgICAgICAgImltYWdlVXJsIjogImh0dHBzOi8vcGxhY2Vob2xkLmNvLzMwMHgzMDAvcG5nP3RleHQ9U2Ftc3VuZytTMjQiLAogICAgICAgICAgImNhdGVnb3J5X2lkIjogMQogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgImlkIjogMywKICAgICAgICAgICJuYW1lIjogIk1hY0Jvb2sgUHJvIE0zIiwKICAgICAgICAgICJwcmljZSI6IDQ1MDAwMDAwLAogICAgICAgICAgImRlc2NyaXB0aW9uIjogIkxhcHRvcCBjaHV5w6puIG5naGnhu4dwIG3huqFuaCBt4bq9IiwKICAgICAgICAgICJpbWFnZVVybCI6ICJodHRwczovL3BsYWNlaG9sZC5jby8zMDB4MzAwL3BuZz90ZXh0PU1hY2Jvb2srUHJvIiwKICAgICAgICAgICJjYXRlZ29yeV9pZCI6IDIKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICJpZCI6IDQsCiAgICAgICAgICAibmFtZSI6ICJUYWkgbmdoZSBBaXJQb2RzIFBybyAyIiwKICAgICAgICAgICJwcmljZSI6IDYwMDAwMDAsCiAgICAgICAgICAiZGVzY3JpcHRpb24iOiAiQ2jhu5FuZyDhu5NuIGNo4bunIMSR4buZbmcgeHXhuqV0IHPhuq9jIiwKICAgICAgICAgICJpbWFnZVVybCI6ICJodHRwczovL3BsYWNlaG9sZC5jby8zMDB4MzAwL3BuZz90ZXh0PUFpclBvZHMrUHJvIiwKICAgICAgICAgICJjYXRlZ29yeV9pZCI6IDMKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICJpZCI6IDUsCiAgICAgICAgICAibmFtZSI6ICJCw6BuIHBow61tIGPGoSBLZXljaHJvbiBRMSIsCiAgICAgICAgICAicHJpY2UiOiA0MDAwMDAwLAogICAgICAgICAgImRlc2NyaXB0aW9uIjogIkfDtSBj4buxYyBzxrDhu5tuZywgdGhp4bq/dCBr4bq/IGtpbSBsb+G6oWkiLAogICAgICAgICAgImltYWdlVXJsIjogImh0dHBzOi8vcGxhY2Vob2xkLmNvLzMwMHgzMDAvcG5nP3RleHQ9S2V5Y2hyb24rUTEiLAogICAgICAgICAgImNhdGVnb3J5X2lkIjogMwogICAgICAgIH0KICAgICAgXQogICAgfSwKICAgIHsKICAgICAgInVybCI6ICJodHRwOi8vbG9jYWxob3N0OjMwMDAvYXBpL3VzZXJzL21lIiwKICAgICAgInN0YXR1cyI6IDIwMCwKICAgICAgImRhdGEiOiB7CiAgICAgICAgImlkIjogMzQ5LAogICAgICAgICJuYW1lIjogIkNocm9tZSBUZXN0ZXIiLAogICAgICAgICJlbWFpbCI6ICJ0aWEwMTE1LjE3OTM3NzMxOTg1MjEuMEB0ZXN0LmxvY2FsIiwKICAgICAgICAicGFzc3dvcmQiOiAiQWJjMTIzNDUgIiwKICAgICAgICAicm9sZSI6ICJ1c2VyIiwKICAgICAgICAibG9naW5fYXR0ZW1wdHMiOiAwLAogICAgICAgICJsb2NrZWRfdW50aWwiOiBudWxsLAogICAgICAgICJyZXNldF90b2tlbiI6IG51bGwsCiAgICAgICAgInNoaXBwaW5nX2FkZHJlc3MiOiBudWxsLAogICAgICAgICJwaG9uZSI6IG51bGwKICAgICAgfQogICAgfSwKICAgIHsKICAgICAgInVybCI6ICJodHRwOi8vbG9jYWxob3N0OjMwMDAvYXBpL29yZGVycy9teS1vcmRlcnMiLAogICAgICAic3RhdHVzIjogMjAwLAogICAgICAiZGF0YSI6IFtdCiAgICB9LAogICAgewogICAgICAidXJsIjogImh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC9hcGkvb3JkZXJzL215LW9yZGVycyIsCiAgICAgICJzdGF0dXMiOiAyMDAsCiAgICAgICJkYXRhIjogW10KICAgIH0KICBdLAogICJleGVjdXRlZEF0IjogIjIwMjYtMTEtMDRUMDY6MjA6MDAuMTU1WiIKfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "20aa10028eee7ab2bb5c-951297f27651f3b79770",
+          "file": "run-firefox-shared.cjs",
+          "line": 24,
+          "column": 2
+        },
+        {
+          "title": "IA-01-18 Vietnamese names with diacritics are displayed correctly everywhere the name appears.",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 3185,
+                  "error": {
+                    "message": "Error: Sau save: field=\"Nguyễn Lê Thế Vinh\"; greeting=\"Chào, Chrome Tester\"; dialogs=[{\"type\":\"alert\",\"text\":\"Cập nhật thành công!\"}]\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m",
+                    "stack": "Error: Sau save: field=\"Nguyễn Lê Thế Vinh\"; greeting=\"Chào, Chrome Tester\"; dialogs=[{\"type\":\"alert\",\"text\":\"Cập nhật thành công!\"}]\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n    at /home/zinn/zinn/testing/hw03/checklist/automation/run-firefox-shared.cjs:139:31",
+                    "location": {
+                      "file": "/home/zinn/zinn/testing/hw03/checklist/automation/run-firefox-shared.cjs",
+                      "column": 31,
+                      "line": 139
+                    }
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/zinn/zinn/testing/hw03/checklist/automation/run-firefox-shared.cjs",
+                        "column": 31,
+                        "line": 139
+                      },
+                      "message": "Error: Sau save: field=\"Nguyễn Lê Thế Vinh\"; greeting=\"Chào, Chrome Tester\"; dialogs=[{\"type\":\"alert\",\"text\":\"Cập nhật thành công!\"}]\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n    at /home/zinn/zinn/testing/hw03/checklist/automation/run-firefox-shared.cjs:139:31"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-04T06:20:00.195Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "execution",
+                      "contentType": "application/json",
+                      "body": "ewogICJpZCI6ICJJQS0wMS0xOCIsCiAgImlhIjogIklBLTAxIEdlbmVyYWwgVUkgc3RhbmRhcmRzIiwKICAicmVzdWx0IjogIkZhaWxlZCIsCiAgIm1ldGhvZCI6ICLEkOG7lWkgdMOqbiBxdWEgZm9ybSBy4buTaSBzbyBncmVldGluZyBraMO0bmcgcmVsb2FkIiwKICAiYWN0dWFsIjogIlNhdSBzYXZlOiBmaWVsZD1cIk5ndXnhu4VuIEzDqiBUaOG6vyBWaW5oXCI7IGdyZWV0aW5nPVwiQ2jDoG8sIENocm9tZSBUZXN0ZXJcIjsgZGlhbG9ncz1be1widHlwZVwiOlwiYWxlcnRcIixcInRleHRcIjpcIkPhuq1wIG5o4bqtdCB0aMOgbmggY8O0bmchXCJ9XSIsCiAgIm5vdGVzIjogIlNhdSBzYXZlOiBmaWVsZD1cIk5ndXnhu4VuIEzDqiBUaOG6vyBWaW5oXCI7IGdyZWV0aW5nPVwiQ2jDoG8sIENocm9tZSBUZXN0ZXJcIjsgZGlhbG9ncz1be1widHlwZVwiOlwiYWxlcnRcIixcInRleHRcIjpcIkPhuq1wIG5o4bqtdCB0aMOgbmggY8O0bmchXCJ9XSIsCiAgInBsYXRmb3JtIjogImZpcmVmb3giLAogICJpbmNvbXBsZXRlIjogZmFsc2UsCiAgInNjcmVlbnNob3QiOiAic2NyZWVuc2hvdHMvY3Jvc3MtcGxhdGZvcm0vZmlyZWZveF9JQS0wMS0xOC5wbmciLAogICJlbWFpbCI6ICJ0aWEwMTE4LjE3OTM3NzMyMDA0OTguMEB0ZXN0LmxvY2FsIiwKICAiZGlhbG9ncyI6IFsKICAgIHsKICAgICAgInR5cGUiOiAiYWxlcnQiLAogICAgICAidGV4dCI6ICJD4bqtcCBuaOG6rXQgdGjDoG5oIGPDtG5nISIKICAgIH0KICBdLAogICJyZXF1ZXN0cyI6IFsKICAgIHsKICAgICAgInVybCI6ICJodHRwOi8vbG9jYWxob3N0OjMwMDAvYXBpL2xvZ2luIiwKICAgICAgIm1ldGhvZCI6ICJQT1NUIiwKICAgICAgImRhdGEiOiAie1wiZW1haWxcIjpcInRpYTAxMTguMTc5Mzc3MzIwMDQ5OC4wQHRlc3QubG9jYWxcIixcInBhc3N3b3JkXCI6XCJBYmMxMjM0NSBcIn0iLAogICAgICAiYXQiOiAxNzkzNzczMjAwOTY0CiAgICB9LAogICAgewogICAgICAidXJsIjogImh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC9hcGkvdXNlcnMvbWUiLAogICAgICAibWV0aG9kIjogIlBVVCIsCiAgICAgICJkYXRhIjogIntcIm5hbWVcIjpcIk5ndXnhu4VuIEzDqiBUaOG6vyBWaW5oXCIsXCJwaG9uZVwiOlwiOTEyMzQ1Njc4XCIsXCJzaGlwcGluZ19hZGRyZXNzXCI6XCIxMjMgxJDGsOG7nW5nIHRo4butIG5naGnhu4dtXCJ9IiwKICAgICAgImF0IjogMTc5Mzc3MzIwMTYxNAogICAgfQogIF0sCiAgInJlc3BvbnNlcyI6IFsKICAgIHsKICAgICAgInVybCI6ICJodHRwOi8vbG9jYWxob3N0OjMwMDAvYXBpL2xvZ2luIiwKICAgICAgInN0YXR1cyI6IDIwMCwKICAgICAgImRhdGEiOiB7CiAgICAgICAgIm1lc3NhZ2UiOiAiTG9naW4gc3VjY2Vzc2Z1bCIsCiAgICAgICAgInRva2VuIjogImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUpwWkNJNk16VXdMQ0p5YjJ4bElqb2lkWE5sY2lJc0ltbGhkQ0k2TVRjNU16YzNNekl3TUgwLkxIWjNxU0RnWE9Kb010RTkyTHNmNEFqY2ppVThzSlRwVGFjSnhKUHA5blEiLAogICAgICAgICJ1c2VyIjogewogICAgICAgICAgImlkIjogMzUwLAogICAgICAgICAgIm5hbWUiOiAiQ2hyb21lIFRlc3RlciIsCiAgICAgICAgICAiZW1haWwiOiAidGlhMDExOC4xNzkzNzczMjAwNDk4LjBAdGVzdC5sb2NhbCIsCiAgICAgICAgICAicGFzc3dvcmQiOiAiQWJjMTIzNDUgIiwKICAgICAgICAgICJyb2xlIjogInVzZXIiLAogICAgICAgICAgImxvZ2luX2F0dGVtcHRzIjogMCwKICAgICAgICAgICJsb2NrZWRfdW50aWwiOiBudWxsLAogICAgICAgICAgInJlc2V0X3Rva2VuIjogbnVsbCwKICAgICAgICAgICJzaGlwcGluZ19hZGRyZXNzIjogbnVsbCwKICAgICAgICAgICJwaG9uZSI6IG51bGwKICAgICAgICB9CiAgICAgIH0KICAgIH0sCiAgICB7CiAgICAgICJ1cmwiOiAiaHR0cDovL2xvY2FsaG9zdDozMDAwL2FwaS91c2Vycy9tZSIsCiAgICAgICJzdGF0dXMiOiAyMDAsCiAgICAgICJkYXRhIjogewogICAgICAgICJpZCI6IDM1MCwKICAgICAgICAibmFtZSI6ICJDaHJvbWUgVGVzdGVyIiwKICAgICAgICAiZW1haWwiOiAidGlhMDExOC4xNzkzNzczMjAwNDk4LjBAdGVzdC5sb2NhbCIsCiAgICAgICAgInBhc3N3b3JkIjogIkFiYzEyMzQ1ICIsCiAgICAgICAgInJvbGUiOiAidXNlciIsCiAgICAgICAgImxvZ2luX2F0dGVtcHRzIjogMCwKICAgICAgICAibG9ja2VkX3VudGlsIjogbnVsbCwKICAgICAgICAicmVzZXRfdG9rZW4iOiBudWxsLAogICAgICAgICJzaGlwcGluZ19hZGRyZXNzIjogbnVsbCwKICAgICAgICAicGhvbmUiOiBudWxsCiAgICAgIH0KICAgIH0sCiAgICB7CiAgICAgICJ1cmwiOiAiaHR0cDovL2xvY2FsaG9zdDozMDAwL2FwaS9wcm9kdWN0cz9zZWFyY2g9IiwKICAgICAgInN0YXR1cyI6IDIwMCwKICAgICAgImRhdGEiOiBbCiAgICAgICAgewogICAgICAgICAgImlkIjogMSwKICAgICAgICAgICJuYW1lIjogImlQaG9uZSAxNSBQcm8gTWF4IiwKICAgICAgICAgICJwcmljZSI6IDMwMDAwMDAwLAogICAgICAgICAgImRlc2NyaXB0aW9uIjogIsSQaeG7h24gdGhv4bqhaSBjYW8gY+G6pXAgY+G7p2EgQXBwbGUiLAogICAgICAgICAgImltYWdlVXJsIjogImh0dHBzOi8vcGxhY2Vob2xkLmNvLzMwMHgzMDAvcG5nP3RleHQ9aVBob25lKzE1IiwKICAgICAgICAgICJjYXRlZ29yeV9pZCI6IDEKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICJpZCI6IDIsCiAgICAgICAgICAibmFtZSI6ICJTYW1zdW5nIEdhbGF4eSBTMjQgVWx0cmEiLAogICAgICAgICAgInByaWNlIjogMjgwMDAwMDAsCiAgICAgICAgICAiZGVzY3JpcHRpb24iOiAiTcOgbiBow6xuaCBoaeG7g24gdGjhu4sgeHXhuqV0IHPhuq9jLCBjYW1lcmEgc2nDqnUgem9vbSIsCiAgICAgICAgICAiaW1hZ2VVcmwiOiAiaHR0cHM6Ly9wbGFjZWhvbGQuY28vMzAweDMwMC9wbmc/dGV4dD1TYW1zdW5nK1MyNCIsCiAgICAgICAgICAiY2F0ZWdvcnlfaWQiOiAxCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAiaWQiOiAzLAogICAgICAgICAgIm5hbWUiOiAiTWFjQm9vayBQcm8gTTMiLAogICAgICAgICAgInByaWNlIjogNDUwMDAwMDAsCiAgICAgICAgICAiZGVzY3JpcHRpb24iOiAiTGFwdG9wIGNodXnDqm4gbmdoaeG7h3AgbeG6oW5oIG3hur0iLAogICAgICAgICAgImltYWdlVXJsIjogImh0dHBzOi8vcGxhY2Vob2xkLmNvLzMwMHgzMDAvcG5nP3RleHQ9TWFjYm9vaytQcm8iLAogICAgICAgICAgImNhdGVnb3J5X2lkIjogMgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgImlkIjogNCwKICAgICAgICAgICJuYW1lIjogIlRhaSBuZ2hlIEFpclBvZHMgUHJvIDIiLAogICAgICAgICAgInByaWNlIjogNjAwMDAwMCwKICAgICAgICAgICJkZXNjcmlwdGlvbiI6ICJDaOG7kW5nIOG7k24gY2jhu6cgxJHhu5luZyB4deG6pXQgc+G6r2MiLAogICAgICAgICAgImltYWdlVXJsIjogImh0dHBzOi8vcGxhY2Vob2xkLmNvLzMwMHgzMDAvcG5nP3RleHQ9QWlyUG9kcytQcm8iLAogICAgICAgICAgImNhdGVnb3J5X2lkIjogMwogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgImlkIjogNSwKICAgICAgICAgICJuYW1lIjogIkLDoG4gcGjDrW0gY8ahIEtleWNocm9uIFExIiwKICAgICAgICAgICJwcmljZSI6IDQwMDAwMDAsCiAgICAgICAgICAiZGVzY3JpcHRpb24iOiAiR8O1IGPhu7FjIHPGsOG7m25nLCB0aGnhur90IGvhur8ga2ltIGxv4bqhaSIsCiAgICAgICAgICAiaW1hZ2VVcmwiOiAiaHR0cHM6Ly9wbGFjZWhvbGQuY28vMzAweDMwMC9wbmc/dGV4dD1LZXljaHJvbitRMSIsCiAgICAgICAgICAiY2F0ZWdvcnlfaWQiOiAzCiAgICAgICAgfQogICAgICBdCiAgICB9LAogICAgewogICAgICAidXJsIjogImh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC9hcGkvdXNlcnMvbWUiLAogICAgICAic3RhdHVzIjogMjAwLAogICAgICAiZGF0YSI6IHsKICAgICAgICAiaWQiOiAzNTAsCiAgICAgICAgIm5hbWUiOiAiQ2hyb21lIFRlc3RlciIsCiAgICAgICAgImVtYWlsIjogInRpYTAxMTguMTc5Mzc3MzIwMDQ5OC4wQHRlc3QubG9jYWwiLAogICAgICAgICJwYXNzd29yZCI6ICJBYmMxMjM0NSAiLAogICAgICAgICJyb2xlIjogInVzZXIiLAogICAgICAgICJsb2dpbl9hdHRlbXB0cyI6IDAsCiAgICAgICAgImxvY2tlZF91bnRpbCI6IG51bGwsCiAgICAgICAgInJlc2V0X3Rva2VuIjogbnVsbCwKICAgICAgICAic2hpcHBpbmdfYWRkcmVzcyI6IG51bGwsCiAgICAgICAgInBob25lIjogbnVsbAogICAgICB9CiAgICB9LAogICAgewogICAgICAidXJsIjogImh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC9hcGkvb3JkZXJzL215LW9yZGVycyIsCiAgICAgICJzdGF0dXMiOiAyMDAsCiAgICAgICJkYXRhIjogW10KICAgIH0sCiAgICB7CiAgICAgICJ1cmwiOiAiaHR0cDovL2xvY2FsaG9zdDozMDAwL2FwaS9vcmRlcnMvbXktb3JkZXJzIiwKICAgICAgInN0YXR1cyI6IDIwMCwKICAgICAgImRhdGEiOiBbXQogICAgfSwKICAgIHsKICAgICAgInVybCI6ICJodHRwOi8vbG9jYWxob3N0OjMwMDAvYXBpL3VzZXJzL21lIiwKICAgICAgInN0YXR1cyI6IDIwMCwKICAgICAgImRhdGEiOiB7CiAgICAgICAgIm1lc3NhZ2UiOiAiUHJvZmlsZSB1cGRhdGVkIgogICAgICB9CiAgICB9CiAgXSwKICAiZXhlY3V0ZWRBdCI6ICIyMDI2LTExLTA0VDA2OjIwOjAzLjI3MVoiCn0="
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/zinn/zinn/testing/hw03/checklist/automation/cross-platform/firefox-recheck-test-results/run-firefox-IA-01-18-Vietn-4c6d3-verywhere-the-name-appears--firefox/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/zinn/zinn/testing/hw03/checklist/automation/run-firefox-shared.cjs",
+                    "column": 31,
+                    "line": 139
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "20aa10028eee7ab2bb5c-ccddf0f28e6692dd6e80",
+          "file": "run-firefox-shared.cjs",
+          "line": 24,
+          "column": 2
+        },
+        {
+          "title": "IA-01-20 User-entered name is shown as plain text and never rendered as HTML.",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 9,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 5063,
+                  "error": {
+                    "message": "Error: Greeting=\"Chào, x\"; b nodes=1\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m",
+                    "stack": "Error: Greeting=\"Chào, x\"; b nodes=1\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n    at /home/zinn/zinn/testing/hw03/checklist/automation/run-firefox-shared.cjs:139:31",
+                    "location": {
+                      "file": "/home/zinn/zinn/testing/hw03/checklist/automation/run-firefox-shared.cjs",
+                      "column": 31,
+                      "line": 139
+                    }
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/zinn/zinn/testing/hw03/checklist/automation/run-firefox-shared.cjs",
+                        "column": 31,
+                        "line": 139
+                      },
+                      "message": "Error: Greeting=\"Chào, x\"; b nodes=1\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n    at /home/zinn/zinn/testing/hw03/checklist/automation/run-firefox-shared.cjs:139:31"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-04T06:20:05.087Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "execution",
+                      "contentType": "application/json",
+                      "body": "ewogICJpZCI6ICJJQS0wMS0yMCIsCiAgImlhIjogIklBLTAxIEdlbmVyYWwgVUkgc3RhbmRhcmRzIiwKICAicmVzdWx0IjogIkZhaWxlZCIsCiAgIm1ldGhvZCI6ICJMxrB1IHTDqm4gbWFya3VwIHLhu5NpIHJlbG9hZDsga2nhu4NtIGxpdGVyYWwgdGV4dCB2w6AgdGjhursgYiIsCiAgImFjdHVhbCI6ICJHcmVldGluZz1cIkNow6BvLCB4XCI7IGIgbm9kZXM9MSIsCiAgIm5vdGVzIjogIkdyZWV0aW5nPVwiQ2jDoG8sIHhcIjsgYiBub2Rlcz0xIiwKICAicGxhdGZvcm0iOiAiZmlyZWZveCIsCiAgImluY29tcGxldGUiOiBmYWxzZSwKICAic2NyZWVuc2hvdCI6ICJzY3JlZW5zaG90cy9jcm9zcy1wbGF0Zm9ybS9maXJlZm94X0lBLTAxLTIwLnBuZyIsCiAgImVtYWlsIjogInRpYTAxMjAuMTc5Mzc3MzIwNzY0Ny4wQHRlc3QubG9jYWwiLAogICJkaWFsb2dzIjogWwogICAgewogICAgICAidHlwZSI6ICJhbGVydCIsCiAgICAgICJ0ZXh0IjogIkPhuq1wIG5o4bqtdCB0aMOgbmggY8O0bmchIgogICAgfQogIF0sCiAgInJlcXVlc3RzIjogWwogICAgewogICAgICAidXJsIjogImh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC9hcGkvbG9naW4iLAogICAgICAibWV0aG9kIjogIlBPU1QiLAogICAgICAiZGF0YSI6ICJ7XCJlbWFpbFwiOlwidGlhMDEyMC4xNzkzNzczMjA3NjQ3LjBAdGVzdC5sb2NhbFwiLFwicGFzc3dvcmRcIjpcIkFiYzEyMzQ1IFwifSIsCiAgICAgICJhdCI6IDE3OTM3NzMyMDg4NDEKICAgIH0sCiAgICB7CiAgICAgICJ1cmwiOiAiaHR0cDovL2xvY2FsaG9zdDozMDAwL2FwaS91c2Vycy9tZSIsCiAgICAgICJtZXRob2QiOiAiUFVUIiwKICAgICAgImRhdGEiOiAie1wibmFtZVwiOlwiPGI+eDwvYj5cIixcInBob25lXCI6XCI5MTIzNDU2NzhcIixcInNoaXBwaW5nX2FkZHJlc3NcIjpcIjEyMyDEkMaw4budbmcgdGjhu60gbmdoaeG7h21cIn0iLAogICAgICAiYXQiOiAxNzkzNzczMjA5Nzc4CiAgICB9CiAgXSwKICAicmVzcG9uc2VzIjogWwogICAgewogICAgICAidXJsIjogImh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC9hcGkvbG9naW4iLAogICAgICAic3RhdHVzIjogMjAwLAogICAgICAiZGF0YSI6IHsKICAgICAgICAibWVzc2FnZSI6ICJMb2dpbiBzdWNjZXNzZnVsIiwKICAgICAgICAidG9rZW4iOiAiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBaQ0k2TXpVekxDSnliMnhsSWpvaWRYTmxjaUlzSW1saGRDSTZNVGM1TXpjM016SXdPSDAuRjNYWUZ4ZkFudlE4WkhWUVdLam93cFd1VngxNGtreHBTMGZJdzhqMkJTRSIsCiAgICAgICAgInVzZXIiOiB7CiAgICAgICAgICAiaWQiOiAzNTMsCiAgICAgICAgICAibmFtZSI6ICJDaHJvbWUgVGVzdGVyIiwKICAgICAgICAgICJlbWFpbCI6ICJ0aWEwMTIwLjE3OTM3NzMyMDc2NDcuMEB0ZXN0LmxvY2FsIiwKICAgICAgICAgICJwYXNzd29yZCI6ICJBYmMxMjM0NSAiLAogICAgICAgICAgInJvbGUiOiAidXNlciIsCiAgICAgICAgICAibG9naW5fYXR0ZW1wdHMiOiAwLAogICAgICAgICAgImxvY2tlZF91bnRpbCI6IG51bGwsCiAgICAgICAgICAicmVzZXRfdG9rZW4iOiBudWxsLAogICAgICAgICAgInNoaXBwaW5nX2FkZHJlc3MiOiBudWxsLAogICAgICAgICAgInBob25lIjogbnVsbAogICAgICAgIH0KICAgICAgfQogICAgfSwKICAgIHsKICAgICAgInVybCI6ICJodHRwOi8vbG9jYWxob3N0OjMwMDAvYXBpL3VzZXJzL21lIiwKICAgICAgInN0YXR1cyI6IDIwMCwKICAgICAgImRhdGEiOiB7CiAgICAgICAgImlkIjogMzUzLAogICAgICAgICJuYW1lIjogIkNocm9tZSBUZXN0ZXIiLAogICAgICAgICJlbWFpbCI6ICJ0aWEwMTIwLjE3OTM3NzMyMDc2NDcuMEB0ZXN0LmxvY2FsIiwKICAgICAgICAicGFzc3dvcmQiOiAiQWJjMTIzNDUgIiwKICAgICAgICAicm9sZSI6ICJ1c2VyIiwKICAgICAgICAibG9naW5fYXR0ZW1wdHMiOiAwLAogICAgICAgICJsb2NrZWRfdW50aWwiOiBudWxsLAogICAgICAgICJyZXNldF90b2tlbiI6IG51bGwsCiAgICAgICAgInNoaXBwaW5nX2FkZHJlc3MiOiBudWxsLAogICAgICAgICJwaG9uZSI6IG51bGwKICAgICAgfQogICAgfSwKICAgIHsKICAgICAgInVybCI6ICJodHRwOi8vbG9jYWxob3N0OjMwMDAvYXBpL3Byb2R1Y3RzP3NlYXJjaD0iLAogICAgICAic3RhdHVzIjogMjAwLAogICAgICAiZGF0YSI6IFsKICAgICAgICB7CiAgICAgICAgICAiaWQiOiAxLAogICAgICAgICAgIm5hbWUiOiAiaVBob25lIDE1IFBybyBNYXgiLAogICAgICAgICAgInByaWNlIjogMzAwMDAwMDAsCiAgICAgICAgICAiZGVzY3JpcHRpb24iOiAixJBp4buHbiB0aG/huqFpIGNhbyBj4bqlcCBj4bunYSBBcHBsZSIsCiAgICAgICAgICAiaW1hZ2VVcmwiOiAiaHR0cHM6Ly9wbGFjZWhvbGQuY28vMzAweDMwMC9wbmc/dGV4dD1pUGhvbmUrMTUiLAogICAgICAgICAgImNhdGVnb3J5X2lkIjogMQogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgImlkIjogMiwKICAgICAgICAgICJuYW1lIjogIlNhbXN1bmcgR2FsYXh5IFMyNCBVbHRyYSIsCiAgICAgICAgICAicHJpY2UiOiAyODAwMDAwMCwKICAgICAgICAgICJkZXNjcmlwdGlvbiI6ICJNw6BuIGjDrG5oIGhp4buDbiB0aOG7iyB4deG6pXQgc+G6r2MsIGNhbWVyYSBzacOqdSB6b29tIiwKICAgICAgICAgICJpbWFnZVVybCI6ICJodHRwczovL3BsYWNlaG9sZC5jby8zMDB4MzAwL3BuZz90ZXh0PVNhbXN1bmcrUzI0IiwKICAgICAgICAgICJjYXRlZ29yeV9pZCI6IDEKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICJpZCI6IDMsCiAgICAgICAgICAibmFtZSI6ICJNYWNCb29rIFBybyBNMyIsCiAgICAgICAgICAicHJpY2UiOiA0NTAwMDAwMCwKICAgICAgICAgICJkZXNjcmlwdGlvbiI6ICJMYXB0b3AgY2h1ecOqbiBuZ2hp4buHcCBt4bqhbmggbeG6vSIsCiAgICAgICAgICAiaW1hZ2VVcmwiOiAiaHR0cHM6Ly9wbGFjZWhvbGQuY28vMzAweDMwMC9wbmc/dGV4dD1NYWNib29rK1BybyIsCiAgICAgICAgICAiY2F0ZWdvcnlfaWQiOiAyCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAiaWQiOiA0LAogICAgICAgICAgIm5hbWUiOiAiVGFpIG5naGUgQWlyUG9kcyBQcm8gMiIsCiAgICAgICAgICAicHJpY2UiOiA2MDAwMDAwLAogICAgICAgICAgImRlc2NyaXB0aW9uIjogIkNo4buRbmcg4buTbiBjaOG7pyDEkeG7mW5nIHh14bqldCBz4bqvYyIsCiAgICAgICAgICAiaW1hZ2VVcmwiOiAiaHR0cHM6Ly9wbGFjZWhvbGQuY28vMzAweDMwMC9wbmc/dGV4dD1BaXJQb2RzK1BybyIsCiAgICAgICAgICAiY2F0ZWdvcnlfaWQiOiAzCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAiaWQiOiA1LAogICAgICAgICAgIm5hbWUiOiAiQsOgbiBwaMOtbSBjxqEgS2V5Y2hyb24gUTEiLAogICAgICAgICAgInByaWNlIjogNDAwMDAwMCwKICAgICAgICAgICJkZXNjcmlwdGlvbiI6ICJHw7UgY+G7sWMgc8aw4bubbmcsIHRoaeG6v3Qga+G6vyBraW0gbG/huqFpIiwKICAgICAgICAgICJpbWFnZVVybCI6ICJodHRwczovL3BsYWNlaG9sZC5jby8zMDB4MzAwL3BuZz90ZXh0PUtleWNocm9uK1ExIiwKICAgICAgICAgICJjYXRlZ29yeV9pZCI6IDMKICAgICAgICB9CiAgICAgIF0KICAgIH0sCiAgICB7CiAgICAgICJ1cmwiOiAiaHR0cDovL2xvY2FsaG9zdDozMDAwL2FwaS9wcm9kdWN0cz9zZWFyY2g9IiwKICAgICAgInN0YXR1cyI6IDIwMCwKICAgICAgImRhdGEiOiBbCiAgICAgICAgewogICAgICAgICAgImlkIjogMSwKICAgICAgICAgICJuYW1lIjogImlQaG9uZSAxNSBQcm8gTWF4IiwKICAgICAgICAgICJwcmljZSI6IDMwMDAwMDAwLAogICAgICAgICAgImRlc2NyaXB0aW9uIjogIsSQaeG7h24gdGhv4bqhaSBjYW8gY+G6pXAgY+G7p2EgQXBwbGUiLAogICAgICAgICAgImltYWdlVXJsIjogImh0dHBzOi8vcGxhY2Vob2xkLmNvLzMwMHgzMDAvcG5nP3RleHQ9aVBob25lKzE1IiwKICAgICAgICAgICJjYXRlZ29yeV9pZCI6IDEKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICJpZCI6IDIsCiAgICAgICAgICAibmFtZSI6ICJTYW1zdW5nIEdhbGF4eSBTMjQgVWx0cmEiLAogICAgICAgICAgInByaWNlIjogMjgwMDAwMDAsCiAgICAgICAgICAiZGVzY3JpcHRpb24iOiAiTcOgbiBow6xuaCBoaeG7g24gdGjhu4sgeHXhuqV0IHPhuq9jLCBjYW1lcmEgc2nDqnUgem9vbSIsCiAgICAgICAgICAiaW1hZ2VVcmwiOiAiaHR0cHM6Ly9wbGFjZWhvbGQuY28vMzAweDMwMC9wbmc/dGV4dD1TYW1zdW5nK1MyNCIsCiAgICAgICAgICAiY2F0ZWdvcnlfaWQiOiAxCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAiaWQiOiAzLAogICAgICAgICAgIm5hbWUiOiAiTWFjQm9vayBQcm8gTTMiLAogICAgICAgICAgInByaWNlIjogNDUwMDAwMDAsCiAgICAgICAgICAiZGVzY3JpcHRpb24iOiAiTGFwdG9wIGNodXnDqm4gbmdoaeG7h3AgbeG6oW5oIG3hur0iLAogICAgICAgICAgImltYWdlVXJsIjogImh0dHBzOi8vcGxhY2Vob2xkLmNvLzMwMHgzMDAvcG5nP3RleHQ9TWFjYm9vaytQcm8iLAogICAgICAgICAgImNhdGVnb3J5X2lkIjogMgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgImlkIjogNCwKICAgICAgICAgICJuYW1lIjogIlRhaSBuZ2hlIEFpclBvZHMgUHJvIDIiLAogICAgICAgICAgInByaWNlIjogNjAwMDAwMCwKICAgICAgICAgICJkZXNjcmlwdGlvbiI6ICJDaOG7kW5nIOG7k24gY2jhu6cgxJHhu5luZyB4deG6pXQgc+G6r2MiLAogICAgICAgICAgImltYWdlVXJsIjogImh0dHBzOi8vcGxhY2Vob2xkLmNvLzMwMHgzMDAvcG5nP3RleHQ9QWlyUG9kcytQcm8iLAogICAgICAgICAgImNhdGVnb3J5X2lkIjogMwogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgImlkIjogNSwKICAgICAgICAgICJuYW1lIjogIkLDoG4gcGjDrW0gY8ahIEtleWNocm9uIFExIiwKICAgICAgICAgICJwcmljZSI6IDQwMDAwMDAsCiAgICAgICAgICAiZGVzY3JpcHRpb24iOiAiR8O1IGPhu7FjIHPGsOG7m25nLCB0aGnhur90IGvhur8ga2ltIGxv4bqhaSIsCiAgICAgICAgICAiaW1hZ2VVcmwiOiAiaHR0cHM6Ly9wbGFjZWhvbGQuY28vMzAweDMwMC9wbmc/dGV4dD1LZXljaHJvbitRMSIsCiAgICAgICAgICAiY2F0ZWdvcnlfaWQiOiAzCiAgICAgICAgfQogICAgICBdCiAgICB9LAogICAgewogICAgICAidXJsIjogImh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC9hcGkvdXNlcnMvbWUiLAogICAgICAic3RhdHVzIjogMjAwLAogICAgICAiZGF0YSI6IHsKICAgICAgICAiaWQiOiAzNTMsCiAgICAgICAgIm5hbWUiOiAiQ2hyb21lIFRlc3RlciIsCiAgICAgICAgImVtYWlsIjogInRpYTAxMjAuMTc5Mzc3MzIwNzY0Ny4wQHRlc3QubG9jYWwiLAogICAgICAgICJwYXNzd29yZCI6ICJBYmMxMjM0NSAiLAogICAgICAgICJyb2xlIjogInVzZXIiLAogICAgICAgICJsb2dpbl9hdHRlbXB0cyI6IDAsCiAgICAgICAgImxvY2tlZF91bnRpbCI6IG51bGwsCiAgICAgICAgInJlc2V0X3Rva2VuIjogbnVsbCwKICAgICAgICAic2hpcHBpbmdfYWRkcmVzcyI6IG51bGwsCiAgICAgICAgInBob25lIjogbnVsbAogICAgICB9CiAgICB9LAogICAgewogICAgICAidXJsIjogImh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC9hcGkvb3JkZXJzL215LW9yZGVycyIsCiAgICAgICJzdGF0dXMiOiAyMDAsCiAgICAgICJkYXRhIjogW10KICAgIH0sCiAgICB7CiAgICAgICJ1cmwiOiAiaHR0cDovL2xvY2FsaG9zdDozMDAwL2FwaS9vcmRlcnMvbXktb3JkZXJzIiwKICAgICAgInN0YXR1cyI6IDIwMCwKICAgICAgImRhdGEiOiBbXQogICAgfSwKICAgIHsKICAgICAgInVybCI6ICJodHRwOi8vbG9jYWxob3N0OjMwMDAvYXBpL3VzZXJzL21lIiwKICAgICAgInN0YXR1cyI6IDIwMCwKICAgICAgImRhdGEiOiB7CiAgICAgICAgIm1lc3NhZ2UiOiAiUHJvZmlsZSB1cGRhdGVkIgogICAgICB9CiAgICB9LAogICAgewogICAgICAidXJsIjogImh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC9hcGkvdXNlcnMvbWUiLAogICAgICAic3RhdHVzIjogMjAwLAogICAgICAiZGF0YSI6IHsKICAgICAgICAiaWQiOiAzNTMsCiAgICAgICAgIm5hbWUiOiAiPGI+eDwvYj4iLAogICAgICAgICJlbWFpbCI6ICJ0aWEwMTIwLjE3OTM3NzMyMDc2NDcuMEB0ZXN0LmxvY2FsIiwKICAgICAgICAicGFzc3dvcmQiOiAiQWJjMTIzNDUgIiwKICAgICAgICAicm9sZSI6ICJ1c2VyIiwKICAgICAgICAibG9naW5fYXR0ZW1wdHMiOiAwLAogICAgICAgICJsb2NrZWRfdW50aWwiOiBudWxsLAogICAgICAgICJyZXNldF90b2tlbiI6IG51bGwsCiAgICAgICAgInNoaXBwaW5nX2FkZHJlc3MiOiAiMTIzIMSQxrDhu51uZyB0aOG7rSBuZ2hp4buHbSIsCiAgICAgICAgInBob25lIjogIjkxMjM0NTY3OCIKICAgICAgfQogICAgfSwKICAgIHsKICAgICAgInVybCI6ICJodHRwOi8vbG9jYWxob3N0OjMwMDAvYXBpL29yZGVycy9teS1vcmRlcnMiLAogICAgICAic3RhdHVzIjogMjAwLAogICAgICAiZGF0YSI6IFtdCiAgICB9LAogICAgewogICAgICAidXJsIjogImh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC9hcGkvdXNlcnMvbWUiLAogICAgICAic3RhdHVzIjogMjAwLAogICAgICAiZGF0YSI6IHsKICAgICAgICAiaWQiOiAzNTMsCiAgICAgICAgIm5hbWUiOiAiPGI+eDwvYj4iLAogICAgICAgICJlbWFpbCI6ICJ0aWEwMTIwLjE3OTM3NzMyMDc2NDcuMEB0ZXN0LmxvY2FsIiwKICAgICAgICAicGFzc3dvcmQiOiAiQWJjMTIzNDUgIiwKICAgICAgICAicm9sZSI6ICJ1c2VyIiwKICAgICAgICAibG9naW5fYXR0ZW1wdHMiOiAwLAogICAgICAgICJsb2NrZWRfdW50aWwiOiBudWxsLAogICAgICAgICJyZXNldF90b2tlbiI6IG51bGwsCiAgICAgICAgInNoaXBwaW5nX2FkZHJlc3MiOiAiMTIzIMSQxrDhu51uZyB0aOG7rSBuZ2hp4buHbSIsCiAgICAgICAgInBob25lIjogIjkxMjM0NTY3OCIKICAgICAgfQogICAgfQogIF0sCiAgImV4ZWN1dGVkQXQiOiAiMjAyNi0xMS0wNFQwNjoyMDoxMS4zNDdaIgp9"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/zinn/zinn/testing/hw03/checklist/automation/cross-platform/firefox-recheck-test-results/run-firefox-IA-01-20-User--51cf2-and-never-rendered-as-HTML--firefox/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/zinn/zinn/testing/hw03/checklist/automation/run-firefox-shared.cjs",
+                    "column": 31,
+                    "line": 139
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "20aa10028eee7ab2bb5c-e907dc23c7e6f96a3d86",
+          "file": "run-firefox-shared.cjs",
+          "line": 24,
+          "column": 2
+        },
+        {
+          "title": "IA-02-01 Every required field has a `*` immediately next to its label.",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 10,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 6753,
+                  "error": {
+                    "message": "Error: /login: [{\"label\":\"Username\",\"required\":true,\"disabled\":false},{\"label\":\"Mật khẩu\",\"required\":true,\"disabled\":false}]\n/register: [{\"label\":\"Họ Tên\",\"required\":true,\"disabled\":false},{\"label\":\"Email\",\"required\":true,\"disabled\":false},{\"label\":\"Mật khẩu\",\"required\":true,\"disabled\":false}]\n/forgot-password: [{\"label\":\"Nhập Email của bạn\",\"required\":true,\"disabled\":false}]\n/forgot-password#step2: [{\"label\":\"Mã OTP (4 số)\",\"required\":true,\"disabled\":false},{\"label\":\"Mật khẩu mới\",\"required\":true,\"disabled\":false}]\n/profile: [{\"label\":\"Email (Không đổi)\",\"required\":false,\"disabled\":true},{\"label\":\"Họ Tên\",\"required\":true,\"disabled\":false},{\"label\":\"Số điện thoại\",\"required\":false,\"disabled\":false},{\"label\":\"Địa chỉ giao hàng\",\"required\":false,\"disabled\":false}]\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m",
+                    "stack": "Error: /login: [{\"label\":\"Username\",\"required\":true,\"disabled\":false},{\"label\":\"Mật khẩu\",\"required\":true,\"disabled\":false}]\n/register: [{\"label\":\"Họ Tên\",\"required\":true,\"disabled\":false},{\"label\":\"Email\",\"required\":true,\"disabled\":false},{\"label\":\"Mật khẩu\",\"required\":true,\"disabled\":false}]\n/forgot-password: [{\"label\":\"Nhập Email của bạn\",\"required\":true,\"disabled\":false}]\n/forgot-password#step2: [{\"label\":\"Mã OTP (4 số)\",\"required\":true,\"disabled\":false},{\"label\":\"Mật khẩu mới\",\"required\":true,\"disabled\":false}]\n/profile: [{\"label\":\"Email (Không đổi)\",\"required\":false,\"disabled\":true},{\"label\":\"Họ Tên\",\"required\":true,\"disabled\":false},{\"label\":\"Số điện thoại\",\"required\":false,\"disabled\":false},{\"label\":\"Địa chỉ giao hàng\",\"required\":false,\"disabled\":false}]\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n    at /home/zinn/zinn/testing/hw03/checklist/automation/run-firefox-shared.cjs:139:31",
+                    "location": {
+                      "file": "/home/zinn/zinn/testing/hw03/checklist/automation/run-firefox-shared.cjs",
+                      "column": 31,
+                      "line": 139
+                    }
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/zinn/zinn/testing/hw03/checklist/automation/run-firefox-shared.cjs",
+                        "column": 31,
+                        "line": 139
+                      },
+                      "message": "Error: /login: [{\"label\":\"Username\",\"required\":true,\"disabled\":false},{\"label\":\"Mật khẩu\",\"required\":true,\"disabled\":false}]\n/register: [{\"label\":\"Họ Tên\",\"required\":true,\"disabled\":false},{\"label\":\"Email\",\"required\":true,\"disabled\":false},{\"label\":\"Mật khẩu\",\"required\":true,\"disabled\":false}]\n/forgot-password: [{\"label\":\"Nhập Email của bạn\",\"required\":true,\"disabled\":false}]\n/forgot-password#step2: [{\"label\":\"Mã OTP (4 số)\",\"required\":true,\"disabled\":false},{\"label\":\"Mật khẩu mới\",\"required\":true,\"disabled\":false}]\n/profile: [{\"label\":\"Email (Không đổi)\",\"required\":false,\"disabled\":true},{\"label\":\"Họ Tên\",\"required\":true,\"disabled\":false},{\"label\":\"Số điện thoại\",\"required\":false,\"disabled\":false},{\"label\":\"Địa chỉ giao hàng\",\"required\":false,\"disabled\":false}]\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n    at /home/zinn/zinn/testing/hw03/checklist/automation/run-firefox-shared.cjs:139:31"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-04T06:20:13.017Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "execution",
+                      "contentType": "application/json",
+                      "body": "ewogICJpZCI6ICJJQS0wMi0wMSIsCiAgImlhIjogIklBLTAyIEZvcm1zIiwKICAicmVzdWx0IjogIkZhaWxlZCIsCiAgIm1ldGhvZCI6ICLEkOG7kWkgY2hp4bq/dSByZXF1aXJlZCBhdHRyaWJ1dGUgdsOgIGThuqV1ICogdHLDqm4gbGFiZWwiLAogICJhY3R1YWwiOiAiL2xvZ2luOiBbe1wibGFiZWxcIjpcIlVzZXJuYW1lXCIsXCJyZXF1aXJlZFwiOnRydWUsXCJkaXNhYmxlZFwiOmZhbHNlfSx7XCJsYWJlbFwiOlwiTeG6rXQga2jhuql1XCIsXCJyZXF1aXJlZFwiOnRydWUsXCJkaXNhYmxlZFwiOmZhbHNlfV1cbi9yZWdpc3RlcjogW3tcImxhYmVsXCI6XCJI4buNIFTDqm5cIixcInJlcXVpcmVkXCI6dHJ1ZSxcImRpc2FibGVkXCI6ZmFsc2V9LHtcImxhYmVsXCI6XCJFbWFpbFwiLFwicmVxdWlyZWRcIjp0cnVlLFwiZGlzYWJsZWRcIjpmYWxzZX0se1wibGFiZWxcIjpcIk3huq10IGto4bqpdVwiLFwicmVxdWlyZWRcIjp0cnVlLFwiZGlzYWJsZWRcIjpmYWxzZX1dXG4vZm9yZ290LXBhc3N3b3JkOiBbe1wibGFiZWxcIjpcIk5o4bqtcCBFbWFpbCBj4bunYSBi4bqhblwiLFwicmVxdWlyZWRcIjp0cnVlLFwiZGlzYWJsZWRcIjpmYWxzZX1dXG4vZm9yZ290LXBhc3N3b3JkI3N0ZXAyOiBbe1wibGFiZWxcIjpcIk3DoyBPVFAgKDQgc+G7kSlcIixcInJlcXVpcmVkXCI6dHJ1ZSxcImRpc2FibGVkXCI6ZmFsc2V9LHtcImxhYmVsXCI6XCJN4bqtdCBraOG6qXUgbeG7m2lcIixcInJlcXVpcmVkXCI6dHJ1ZSxcImRpc2FibGVkXCI6ZmFsc2V9XVxuL3Byb2ZpbGU6IFt7XCJsYWJlbFwiOlwiRW1haWwgKEtow7RuZyDEkeG7lWkpXCIsXCJyZXF1aXJlZFwiOmZhbHNlLFwiZGlzYWJsZWRcIjp0cnVlfSx7XCJsYWJlbFwiOlwiSOG7jSBUw6puXCIsXCJyZXF1aXJlZFwiOnRydWUsXCJkaXNhYmxlZFwiOmZhbHNlfSx7XCJsYWJlbFwiOlwiU+G7kSDEkWnhu4duIHRob+G6oWlcIixcInJlcXVpcmVkXCI6ZmFsc2UsXCJkaXNhYmxlZFwiOmZhbHNlfSx7XCJsYWJlbFwiOlwixJDhu4thIGNo4buJIGdpYW8gaMOgbmdcIixcInJlcXVpcmVkXCI6ZmFsc2UsXCJkaXNhYmxlZFwiOmZhbHNlfV0iLAogICJub3RlcyI6ICIvbG9naW46IFt7XCJsYWJlbFwiOlwiVXNlcm5hbWVcIixcInJlcXVpcmVkXCI6dHJ1ZSxcImRpc2FibGVkXCI6ZmFsc2V9LHtcImxhYmVsXCI6XCJN4bqtdCBraOG6qXVcIixcInJlcXVpcmVkXCI6dHJ1ZSxcImRpc2FibGVkXCI6ZmFsc2V9XVxuL3JlZ2lzdGVyOiBbe1wibGFiZWxcIjpcIkjhu40gVMOqblwiLFwicmVxdWlyZWRcIjp0cnVlLFwiZGlzYWJsZWRcIjpmYWxzZX0se1wibGFiZWxcIjpcIkVtYWlsXCIsXCJyZXF1aXJlZFwiOnRydWUsXCJkaXNhYmxlZFwiOmZhbHNlfSx7XCJsYWJlbFwiOlwiTeG6rXQga2jhuql1XCIsXCJyZXF1aXJlZFwiOnRydWUsXCJkaXNhYmxlZFwiOmZhbHNlfV1cbi9mb3Jnb3QtcGFzc3dvcmQ6IFt7XCJsYWJlbFwiOlwiTmjhuq1wIEVtYWlsIGPhu6dhIGLhuqFuXCIsXCJyZXF1aXJlZFwiOnRydWUsXCJkaXNhYmxlZFwiOmZhbHNlfV1cbi9mb3Jnb3QtcGFzc3dvcmQjc3RlcDI6IFt7XCJsYWJlbFwiOlwiTcOjIE9UUCAoNCBz4buRKVwiLFwicmVxdWlyZWRcIjp0cnVlLFwiZGlzYWJsZWRcIjpmYWxzZX0se1wibGFiZWxcIjpcIk3huq10IGto4bqpdSBt4bubaVwiLFwicmVxdWlyZWRcIjp0cnVlLFwiZGlzYWJsZWRcIjpmYWxzZX1dXG4vcHJvZmlsZTogW3tcImxhYmVsXCI6XCJFbWFpbCAoS2jDtG5nIMSR4buVaSlcIixcInJlcXVpcmVkXCI6ZmFsc2UsXCJkaXNhYmxlZFwiOnRydWV9LHtcImxhYmVsXCI6XCJI4buNIFTDqm5cIixcInJlcXVpcmVkXCI6dHJ1ZSxcImRpc2FibGVkXCI6ZmFsc2V9LHtcImxhYmVsXCI6XCJT4buRIMSRaeG7h24gdGhv4bqhaVwiLFwicmVxdWlyZWRcIjpmYWxzZSxcImRpc2FibGVkXCI6ZmFsc2V9LHtcImxhYmVsXCI6XCLEkOG7i2EgY2jhu4kgZ2lhbyBow6BuZ1wiLFwicmVxdWlyZWRcIjpmYWxzZSxcImRpc2FibGVkXCI6ZmFsc2V9XSIsCiAgInBsYXRmb3JtIjogImZpcmVmb3giLAogICJpbmNvbXBsZXRlIjogZmFsc2UsCiAgInNjcmVlbnNob3QiOiAic2NyZWVuc2hvdHMvY3Jvc3MtcGxhdGZvcm0vZmlyZWZveF9JQS0wMi0wMS5wbmciLAogICJlbWFpbCI6ICJ0aWEwMjAxLjE3OTM3NzMyMTU3MDguMEB0ZXN0LmxvY2FsIiwKICAiZGlhbG9ncyI6IFtdLAogICJyZXF1ZXN0cyI6IFsKICAgIHsKICAgICAgInVybCI6ICJodHRwOi8vbG9jYWxob3N0OjMwMDAvYXBpL2ZvcmdvdC1wYXNzd29yZCIsCiAgICAgICJtZXRob2QiOiAiUE9TVCIsCiAgICAgICJkYXRhIjogIntcImVtYWlsXCI6XCJ0aWEwMjAxLjE3OTM3NzMyMTU3MDguMEB0ZXN0LmxvY2FsXCJ9IiwKICAgICAgImF0IjogMTc5Mzc3MzIxOTUzMgogICAgfSwKICAgIHsKICAgICAgInVybCI6ICJodHRwOi8vbG9jYWxob3N0OjMwMDAvYXBpL2xvZ2luIiwKICAgICAgIm1ldGhvZCI6ICJQT1NUIiwKICAgICAgImRhdGEiOiAie1wiZW1haWxcIjpcInRpYTAyMDEuMTc5Mzc3MzIxNTcwOC4wQHRlc3QubG9jYWxcIixcInBhc3N3b3JkXCI6XCJBYmMxMjM0NSBcIn0iLAogICAgICAiYXQiOiAxNzkzNzczMjIwMzg3CiAgICB9CiAgXSwKICAicmVzcG9uc2VzIjogWwogICAgewogICAgICAidXJsIjogImh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC9hcGkvZm9yZ290LXBhc3N3b3JkIiwKICAgICAgInN0YXR1cyI6IDIwMCwKICAgICAgImRhdGEiOiB7CiAgICAgICAgIm1lc3NhZ2UiOiAiTcOjIMSR4bq3dCBs4bqhaSBt4bqtdCBraOG6qXUgxJHDoyDEkcaw4bujYyB04bqhbyIsCiAgICAgICAgInJlc2V0VG9rZW4iOiAiMzE0OSIKICAgICAgfQogICAgfSwKICAgIHsKICAgICAgInVybCI6ICJodHRwOi8vbG9jYWxob3N0OjMwMDAvYXBpL2xvZ2luIiwKICAgICAgInN0YXR1cyI6IDIwMCwKICAgICAgImRhdGEiOiB7CiAgICAgICAgIm1lc3NhZ2UiOiAiTG9naW4gc3VjY2Vzc2Z1bCIsCiAgICAgICAgInRva2VuIjogImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUpwWkNJNk16VTNMQ0p5YjJ4bElqb2lkWE5sY2lJc0ltbGhkQ0k2TVRjNU16YzNNekl5TUgwLndkRzM4bkpMZVBhYzBUYjBoT0pZdDhrb25Eb0JPMFN0Wk1VcEZQNE9qMm8iLAogICAgICAgICJ1c2VyIjogewogICAgICAgICAgImlkIjogMzU3LAogICAgICAgICAgIm5hbWUiOiAiQ2hyb21lIFRlc3RlciIsCiAgICAgICAgICAiZW1haWwiOiAidGlhMDIwMS4xNzkzNzczMjE1NzA4LjBAdGVzdC5sb2NhbCIsCiAgICAgICAgICAicGFzc3dvcmQiOiAiQWJjMTIzNDUgIiwKICAgICAgICAgICJyb2xlIjogInVzZXIiLAogICAgICAgICAgImxvZ2luX2F0dGVtcHRzIjogMCwKICAgICAgICAgICJsb2NrZWRfdW50aWwiOiBudWxsLAogICAgICAgICAgInJlc2V0X3Rva2VuIjogIjMxNDkiLAogICAgICAgICAgInNoaXBwaW5nX2FkZHJlc3MiOiBudWxsLAogICAgICAgICAgInBob25lIjogbnVsbAogICAgICAgIH0KICAgICAgfQogICAgfSwKICAgIHsKICAgICAgInVybCI6ICJodHRwOi8vbG9jYWxob3N0OjMwMDAvYXBpL3VzZXJzL21lIiwKICAgICAgInN0YXR1cyI6IDIwMCwKICAgICAgImRhdGEiOiB7CiAgICAgICAgImlkIjogMzU3LAogICAgICAgICJuYW1lIjogIkNocm9tZSBUZXN0ZXIiLAogICAgICAgICJlbWFpbCI6ICJ0aWEwMjAxLjE3OTM3NzMyMTU3MDguMEB0ZXN0LmxvY2FsIiwKICAgICAgICAicGFzc3dvcmQiOiAiQWJjMTIzNDUgIiwKICAgICAgICAicm9sZSI6ICJ1c2VyIiwKICAgICAgICAibG9naW5fYXR0ZW1wdHMiOiAwLAogICAgICAgICJsb2NrZWRfdW50aWwiOiBudWxsLAogICAgICAgICJyZXNldF90b2tlbiI6ICIzMTQ5IiwKICAgICAgICAic2hpcHBpbmdfYWRkcmVzcyI6IG51bGwsCiAgICAgICAgInBob25lIjogbnVsbAogICAgICB9CiAgICB9LAogICAgewogICAgICAidXJsIjogImh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC9hcGkvdXNlcnMvbWUiLAogICAgICAic3RhdHVzIjogMjAwLAogICAgICAiZGF0YSI6IHsKICAgICAgICAiaWQiOiAzNTcsCiAgICAgICAgIm5hbWUiOiAiQ2hyb21lIFRlc3RlciIsCiAgICAgICAgImVtYWlsIjogInRpYTAyMDEuMTc5Mzc3MzIxNTcwOC4wQHRlc3QubG9jYWwiLAogICAgICAgICJwYXNzd29yZCI6ICJBYmMxMjM0NSAiLAogICAgICAgICJyb2xlIjogInVzZXIiLAogICAgICAgICJsb2dpbl9hdHRlbXB0cyI6IDAsCiAgICAgICAgImxvY2tlZF91bnRpbCI6IG51bGwsCiAgICAgICAgInJlc2V0X3Rva2VuIjogIjMxNDkiLAogICAgICAgICJzaGlwcGluZ19hZGRyZXNzIjogbnVsbCwKICAgICAgICAicGhvbmUiOiBudWxsCiAgICAgIH0KICAgIH0sCiAgICB7CiAgICAgICJ1cmwiOiAiaHR0cDovL2xvY2FsaG9zdDozMDAwL2FwaS9vcmRlcnMvbXktb3JkZXJzIiwKICAgICAgInN0YXR1cyI6IDIwMCwKICAgICAgImRhdGEiOiBbXQogICAgfSwKICAgIHsKICAgICAgInVybCI6ICJodHRwOi8vbG9jYWxob3N0OjMwMDAvYXBpL29yZGVycy9teS1vcmRlcnMiLAogICAgICAic3RhdHVzIjogMjAwLAogICAgICAiZGF0YSI6IFtdCiAgICB9CiAgXSwKICAiZXhlY3V0ZWRBdCI6ICIyMDI2LTExLTA0VDA2OjIwOjIwLjg5OVoiCn0="
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/zinn/zinn/testing/hw03/checklist/automation/cross-platform/firefox-recheck-test-results/run-firefox-IA-02-01-Every-1df36-ediately-next-to-its-label--firefox/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/zinn/zinn/testing/hw03/checklist/automation/run-firefox-shared.cjs",
+                    "column": 31,
+                    "line": 139
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "20aa10028eee7ab2bb5c-1577abd2b0df4db3c8e9",
+          "file": "run-firefox-shared.cjs",
+          "line": 24,
+          "column": 2
+        },
+        {
+          "title": "IA-04-19 The OTP in the info box can be selected and copied.",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "MANUAL: Automation không hoàn tất: Firefox clipboard automation unavailable: selection=3413 but clipboard=\"\"; cần kiểm Copy/Paste native bằng tay",
+                  "location": {
+                    "file": "/home/zinn/zinn/testing/hw03/checklist/automation/run-firefox-shared.cjs",
+                    "line": 138,
+                    "column": 27
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 11,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 3521,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-04T06:20:22.421Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "MANUAL: Automation không hoàn tất: Firefox clipboard automation unavailable: selection=3413 but clipboard=\"\"; cần kiểm Copy/Paste native bằng tay",
+                      "location": {
+                        "file": "/home/zinn/zinn/testing/hw03/checklist/automation/run-firefox-shared.cjs",
+                        "line": 138,
+                        "column": 27
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "execution",
+                      "contentType": "application/json",
+                      "body": "ewogICJpZCI6ICJJQS0wNC0xOSIsCiAgImlhIjogIklBLTA0IEZlZWRiYWNrIC8gc3RhdGUiLAogICJyZXN1bHQiOiAiTUFOVUFMIiwKICAibWV0aG9kIjogIkvDqW8gY2jhu41uIGNo4buvIHPhu5EgT1RQIGLhurFuZyBtb3VzZTsgQ3RybCtDOyDEkeG7jWMgY2xpcGJvYXJkIHRo4bqtdCIsCiAgImFjdHVhbCI6ICJFcnJvcjogRmlyZWZveCBjbGlwYm9hcmQgYXV0b21hdGlvbiB1bmF2YWlsYWJsZTogc2VsZWN0aW9uPTM0MTMgYnV0IGNsaXBib2FyZD1cIlwiOyBj4bqnbiBraeG7g20gQ29weS9QYXN0ZSBuYXRpdmUgYuG6sW5nIHRheVxuICAgIGF0IC9ob21lL3ppbm4vemlubi90ZXN0aW5nL2h3MDMvY2hlY2tsaXN0L2F1dG9tYXRpb24vcnVuLWZpcmVmb3gtc2hhcmVkLmNqczoxMjk6MTYyXG4gICAgYXQgL3RtcC9lc2hvcC1wbGF5d3JpZ2h0L25vZGVfbW9kdWxlcy9wbGF5d3JpZ2h0L2xpYi93b3JrZXIvd29ya2VyUHJvY2Vzc0VudHJ5LmpzOjE2NTQ6OVxuICAgIGF0IC90bXAvZXNob3AtcGxheXdyaWdodC9ub2RlX21vZHVsZXMvcGxheXdyaWdodC9saWIvd29ya2VyL3dvcmtlclByb2Nlc3NFbnRyeS5qczoxMTM0OjExXG4gICAgYXQgVGltZW91dE1hbmFnZXIud2l0aFJ1bm5hYmxlICgvdG1wL2VzaG9wLXBsYXl3cmlnaHQvbm9kZV9tb2R1bGVzL3BsYXl3cmlnaHQvbGliL3dvcmtlci93b3JrZXJQcm9jZXNzRW50cnkuanM6NDAzOjE0KVxuICAgIGF0IFRlc3RJbmZvSW1wbC5fcnVuV2l0aFRpbWVvdXQgKC90bXAvZXNob3AtcGxheXdyaWdodC9ub2RlX21vZHVsZXMvcGxheXdyaWdodC9saWIvd29ya2VyL3dvcmtlclByb2Nlc3NFbnRyeS5qczoxMTMyOjcpXG4gICAgYXQgL3RtcC9lc2hvcC1wbGF5d3JpZ2h0L25vZGVfbW9kdWxlcy9wbGF5d3JpZ2h0L2xpYi93b3JrZXIvd29ya2VyUHJvY2Vzc0VudHJ5LmpzOjE2NTI6N1xuICAgIGF0IFdvcmtlck1haW4uX3J1blRlc3QgKC90bXAvZXNob3AtcGxheXdyaWdodC9ub2RlX21vZHVsZXMvcGxheXdyaWdodC9saWIvd29ya2VyL3dvcmtlclByb2Nlc3NFbnRyeS5qczoxNjI1OjUpXG4gICAgYXQgV29ya2VyTWFpbi5ydW5UZXN0R3JvdXAgKC90bXAvZXNob3AtcGxheXdyaWdodC9ub2RlX21vZHVsZXMvcGxheXdyaWdodC9saWIvd29ya2VyL3dvcmtlclByb2Nlc3NFbnRyeS5qczoxNTIwOjkpXG4gICAgYXQgcHJvY2Vzcy48YW5vbnltb3VzPiAoL3RtcC9lc2hvcC1wbGF5d3JpZ2h0L25vZGVfbW9kdWxlcy9wbGF5d3JpZ2h0L2xpYi9jb21tb24vaW5kZXguanM6MTk1NToyNSkiLAogICJub3RlcyI6ICJNQU5VQUw6IEF1dG9tYXRpb24ga2jDtG5nIGhvw6BuIHThuqV0OiBGaXJlZm94IGNsaXBib2FyZCBhdXRvbWF0aW9uIHVuYXZhaWxhYmxlOiBzZWxlY3Rpb249MzQxMyBidXQgY2xpcGJvYXJkPVwiXCI7IGPhuqduIGtp4buDbSBDb3B5L1Bhc3RlIG5hdGl2ZSBi4bqxbmcgdGF5XG5RdWFuIHPDoXQ6IEVycm9yOiBGaXJlZm94IGNsaXBib2FyZCBhdXRvbWF0aW9uIHVuYXZhaWxhYmxlOiBzZWxlY3Rpb249MzQxMyBidXQgY2xpcGJvYXJkPVwiXCI7IGPhuqduIGtp4buDbSBDb3B5L1Bhc3RlIG5hdGl2ZSBi4bqxbmcgdGF5XG4gICAgYXQgL2hvbWUvemlubi96aW5uL3Rlc3RpbmcvaHcwMy9jaGVja2xpc3QvYXV0b21hdGlvbi9ydW4tZmlyZWZveC1zaGFyZWQuY2pzOjEyOToxNjJcbiAgICBhdCAvdG1wL2VzaG9wLXBsYXl3cmlnaHQvbm9kZV9tb2R1bGVzL3BsYXl3cmlnaHQvbGliL3dvcmtlci93b3JrZXJQcm9jZXNzRW50cnkuanM6MTY1NDo5XG4gICAgYXQgL3RtcC9lc2hvcC1wbGF5d3JpZ2h0L25vZGVfbW9kdWxlcy9wbGF5d3JpZ2h0L2xpYi93b3JrZXIvd29ya2VyUHJvY2Vzc0VudHJ5LmpzOjExMzQ6MTFcbiAgICBhdCBUaW1lb3V0TWFuYWdlci53aXRoUnVubmFibGUgKC90bXAvZXNob3AtcGxheXdyaWdodC9ub2RlX21vZHVsZXMvcGxheXdyaWdodC9saWIvd29ya2VyL3dvcmtlclByb2Nlc3NFbnRyeS5qczo0MDM6MTQpXG4gICAgYXQgVGVzdEluZm9JbXBsLl9ydW5XaXRoVGltZW91dCAoL3RtcC9lc2hvcC1wbGF5d3JpZ2h0L25vZGVfbW9kdWxlcy9wbGF5d3JpZ2h0L2xpYi93b3JrZXIvd29ya2VyUHJvY2Vzc0VudHJ5LmpzOjExMzI6NylcbiAgICBhdCAvdG1wL2VzaG9wLXBsYXl3cmlnaHQvbm9kZV9tb2R1bGVzL3BsYXl3cmlnaHQvbGliL3dvcmtlci93b3JrZXJQcm9jZXNzRW50cnkuanM6MTY1Mjo3XG4gICAgYXQgV29ya2VyTWFpbi5fcnVuVGVzdCAoL3RtcC9lc2hvcC1wbGF5d3JpZ2h0L25vZGVfbW9kdWxlcy9wbGF5d3JpZ2h0L2xpYi93b3JrZXIvd29ya2VyUHJvY2Vzc0VudHJ5LmpzOjE2MjU6NSlcbiAgICBhdCBXb3JrZXJNYWluLnJ1blRlc3RHcm91cCAoL3RtcC9lc2hvcC1wbGF5d3JpZ2h0L25vZGVfbW9kdWxlcy9wbGF5d3JpZ2h0L2xpYi93b3JrZXIvd29ya2VyUHJvY2Vzc0VudHJ5LmpzOjE1MjA6OSlcbiAgICBhdCBwcm9jZXNzLjxhbm9ueW1vdXM+ICgvdG1wL2VzaG9wLXBsYXl3cmlnaHQvbm9kZV9tb2R1bGVzL3BsYXl3cmlnaHQvbGliL2NvbW1vbi9pbmRleC5qczoxOTU1OjI1KSIsCiAgInBsYXRmb3JtIjogImZpcmVmb3giLAogICJpbmNvbXBsZXRlIjogZmFsc2UsCiAgInNjcmVlbnNob3QiOiAiIiwKICAiZW1haWwiOiAidGlhMDQxOS4xNzkzNzczMjI1MDc0LjBAdGVzdC5sb2NhbCIsCiAgImRpYWxvZ3MiOiBbXSwKICAicmVxdWVzdHMiOiBbCiAgICB7CiAgICAgICJ1cmwiOiAiaHR0cDovL2xvY2FsaG9zdDozMDAwL2FwaS9mb3Jnb3QtcGFzc3dvcmQiLAogICAgICAibWV0aG9kIjogIlBPU1QiLAogICAgICAiZGF0YSI6ICJ7XCJlbWFpbFwiOlwidGlhMDQxOS4xNzkzNzczMjI1MDc0LjBAdGVzdC5sb2NhbFwifSIsCiAgICAgICJhdCI6IDE3OTM3NzMyMjY0MzQKICAgIH0KICBdLAogICJyZXNwb25zZXMiOiBbCiAgICB7CiAgICAgICJ1cmwiOiAiaHR0cDovL2xvY2FsaG9zdDozMDAwL2FwaS9mb3Jnb3QtcGFzc3dvcmQiLAogICAgICAic3RhdHVzIjogMjAwLAogICAgICAiZGF0YSI6IHsKICAgICAgICAibWVzc2FnZSI6ICJNw6MgxJHhurd0IGzhuqFpIG3huq10IGto4bqpdSDEkcOjIMSRxrDhu6NjIHThuqFvIiwKICAgICAgICAicmVzZXRUb2tlbiI6ICIzNDEzIgogICAgICB9CiAgICB9CiAgXSwKICAiZXhlY3V0ZWRBdCI6ICIyMDI2LTExLTA0VDA2OjIwOjI2Ljg2MloiCn0="
+                    }
+                  ]
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "20aa10028eee7ab2bb5c-0b3dff0d32d684b673fd",
+          "file": "run-firefox-shared.cjs",
+          "line": 24,
+          "column": 2
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-04T06:19:02.834Z",
+    "duration": 84788.376,
+    "expected": 1,
+    "skipped": 1,
+    "unexpected": 11,
+    "flaky": 0
+  }
+}

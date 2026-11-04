@@ -1,0 +1,27 @@
+{
+  "id": "screen-forgot-step1",
+  "state": {
+    "url": "http://localhost:5173/forgot-password",
+    "token": null,
+    "fields": [
+      {
+        "value": "",
+        "type": "text",
+        "disabled": false
+      }
+    ],
+    "otp": false,
+    "main": "Quên Mật Khẩu\nNhập Email của bạn\nLấy mã OTP",
+    "header": "EShop\nGiỏ hàng\nĐăng nhập\nĐăng ký",
+    "viewport": {
+      "width": 412,
+      "height": 790
+    },
+    "scrollY": 0
+  },
+  "account": {
+    "name": "Chrome Tester",
+    "email": "overview.androidchrome.1793773662544@test.local",
+    "password": "Abc12345 "
+  }
+}

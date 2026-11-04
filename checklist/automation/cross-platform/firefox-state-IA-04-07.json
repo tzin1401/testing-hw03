@@ -1,0 +1,28 @@
+{
+  "id": "IA-04-07",
+  "state": {
+    "url": "http://localhost:5173/forgot-password",
+    "token": null,
+    "fields": [
+      {
+        "value": "tia0407.1793772894741.0@test.local.unknown",
+        "type": "text",
+        "disabled": false
+      }
+    ],
+    "otp": false,
+    "main": "Quên Mật Khẩu\nNhập Email của bạn\nLấy mã OTP",
+    "header": "EShop\nGiỏ hàng\nĐăng nhập\nĐăng ký",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "scrollY": 0
+  },
+  "account": {
+    "name": "Chrome Tester",
+    "email": "tia0407.1793772894741.0@test.local",
+    "password": "Abc12345 "
+  },
+  "selector": "main form"
+}

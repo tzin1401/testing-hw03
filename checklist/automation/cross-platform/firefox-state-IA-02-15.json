@@ -1,0 +1,43 @@
+{
+  "id": "IA-02-15",
+  "state": {
+    "url": "http://localhost:5173/profile",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTk4LCJyb2xlIjoidXNlciIsImlhdCI6MTc5Mzc3MjczN30.KRL-L9eNx7kYrhvGYe0SCB8nOb_M0zzcKvNsq9MAVUI",
+    "fields": [
+      {
+        "value": "tia0215.1793772735978.0@test.local",
+        "type": "text",
+        "disabled": true
+      },
+      {
+        "value": "Phone Tester",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "value": "0912345678",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "value": "",
+        "type": "textarea",
+        "disabled": false
+      }
+    ],
+    "otp": false,
+    "main": "Hồ sơ của bạn\nEmail (Không đổi)\nHọ Tên\nSố điện thoại\nĐịa chỉ giao hàng\nCập nhật\nLịch sử đơn hàng\n\nBạn chưa có đơn hàng nào.",
+    "header": "EShop\nGiỏ hàng\nChào, Cross firefox Tester\nThoát",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "scrollY": 0
+  },
+  "account": {
+    "name": "Cross firefox Tester",
+    "email": "tia0215.1793772735978.0@test.local",
+    "password": "Abc12345 "
+  },
+  "selector": "main input"
+}

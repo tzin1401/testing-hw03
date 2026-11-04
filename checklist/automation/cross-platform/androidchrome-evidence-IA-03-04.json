@@ -1,0 +1,38 @@
+{
+  "path": "screenshots/cross-platform/androidchrome_IA-03-04.png",
+  "mode": "adb exec-out screencap -p, full device",
+  "state": {
+    "url": "http://localhost:5173/profile",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzYxLCJyb2xlIjoidXNlciIsImlhdCI6MTc5Mzc3MzIzNH0.lLq1lD5N1HTzFqe11lpLGTKCyC7vEKaK9knasa6t4Tk",
+    "fields": [
+      {
+        "value": "tia0304.1793773231445.0@test.local",
+        "type": "text",
+        "disabled": true
+      },
+      {
+        "value": "Chrome Tester",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "value": "",
+        "type": "text",
+        "disabled": false
+      },
+      {
+        "value": "",
+        "type": "textarea",
+        "disabled": false
+      }
+    ],
+    "otp": false,
+    "main": "Hồ sơ của bạn\nEmail (Không đổi)\nHọ Tên\nSố điện thoại\nĐịa chỉ giao hàng\nCập nhật\nLịch sử đơn hàng\n\nBạn chưa có đơn hàng nào.",
+    "header": "EShop\nGiỏ hàng\nChào, Chrome Tester\nThoát",
+    "viewport": {
+      "width": 412,
+      "height": 790
+    },
+    "scrollY": 0
+  }
+}

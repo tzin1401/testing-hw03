@@ -1,0 +1,22 @@
+{
+  "path": "screenshots/cross-platform/firefox_IA-03-12.png",
+  "mode": "chrome context, real browser address bar",
+  "action": "load URL, restore auth with independent API fixture, fill controls",
+  "alert": null,
+  "actual": {
+    "url": "http://localhost:5173/forgot-password",
+    "main": "Quên Mật Khẩu\nNhập Email của bạn\nLấy mã OTP",
+    "fields": [
+      {
+        "value": "",
+        "type": "text"
+      }
+    ],
+    "head": "EShop\nGiỏ hàng\nĐăng nhập\nĐăng ký",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    }
+  },
+  "capturedAt": "2026-11-04T13:13:51+0700"
+}
