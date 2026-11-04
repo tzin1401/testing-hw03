@@ -1,0 +1,196 @@
+{
+  "config": {
+    "argv": [
+      "/usr/bin/node",
+      "/tmp/eshop-playwright/node_modules/.bin/playwright",
+      "test",
+      "-c",
+      "checklist/automation/playwright.config.js",
+      "--grep",
+      "IA-02-03 "
+    ],
+    "configFile": "/home/zinn/zinn/testing/hw03/checklist/automation/playwright.config.js",
+    "rootDir": "/home/zinn/zinn/testing/hw03/checklist/automation",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/home/zinn/zinn/testing/hw03/checklist/automation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/home/zinn/zinn/testing/hw03/checklist/automation",
+        "testIgnore": [],
+        "testMatch": [
+          "run-chrome.spec.js"
+        ],
+        "timeout": 90000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/home/zinn/zinn/testing/hw03/checklist/automation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "/home/zinn/zinn/testing/hw03/checklist/automation",
+        "snapshotDir": "/home/zinn/zinn/testing/hw03/checklist/automation",
+        "testIgnore": [],
+        "testMatch": "run-chrome.spec.js",
+        "timeout": 90000,
+        "use": {
+          "channel": "chrome",
+          "headless": false,
+          "viewport": {
+            "width": 1280,
+            "height": 800
+          },
+          "baseURL": "http://localhost:5173",
+          "permissions": [
+            "clipboard-read",
+            "clipboard-write"
+          ],
+          "screenshot": "off",
+          "trace": "off",
+          "actionTimeout": 6000,
+          "navigationTimeout": 15000
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "line",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "/home/zinn/zinn/testing/hw03/checklist/automation/playwright-email-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "run-chrome.spec.js",
+      "file": "run-chrome.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "IA-02-03 Every email field uses `type=\"email\"` and native HTML5 validation blocks malformed addresses.",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 1955,
+                  "error": {
+                    "message": "Error: /login: before submit {\"type\":\"text\",\"typeMismatch\":false,\"message\":\"\",\"value\":\"abc\"}\n/login: {\"type\":\"text\",\"typeMismatch\":false,\"message\":\"\",\"value\":\"abc\"}; requests=1\n/register: before submit {\"type\":\"text\",\"typeMismatch\":false,\"message\":\"\",\"value\":\"abc\"}\n/register: {\"type\":\"text\",\"typeMismatch\":false,\"message\":\"\",\"value\":\"abc\"}; requests=1\n/forgot-password: before submit {\"type\":\"text\",\"typeMismatch\":false,\"message\":\"\",\"value\":\"abc\"}\n/forgot-password: {\"type\":\"text\",\"typeMismatch\":false,\"message\":\"\",\"value\":\"abc\"}; requests=1\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m",
+                    "stack": "Error: /login: before submit {\"type\":\"text\",\"typeMismatch\":false,\"message\":\"\",\"value\":\"abc\"}\n/login: {\"type\":\"text\",\"typeMismatch\":false,\"message\":\"\",\"value\":\"abc\"}; requests=1\n/register: before submit {\"type\":\"text\",\"typeMismatch\":false,\"message\":\"\",\"value\":\"abc\"}\n/register: {\"type\":\"text\",\"typeMismatch\":false,\"message\":\"\",\"value\":\"abc\"}; requests=1\n/forgot-password: before submit {\"type\":\"text\",\"typeMismatch\":false,\"message\":\"\",\"value\":\"abc\"}\n/forgot-password: {\"type\":\"text\",\"typeMismatch\":false,\"message\":\"\",\"value\":\"abc\"}; requests=1\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n    at /home/zinn/zinn/testing/hw03/checklist/automation/run-chrome.spec.js:145:31",
+                    "location": {
+                      "file": "/home/zinn/zinn/testing/hw03/checklist/automation/run-chrome.spec.js",
+                      "column": 31,
+                      "line": 145
+                    },
+                    "snippet": "  143 |   await testInfo.attach('execution',{body:JSON.stringify(record,null,2),contentType:'application/json'});\n  144 |   if(manual&&!failed)test.skip(true,manual);\n> 145 |   expect(failed,record.notes).toBe(false);\n      |                               ^\n  146 |  });\n  147 | }\n  148 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/zinn/zinn/testing/hw03/checklist/automation/run-chrome.spec.js",
+                        "column": 31,
+                        "line": 145
+                      },
+                      "message": "Error: /login: before submit {\"type\":\"text\",\"typeMismatch\":false,\"message\":\"\",\"value\":\"abc\"}\n/login: {\"type\":\"text\",\"typeMismatch\":false,\"message\":\"\",\"value\":\"abc\"}; requests=1\n/register: before submit {\"type\":\"text\",\"typeMismatch\":false,\"message\":\"\",\"value\":\"abc\"}\n/register: {\"type\":\"text\",\"typeMismatch\":false,\"message\":\"\",\"value\":\"abc\"}; requests=1\n/forgot-password: before submit {\"type\":\"text\",\"typeMismatch\":false,\"message\":\"\",\"value\":\"abc\"}\n/forgot-password: {\"type\":\"text\",\"typeMismatch\":false,\"message\":\"\",\"value\":\"abc\"}; requests=1\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n\n  143 |   await testInfo.attach('execution',{body:JSON.stringify(record,null,2),contentType:'application/json'});\n  144 |   if(manual&&!failed)test.skip(true,manual);\n> 145 |   expect(failed,record.notes).toBe(false);\n      |                               ^\n  146 |  });\n  147 | }\n  148 |\n    at /home/zinn/zinn/testing/hw03/checklist/automation/run-chrome.spec.js:145:31"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T19:18:38.357Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "execution",
+                      "contentType": "application/json",
+                      "body": "ewogICJpZCI6ICJJQS0wMi0wMyIsCiAgImlhIjogIklBLTAyIEZvcm1zIiwKICAicmVzdWx0IjogIkZhaWxlZCIsCiAgIm1ldGhvZCI6ICJOaOG6rXAgYWJjOyBraeG7g20gdHlwZSwgdmFsaWRpdHkgdsOgIHPhu5EgcmVxdWVzdCIsCiAgImFjdHVhbCI6ICIvbG9naW46IGJlZm9yZSBzdWJtaXQge1widHlwZVwiOlwidGV4dFwiLFwidHlwZU1pc21hdGNoXCI6ZmFsc2UsXCJtZXNzYWdlXCI6XCJcIixcInZhbHVlXCI6XCJhYmNcIn1cbi9sb2dpbjoge1widHlwZVwiOlwidGV4dFwiLFwidHlwZU1pc21hdGNoXCI6ZmFsc2UsXCJtZXNzYWdlXCI6XCJcIixcInZhbHVlXCI6XCJhYmNcIn07IHJlcXVlc3RzPTFcbi9yZWdpc3RlcjogYmVmb3JlIHN1Ym1pdCB7XCJ0eXBlXCI6XCJ0ZXh0XCIsXCJ0eXBlTWlzbWF0Y2hcIjpmYWxzZSxcIm1lc3NhZ2VcIjpcIlwiLFwidmFsdWVcIjpcImFiY1wifVxuL3JlZ2lzdGVyOiB7XCJ0eXBlXCI6XCJ0ZXh0XCIsXCJ0eXBlTWlzbWF0Y2hcIjpmYWxzZSxcIm1lc3NhZ2VcIjpcIlwiLFwidmFsdWVcIjpcImFiY1wifTsgcmVxdWVzdHM9MVxuL2ZvcmdvdC1wYXNzd29yZDogYmVmb3JlIHN1Ym1pdCB7XCJ0eXBlXCI6XCJ0ZXh0XCIsXCJ0eXBlTWlzbWF0Y2hcIjpmYWxzZSxcIm1lc3NhZ2VcIjpcIlwiLFwidmFsdWVcIjpcImFiY1wifVxuL2ZvcmdvdC1wYXNzd29yZDoge1widHlwZVwiOlwidGV4dFwiLFwidHlwZU1pc21hdGNoXCI6ZmFsc2UsXCJtZXNzYWdlXCI6XCJcIixcInZhbHVlXCI6XCJhYmNcIn07IHJlcXVlc3RzPTEiLAogICJub3RlcyI6ICIvbG9naW46IGJlZm9yZSBzdWJtaXQge1widHlwZVwiOlwidGV4dFwiLFwidHlwZU1pc21hdGNoXCI6ZmFsc2UsXCJtZXNzYWdlXCI6XCJcIixcInZhbHVlXCI6XCJhYmNcIn1cbi9sb2dpbjoge1widHlwZVwiOlwidGV4dFwiLFwidHlwZU1pc21hdGNoXCI6ZmFsc2UsXCJtZXNzYWdlXCI6XCJcIixcInZhbHVlXCI6XCJhYmNcIn07IHJlcXVlc3RzPTFcbi9yZWdpc3RlcjogYmVmb3JlIHN1Ym1pdCB7XCJ0eXBlXCI6XCJ0ZXh0XCIsXCJ0eXBlTWlzbWF0Y2hcIjpmYWxzZSxcIm1lc3NhZ2VcIjpcIlwiLFwidmFsdWVcIjpcImFiY1wifVxuL3JlZ2lzdGVyOiB7XCJ0eXBlXCI6XCJ0ZXh0XCIsXCJ0eXBlTWlzbWF0Y2hcIjpmYWxzZSxcIm1lc3NhZ2VcIjpcIlwiLFwidmFsdWVcIjpcImFiY1wifTsgcmVxdWVzdHM9MVxuL2ZvcmdvdC1wYXNzd29yZDogYmVmb3JlIHN1Ym1pdCB7XCJ0eXBlXCI6XCJ0ZXh0XCIsXCJ0eXBlTWlzbWF0Y2hcIjpmYWxzZSxcIm1lc3NhZ2VcIjpcIlwiLFwidmFsdWVcIjpcImFiY1wifVxuL2ZvcmdvdC1wYXNzd29yZDoge1widHlwZVwiOlwidGV4dFwiLFwidHlwZU1pc21hdGNoXCI6ZmFsc2UsXCJtZXNzYWdlXCI6XCJcIixcInZhbHVlXCI6XCJhYmNcIn07IHJlcXVlc3RzPTEiLAogICJzY3JlZW5zaG90IjogInNjcmVlbnNob3RzL2ZhaWxlZC9JQS0wMi0wMy5wbmciLAogICJlbWFpbCI6ICJ0aWEwMjAzLjE3OTM3MzM1MTg3MjguMEB0ZXN0LmxvY2FsIiwKICAiZGlhbG9ncyI6IFtdLAogICJyZXF1ZXN0cyI6IFsKICAgIHsKICAgICAgInVybCI6ICJodHRwOi8vbG9jYWxob3N0OjMwMDAvYXBpL2xvZ2luIiwKICAgICAgIm1ldGhvZCI6ICJQT1NUIiwKICAgICAgImRhdGEiOiAie1wiZW1haWxcIjpcImFiY1wiLFwicGFzc3dvcmRcIjpcIkFiYzEyMzQ1IFwifSIsCiAgICAgICJhdCI6IDE3OTM3MzM1MTkyNjQKICAgIH0sCiAgICB7CiAgICAgICJ1cmwiOiAiaHR0cDovL2xvY2FsaG9zdDozMDAwL2FwaS9yZWdpc3RlciIsCiAgICAgICJtZXRob2QiOiAiUE9TVCIsCiAgICAgICJkYXRhIjogIntcIm5hbWVcIjpcIkNocm9tZSBUZXN0ZXJcIixcImVtYWlsXCI6XCJhYmNcIixcInBhc3N3b3JkXCI6XCJBYmMxMjM0NSBcIn0iLAogICAgICAiYXQiOiAxNzkzNzMzNTE5NzkwCiAgICB9LAogICAgewogICAgICAidXJsIjogImh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC9hcGkvZm9yZ290LXBhc3N3b3JkIiwKICAgICAgIm1ldGhvZCI6ICJQT1NUIiwKICAgICAgImRhdGEiOiAie1wiZW1haWxcIjpcImFiY1wifSIsCiAgICAgICJhdCI6IDE3OTM3MzM1MjAyNzIKICAgIH0KICBdLAogICJyZXNwb25zZXMiOiBbCiAgICB7CiAgICAgICJ1cmwiOiAiaHR0cDovL2xvY2FsaG9zdDozMDAwL2FwaS9sb2dpbiIsCiAgICAgICJzdGF0dXMiOiAyMDAsCiAgICAgICJkYXRhIjogewogICAgICAgICJtZXNzYWdlIjogIkxvZ2luIHN1Y2Nlc3NmdWwiLAogICAgICAgICJ0b2tlbiI6ICJleUpoYkdjaU9pSklVekkxTmlJc0luUjVjQ0k2SWtwWFZDSjkuZXlKcFpDSTZORE1zSW5KdmJHVWlPaUoxYzJWeUlpd2lhV0YwSWpveE56a3pOek16TlRFNWZRLlJXdEI5NXFoaUZMTXVwUXBjWDZMZWU0ekZVU1NIUHdlclRVUEZFcHo1UzQiLAogICAgICAgICJ1c2VyIjogewogICAgICAgICAgImlkIjogNDMsCiAgICAgICAgICAibmFtZSI6ICJDaHJvbWUgVGVzdGVyIiwKICAgICAgICAgICJlbWFpbCI6ICJhYmMiLAogICAgICAgICAgInBhc3N3b3JkIjogIkFiYzEyMzQ1ICIsCiAgICAgICAgICAicm9sZSI6ICJ1c2VyIiwKICAgICAgICAgICJsb2dpbl9hdHRlbXB0cyI6IDAsCiAgICAgICAgICAibG9ja2VkX3VudGlsIjogbnVsbCwKICAgICAgICAgICJyZXNldF90b2tlbiI6ICI0MzE3IiwKICAgICAgICAgICJzaGlwcGluZ19hZGRyZXNzIjogbnVsbCwKICAgICAgICAgICJwaG9uZSI6IG51bGwKICAgICAgICB9CiAgICAgIH0KICAgIH0sCiAgICB7CiAgICAgICJ1cmwiOiAiaHR0cDovL2xvY2FsaG9zdDozMDAwL2FwaS91c2Vycy9tZSIsCiAgICAgICJzdGF0dXMiOiAyMDAsCiAgICAgICJkYXRhIjogewogICAgICAgICJpZCI6IDQzLAogICAgICAgICJuYW1lIjogIkNocm9tZSBUZXN0ZXIiLAogICAgICAgICJlbWFpbCI6ICJhYmMiLAogICAgICAgICJwYXNzd29yZCI6ICJBYmMxMjM0NSAiLAogICAgICAgICJyb2xlIjogInVzZXIiLAogICAgICAgICJsb2dpbl9hdHRlbXB0cyI6IDAsCiAgICAgICAgImxvY2tlZF91bnRpbCI6IG51bGwsCiAgICAgICAgInJlc2V0X3Rva2VuIjogIjQzMTciLAogICAgICAgICJzaGlwcGluZ19hZGRyZXNzIjogbnVsbCwKICAgICAgICAicGhvbmUiOiBudWxsCiAgICAgIH0KICAgIH0sCiAgICB7CiAgICAgICJ1cmwiOiAiaHR0cDovL2xvY2FsaG9zdDozMDAwL2FwaS9wcm9kdWN0cz9zZWFyY2g9IiwKICAgICAgInN0YXR1cyI6IDIwMCwKICAgICAgImRhdGEiOiBbCiAgICAgICAgewogICAgICAgICAgImlkIjogMSwKICAgICAgICAgICJuYW1lIjogImlQaG9uZSAxNSBQcm8gTWF4IiwKICAgICAgICAgICJwcmljZSI6IDMwMDAwMDAwLAogICAgICAgICAgImRlc2NyaXB0aW9uIjogIsSQaeG7h24gdGhv4bqhaSBjYW8gY+G6pXAgY+G7p2EgQXBwbGUiLAogICAgICAgICAgImltYWdlVXJsIjogImh0dHBzOi8vcGxhY2Vob2xkLmNvLzMwMHgzMDAvcG5nP3RleHQ9aVBob25lKzE1IiwKICAgICAgICAgICJjYXRlZ29yeV9pZCI6IDEKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICJpZCI6IDIsCiAgICAgICAgICAibmFtZSI6ICJTYW1zdW5nIEdhbGF4eSBTMjQgVWx0cmEiLAogICAgICAgICAgInByaWNlIjogMjgwMDAwMDAsCiAgICAgICAgICAiZGVzY3JpcHRpb24iOiAiTcOgbiBow6xuaCBoaeG7g24gdGjhu4sgeHXhuqV0IHPhuq9jLCBjYW1lcmEgc2nDqnUgem9vbSIsCiAgICAgICAgICAiaW1hZ2VVcmwiOiAiaHR0cHM6Ly9wbGFjZWhvbGQuY28vMzAweDMwMC9wbmc/dGV4dD1TYW1zdW5nK1MyNCIsCiAgICAgICAgICAiY2F0ZWdvcnlfaWQiOiAxCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAiaWQiOiAzLAogICAgICAgICAgIm5hbWUiOiAiTWFjQm9vayBQcm8gTTMiLAogICAgICAgICAgInByaWNlIjogNDUwMDAwMDAsCiAgICAgICAgICAiZGVzY3JpcHRpb24iOiAiTGFwdG9wIGNodXnDqm4gbmdoaeG7h3AgbeG6oW5oIG3hur0iLAogICAgICAgICAgImltYWdlVXJsIjogImh0dHBzOi8vcGxhY2Vob2xkLmNvLzMwMHgzMDAvcG5nP3RleHQ9TWFjYm9vaytQcm8iLAogICAgICAgICAgImNhdGVnb3J5X2lkIjogMgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgImlkIjogNCwKICAgICAgICAgICJuYW1lIjogIlRhaSBuZ2hlIEFpclBvZHMgUHJvIDIiLAogICAgICAgICAgInByaWNlIjogNjAwMDAwMCwKICAgICAgICAgICJkZXNjcmlwdGlvbiI6ICJDaOG7kW5nIOG7k24gY2jhu6cgxJHhu5luZyB4deG6pXQgc+G6r2MiLAogICAgICAgICAgImltYWdlVXJsIjogImh0dHBzOi8vcGxhY2Vob2xkLmNvLzMwMHgzMDAvcG5nP3RleHQ9QWlyUG9kcytQcm8iLAogICAgICAgICAgImNhdGVnb3J5X2lkIjogMwogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgImlkIjogNSwKICAgICAgICAgICJuYW1lIjogIkLDoG4gcGjDrW0gY8ahIEtleWNocm9uIFExIiwKICAgICAgICAgICJwcmljZSI6IDQwMDAwMDAsCiAgICAgICAgICAiZGVzY3JpcHRpb24iOiAiR8O1IGPhu7FjIHPGsOG7m25nLCB0aGnhur90IGvhur8ga2ltIGxv4bqhaSIsCiAgICAgICAgICAiaW1hZ2VVcmwiOiAiaHR0cHM6Ly9wbGFjZWhvbGQuY28vMzAweDMwMC9wbmc/dGV4dD1LZXljaHJvbitRMSIsCiAgICAgICAgICAiY2F0ZWdvcnlfaWQiOiAzCiAgICAgICAgfQogICAgICBdCiAgICB9LAogICAgewogICAgICAidXJsIjogImh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC9hcGkvcHJvZHVjdHM/c2VhcmNoPSIsCiAgICAgICJzdGF0dXMiOiAyMDAsCiAgICAgICJkYXRhIjogWwogICAgICAgIHsKICAgICAgICAgICJpZCI6IDEsCiAgICAgICAgICAibmFtZSI6ICJpUGhvbmUgMTUgUHJvIE1heCIsCiAgICAgICAgICAicHJpY2UiOiAzMDAwMDAwMCwKICAgICAgICAgICJkZXNjcmlwdGlvbiI6ICLEkGnhu4duIHRob+G6oWkgY2FvIGPhuqVwIGPhu6dhIEFwcGxlIiwKICAgICAgICAgICJpbWFnZVVybCI6ICJodHRwczovL3BsYWNlaG9sZC5jby8zMDB4MzAwL3BuZz90ZXh0PWlQaG9uZSsxNSIsCiAgICAgICAgICAiY2F0ZWdvcnlfaWQiOiAxCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAiaWQiOiAyLAogICAgICAgICAgIm5hbWUiOiAiU2Ftc3VuZyBHYWxheHkgUzI0IFVsdHJhIiwKICAgICAgICAgICJwcmljZSI6IDI4MDAwMDAwLAogICAgICAgICAgImRlc2NyaXB0aW9uIjogIk3DoG4gaMOsbmggaGnhu4NuIHRo4buLIHh14bqldCBz4bqvYywgY2FtZXJhIHNpw6p1IHpvb20iLAogICAgICAgICAgImltYWdlVXJsIjogImh0dHBzOi8vcGxhY2Vob2xkLmNvLzMwMHgzMDAvcG5nP3RleHQ9U2Ftc3VuZytTMjQiLAogICAgICAgICAgImNhdGVnb3J5X2lkIjogMQogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgImlkIjogMywKICAgICAgICAgICJuYW1lIjogIk1hY0Jvb2sgUHJvIE0zIiwKICAgICAgICAgICJwcmljZSI6IDQ1MDAwMDAwLAogICAgICAgICAgImRlc2NyaXB0aW9uIjogIkxhcHRvcCBjaHV5w6puIG5naGnhu4dwIG3huqFuaCBt4bq9IiwKICAgICAgICAgICJpbWFnZVVybCI6ICJodHRwczovL3BsYWNlaG9sZC5jby8zMDB4MzAwL3BuZz90ZXh0PU1hY2Jvb2srUHJvIiwKICAgICAgICAgICJjYXRlZ29yeV9pZCI6IDIKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICJpZCI6IDQsCiAgICAgICAgICAibmFtZSI6ICJUYWkgbmdoZSBBaXJQb2RzIFBybyAyIiwKICAgICAgICAgICJwcmljZSI6IDYwMDAwMDAsCiAgICAgICAgICAiZGVzY3JpcHRpb24iOiAiQ2jhu5FuZyDhu5NuIGNo4bunIMSR4buZbmcgeHXhuqV0IHPhuq9jIiwKICAgICAgICAgICJpbWFnZVVybCI6ICJodHRwczovL3BsYWNlaG9sZC5jby8zMDB4MzAwL3BuZz90ZXh0PUFpclBvZHMrUHJvIiwKICAgICAgICAgICJjYXRlZ29yeV9pZCI6IDMKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICJpZCI6IDUsCiAgICAgICAgICAibmFtZSI6ICJCw6BuIHBow61tIGPGoSBLZXljaHJvbiBRMSIsCiAgICAgICAgICAicHJpY2UiOiA0MDAwMDAwLAogICAgICAgICAgImRlc2NyaXB0aW9uIjogIkfDtSBj4buxYyBzxrDhu5tuZywgdGhp4bq/dCBr4bq/IGtpbSBsb+G6oWkiLAogICAgICAgICAgImltYWdlVXJsIjogImh0dHBzOi8vcGxhY2Vob2xkLmNvLzMwMHgzMDAvcG5nP3RleHQ9S2V5Y2hyb24rUTEiLAogICAgICAgICAgImNhdGVnb3J5X2lkIjogMwogICAgICAgIH0KICAgICAgXQogICAgfSwKICAgIHsKICAgICAgInVybCI6ICJodHRwOi8vbG9jYWxob3N0OjMwMDAvYXBpL3VzZXJzL21lIiwKICAgICAgInN0YXR1cyI6IDIwMCwKICAgICAgImRhdGEiOiB7CiAgICAgICAgImlkIjogNDMsCiAgICAgICAgIm5hbWUiOiAiQ2hyb21lIFRlc3RlciIsCiAgICAgICAgImVtYWlsIjogImFiYyIsCiAgICAgICAgInBhc3N3b3JkIjogIkFiYzEyMzQ1ICIsCiAgICAgICAgInJvbGUiOiAidXNlciIsCiAgICAgICAgImxvZ2luX2F0dGVtcHRzIjogMCwKICAgICAgICAibG9ja2VkX3VudGlsIjogbnVsbCwKICAgICAgICAicmVzZXRfdG9rZW4iOiAiNDMxNyIsCiAgICAgICAgInNoaXBwaW5nX2FkZHJlc3MiOiBudWxsLAogICAgICAgICJwaG9uZSI6IG51bGwKICAgICAgfQogICAgfSwKICAgIHsKICAgICAgInVybCI6ICJodHRwOi8vbG9jYWxob3N0OjMwMDAvYXBpL3VzZXJzL21lIiwKICAgICAgInN0YXR1cyI6IDIwMCwKICAgICAgImRhdGEiOiB7CiAgICAgICAgImlkIjogNDMsCiAgICAgICAgIm5hbWUiOiAiQ2hyb21lIFRlc3RlciIsCiAgICAgICAgImVtYWlsIjogImFiYyIsCiAgICAgICAgInBhc3N3b3JkIjogIkFiYzEyMzQ1ICIsCiAgICAgICAgInJvbGUiOiAidXNlciIsCiAgICAgICAgImxvZ2luX2F0dGVtcHRzIjogMCwKICAgICAgICAibG9ja2VkX3VudGlsIjogbnVsbCwKICAgICAgICAicmVzZXRfdG9rZW4iOiAiNDMxNyIsCiAgICAgICAgInNoaXBwaW5nX2FkZHJlc3MiOiBudWxsLAogICAgICAgICJwaG9uZSI6IG51bGwKICAgICAgfQogICAgfSwKICAgIHsKICAgICAgInVybCI6ICJodHRwOi8vbG9jYWxob3N0OjMwMDAvYXBpL3JlZ2lzdGVyIiwKICAgICAgInN0YXR1cyI6IDIwMCwKICAgICAgImRhdGEiOiB7CiAgICAgICAgIm1lc3NhZ2UiOiAiVXNlciByZWdpc3RlcmVkIHN1Y2Nlc3NmdWxseSIsCiAgICAgICAgImlkIjogMTE5CiAgICAgIH0KICAgIH0sCiAgICB7CiAgICAgICJ1cmwiOiAiaHR0cDovL2xvY2FsaG9zdDozMDAwL2FwaS91c2Vycy9tZSIsCiAgICAgICJzdGF0dXMiOiAyMDAsCiAgICAgICJkYXRhIjogewogICAgICAgICJpZCI6IDQzLAogICAgICAgICJuYW1lIjogIkNocm9tZSBUZXN0ZXIiLAogICAgICAgICJlbWFpbCI6ICJhYmMiLAogICAgICAgICJwYXNzd29yZCI6ICJBYmMxMjM0NSAiLAogICAgICAgICJyb2xlIjogInVzZXIiLAogICAgICAgICJsb2dpbl9hdHRlbXB0cyI6IDAsCiAgICAgICAgImxvY2tlZF91bnRpbCI6IG51bGwsCiAgICAgICAgInJlc2V0X3Rva2VuIjogIjQzMTciLAogICAgICAgICJzaGlwcGluZ19hZGRyZXNzIjogbnVsbCwKICAgICAgICAicGhvbmUiOiBudWxsCiAgICAgIH0KICAgIH0sCiAgICB7CiAgICAgICJ1cmwiOiAiaHR0cDovL2xvY2FsaG9zdDozMDAwL2FwaS91c2Vycy9tZSIsCiAgICAgICJzdGF0dXMiOiAyMDAsCiAgICAgICJkYXRhIjogewogICAgICAgICJpZCI6IDQzLAogICAgICAgICJuYW1lIjogIkNocm9tZSBUZXN0ZXIiLAogICAgICAgICJlbWFpbCI6ICJhYmMiLAogICAgICAgICJwYXNzd29yZCI6ICJBYmMxMjM0NSAiLAogICAgICAgICJyb2xlIjogInVzZXIiLAogICAgICAgICJsb2dpbl9hdHRlbXB0cyI6IDAsCiAgICAgICAgImxvY2tlZF91bnRpbCI6IG51bGwsCiAgICAgICAgInJlc2V0X3Rva2VuIjogIjQzMTciLAogICAgICAgICJzaGlwcGluZ19hZGRyZXNzIjogbnVsbCwKICAgICAgICAicGhvbmUiOiBudWxsCiAgICAgIH0KICAgIH0sCiAgICB7CiAgICAgICJ1cmwiOiAiaHR0cDovL2xvY2FsaG9zdDozMDAwL2FwaS9mb3Jnb3QtcGFzc3dvcmQiLAogICAgICAic3RhdHVzIjogMjAwLAogICAgICAiZGF0YSI6IHsKICAgICAgICAibWVzc2FnZSI6ICJNw6MgxJHhurd0IGzhuqFpIG3huq10IGto4bqpdSDEkcOjIMSRxrDhu6NjIHThuqFvIiwKICAgICAgICAicmVzZXRUb2tlbiI6ICIyNTgyIgogICAgICB9CiAgICB9CiAgXSwKICAiZXhlY3V0ZWRBdCI6ICIyMDI2LTExLTAzVDE5OjE4OjQwLjQ5NFoiCn0="
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/zinn/zinn/testing/hw03/checklist/automation/test-results/run-chrome-IA-02-03-Every--81283-blocks-malformed-addresses-/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/zinn/zinn/testing/hw03/checklist/automation/run-chrome.spec.js",
+                    "column": 31,
+                    "line": 145
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "d9e1a25bc5f030e9aedb-ecf4841e34d8fcb04ec7",
+          "file": "run-chrome.spec.js",
+          "line": 22,
+          "column": 2
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-03T19:18:37.247Z",
+    "duration": 3387.0249999999996,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

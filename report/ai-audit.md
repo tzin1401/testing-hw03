@@ -13,6 +13,7 @@
 | 4 | P04 — Checklist IA-03 | OpenCode — DeepSeek V4.1 Flash Free | 04/11/2026 01:27 | [#4](#4) |
 | 5 | P05 — Checklist IA-04 | OpenCode — DeepSeek V4.1 Flash Free | 04/11/2026 01:29 | [#5](#5) |
 | 6 | P05b — Review checklist (trùng / measurable / IA) | OpenCode — DeepSeek V4.1 Flash Free | 04/11/2026 01:43 | [#6](#6) |
+| 7 | P06 — Thực thi Chrome GUI checklist | Codex — GPT-6 | 04/11/2026 02:02 | [#7](#7) |
 
 ---
 
@@ -1265,3 +1266,71 @@ KHÔNG thêm item mới. Chỉ trả về: | ID | Issue | Suggested fix |.
 ```
 
 📝 Đã ghi log #6 vào report/ai-audit.md
+
+### 7
+- **Công cụ AI:** Codex — GPT-6
+- **Ngày giờ:** 04/11/2026 02:02
+- **Bước:** P06 — Thực thi Chrome GUI checklist
+- **File đã tạo/sửa:** checklist/gui-checklist.xlsx; checklist/execution-chrome.md; checklist/automation/run-chrome.spec.js; checklist/automation/playwright.config.js; checklist/automation/write-results.py; checklist/automation/items.json; checklist/automation/execution-results.json; checklist/automation/environment.json; checklist/automation/playwright-results.json; checklist/automation/playwright-recheck-results.json; checklist/automation/playwright-clipboard-results.json; checklist/automation/playwright-email-results.json; checklist/automation/run-chrome*.log; screenshots/failed/IA-*.png (51 ảnh); report/ai-audit.md
+
+**Prompt:**
+```text
+Bạn là test automation agent. Hãy THỰC THI GUI checklist trên Google Chrome thật cho EShop và ghi kết quả vào Excel. Không thiết kế lại checklist.
+
+## Input
+- Checklist: checklist/gui-checklist.xlsx, sheet "Checklist" (79 item). Các cột: ID, IA, Screen, Element, Check, Expected Result, Req, Source, Review note, Why AI missed, Chrome, Firefox, Android Chrome, Expo Go, Notes, Screenshot, Bug ID.
+- SUT: web http://localhost:5173, API http://localhost:3000 (đang chạy, KHÔNG restart, KHÔNG sửa code trong eshop-sut/).
+- Tài khoản có sẵn: test@eshop.com / Test1234!
+- Spec tham khảo: screenshots/input/spec-G1.md
+
+## Cách làm
+1. Viết script Playwright (Node.js) tại checklist/automation/run-chrome.spec.js, dùng `channel: 'chrome'` (Chrome thật đã cài), viewport 1280x800. Mỗi checklist item là 1 test riêng, tên test bắt đầu bằng ID (ví dụ "IA-01-03 ...").
+2. Kiểm tra theo đúng cột "Expected Result". Item nào có nhiều điều kiện thì chỉ Passed khi đạt TẤT CẢ.
+3. Dữ liệu test:
+   - Mỗi test tự tạo tài khoản riêng qua API POST /api/register (email dạng t<ID>.<timestamp>@test.local). Lưu ý: password hợp lệ theo validator hiện tại của UI có thể khác spec, hãy tự tìm và ghi chú lại.
+   - KHÔNG dùng test@eshop.com cho các test làm sai mật khẩu, vì tài khoản bị khóa 3 phút sẽ làm hỏng các test khác.
+   - Test cần lockout thì dùng tài khoản riêng.
+4. Hướng dẫn riêng cho một số item:
+   - Zoom 200%: dùng viewport 640x400 (tương đương 1280x800 ở 200%). Reflow 320px: viewport 320x640.
+   - Contrast: tính contrast ratio từ computed color và background-color bằng công thức WCAG, ghi lại con số.
+   - Clipboard (copy/paste OTP): cấp quyền clipboard-read/clipboard-write cho context.
+   - Double submit: đếm số request bằng page.on('request').
+   - Loading state: dùng route để delay response 2 giây.
+   - aria/role, type, autocomplete, tabIndex, thẻ h1: kiểm tra trong DOM.
+5. Item KHÔNG tự động hóa được một cách tin cậy thì KHÔNG đoán. Để trống cột Chrome và ghi "MANUAL: <lý do>" vào cột Notes.
+6. Item không áp dụng (ví dụ cần chức năng không tồn tại để kiểm hành vi phụ) thì ghi "N/A" kèm lý do.
+
+## Bằng chứng (chỉ cho item Failed)
+- Trước khi chụp, chèn overlay vào trang:
+  document.body.insertAdjacentHTML('beforeend','<div style="position:fixed;bottom:8px;right:8px;z-index:99999;background:#ff0;color:#000;padding:4px 8px;font:bold 13px sans-serif">23120190 · Nguyễn Lê Thế Vinh · 23120190@student.hcmus.edu.vn · Chrome '+navigator.userAgent.match(/Chrome\/[\d.]+/)[0]+' · '+location.href+'</div>')
+- Chụp đúng state chứng minh lỗi (fullPage), lưu thành screenshots/failed/<ID>.png.
+- Nếu lỗi nằm trong DOM (ví dụ type="text") thì làm nổi bật element đó (outline đỏ) trước khi chụp.
+
+## Ghi kết quả vào Excel
+- Dùng openpyxl (cài bằng uv nếu thiếu). CHỈ ghi 3 cột: Chrome (Passed/Failed/N/A), Notes, Screenshot. KHÔNG sửa bất kỳ cột nào khác, KHÔNG thêm/xóa/đổi thứ tự dòng, giữ nguyên định dạng và dropdown.
+- Notes của item Failed: ghi Actual result cụ thể (giá trị đo được, text hiển thị, số request…), không viết chung chung.
+- Thêm sheet "Summary": đếm Passed/Failed/N/A/MANUAL theo từng IA và tổng.
+
+## Báo cáo
+Tạo checklist/execution-chrome.md gồm:
+- Môi trường: OS, Chrome version, Playwright version, ngày giờ chạy.
+- Lệnh để chạy lại script.
+- Bảng: | ID | Result | Cách kiểm (1 dòng) | Actual |
+- Danh sách item MANUAL để tôi tự kiểm tay.
+- Những chỗ Expected Result mơ hồ khiến bạn phải tự diễn giải.
+
+Không tạo GitHub Issue, không commit. Ghi vào log
+```
+
+**AI output:**
+```text
+Đã thực thi 79 item trên Chrome thật: **25 Passed, 51 Failed, 0 N/A, 3 MANUAL**.
+
+- [Excel kết quả](/home/zinn/zinn/testing/hw03/checklist/gui-checklist.xlsx)
+- [Báo cáo và lệnh chạy lại](/home/zinn/zinn/testing/hw03/checklist/execution-chrome.md)
+- [Script Playwright](/home/zinn/zinn/testing/hw03/checklist/automation/run-chrome.spec.js)
+
+Có 51 ảnh lỗi. MANUAL: IA-01-16, IA-01-17, IA-01-19. Đã giữ nguyên các cột khác, định dạng và dropdown.
+
+📝 Đã ghi log #7 vào report/ai-audit.md
+```

@@ -1,0 +1,236 @@
+{
+  "config": {
+    "argv": [
+      "/usr/bin/node",
+      "/tmp/eshop-playwright/node_modules/.bin/playwright",
+      "test",
+      "-c",
+      "checklist/automation/playwright.config.js",
+      "--grep",
+      "IA-(02-21|04-19) "
+    ],
+    "configFile": "/home/zinn/zinn/testing/hw03/checklist/automation/playwright.config.js",
+    "rootDir": "/home/zinn/zinn/testing/hw03/checklist/automation",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/home/zinn/zinn/testing/hw03/checklist/automation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/home/zinn/zinn/testing/hw03/checklist/automation",
+        "testIgnore": [],
+        "testMatch": [
+          "run-chrome.spec.js"
+        ],
+        "timeout": 90000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/home/zinn/zinn/testing/hw03/checklist/automation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "/home/zinn/zinn/testing/hw03/checklist/automation",
+        "snapshotDir": "/home/zinn/zinn/testing/hw03/checklist/automation",
+        "testIgnore": [],
+        "testMatch": "run-chrome.spec.js",
+        "timeout": 90000,
+        "use": {
+          "channel": "chrome",
+          "headless": false,
+          "viewport": {
+            "width": 1280,
+            "height": 800
+          },
+          "baseURL": "http://localhost:5173",
+          "permissions": [
+            "clipboard-read",
+            "clipboard-write"
+          ],
+          "screenshot": "off",
+          "trace": "off",
+          "actionTimeout": 6000,
+          "navigationTimeout": 15000
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "line",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "/home/zinn/zinn/testing/hw03/checklist/automation/playwright-clipboard-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "run-chrome.spec.js",
+      "file": "run-chrome.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "IA-02-21 The OTP field accepts a pasted value.",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 1268,
+                  "error": {
+                    "message": "Error: Clipboard=\" 4967 \"; input=\" 4967 \"; URL=http://localhost:5173/forgot-password; dialogs=[{\"type\":\"alert\",\"text\":\"Mã OTP không đúng hoặc có lỗi xảy ra.\"}]\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m",
+                    "stack": "Error: Clipboard=\" 4967 \"; input=\" 4967 \"; URL=http://localhost:5173/forgot-password; dialogs=[{\"type\":\"alert\",\"text\":\"Mã OTP không đúng hoặc có lỗi xảy ra.\"}]\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n    at /home/zinn/zinn/testing/hw03/checklist/automation/run-chrome.spec.js:145:31",
+                    "location": {
+                      "file": "/home/zinn/zinn/testing/hw03/checklist/automation/run-chrome.spec.js",
+                      "column": 31,
+                      "line": 145
+                    },
+                    "snippet": "  143 |   await testInfo.attach('execution',{body:JSON.stringify(record,null,2),contentType:'application/json'});\n  144 |   if(manual&&!failed)test.skip(true,manual);\n> 145 |   expect(failed,record.notes).toBe(false);\n      |                               ^\n  146 |  });\n  147 | }\n  148 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/zinn/zinn/testing/hw03/checklist/automation/run-chrome.spec.js",
+                        "column": 31,
+                        "line": 145
+                      },
+                      "message": "Error: Clipboard=\" 4967 \"; input=\" 4967 \"; URL=http://localhost:5173/forgot-password; dialogs=[{\"type\":\"alert\",\"text\":\"Mã OTP không đúng hoặc có lỗi xảy ra.\"}]\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n\n  143 |   await testInfo.attach('execution',{body:JSON.stringify(record,null,2),contentType:'application/json'});\n  144 |   if(manual&&!failed)test.skip(true,manual);\n> 145 |   expect(failed,record.notes).toBe(false);\n      |                               ^\n  146 |  });\n  147 | }\n  148 |\n    at /home/zinn/zinn/testing/hw03/checklist/automation/run-chrome.spec.js:145:31"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T19:17:30.907Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "execution",
+                      "contentType": "application/json",
+                      "body": "ewogICJpZCI6ICJJQS0wMi0yMSIsCiAgImlhIjogIklBLTAyIEZvcm1zIiwKICAicmVzdWx0IjogIkZhaWxlZCIsCiAgIm1ldGhvZCI6ICJDbGlwYm9hcmQgY29weSBjb2RlOyBDdHJsK1YgduG7m2kgc3BhY2VzIHLhu5NpIHJlc2V0IiwKICAiYWN0dWFsIjogIkNsaXBib2FyZD1cIiA0OTY3IFwiOyBpbnB1dD1cIiA0OTY3IFwiOyBVUkw9aHR0cDovL2xvY2FsaG9zdDo1MTczL2ZvcmdvdC1wYXNzd29yZDsgZGlhbG9ncz1be1widHlwZVwiOlwiYWxlcnRcIixcInRleHRcIjpcIk3DoyBPVFAga2jDtG5nIMSRw7puZyBob+G6t2MgY8OzIGzhu5dpIHjhuqN5IHJhLlwifV0iLAogICJub3RlcyI6ICJDbGlwYm9hcmQ9XCIgNDk2NyBcIjsgaW5wdXQ9XCIgNDk2NyBcIjsgVVJMPWh0dHA6Ly9sb2NhbGhvc3Q6NTE3My9mb3Jnb3QtcGFzc3dvcmQ7IGRpYWxvZ3M9W3tcInR5cGVcIjpcImFsZXJ0XCIsXCJ0ZXh0XCI6XCJNw6MgT1RQIGtow7RuZyDEkcO6bmcgaG/hurdjIGPDsyBs4buXaSB44bqjeSByYS5cIn1dIiwKICAic2NyZWVuc2hvdCI6ICJzY3JlZW5zaG90cy9mYWlsZWQvSUEtMDItMjEucG5nIiwKICAiZW1haWwiOiAidGlhMDIyMS4xNzkzNzMzNDUxMjg4LjBAdGVzdC5sb2NhbCIsCiAgImRpYWxvZ3MiOiBbCiAgICB7CiAgICAgICJ0eXBlIjogImFsZXJ0IiwKICAgICAgInRleHQiOiAiTcOjIE9UUCBraMO0bmcgxJHDum5nIGhv4bq3YyBjw7MgbOG7l2kgeOG6o3kgcmEuIgogICAgfQogIF0sCiAgInJlcXVlc3RzIjogWwogICAgewogICAgICAidXJsIjogImh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC9hcGkvZm9yZ290LXBhc3N3b3JkIiwKICAgICAgIm1ldGhvZCI6ICJQT1NUIiwKICAgICAgImRhdGEiOiAie1wiZW1haWxcIjpcInRpYTAyMjEuMTc5MzczMzQ1MTI4OC4wQHRlc3QubG9jYWxcIn0iLAogICAgICAiYXQiOiAxNzkzNzMzNDUxNzQ2CiAgICB9LAogICAgewogICAgICAidXJsIjogImh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC9hcGkvcmVzZXQtcGFzc3dvcmQiLAogICAgICAibWV0aG9kIjogIlBPU1QiLAogICAgICAiZGF0YSI6ICJ7XCJlbWFpbFwiOlwidGlhMDIyMS4xNzkzNzMzNDUxMjg4LjBAdGVzdC5sb2NhbFwiLFwicmVzZXRUb2tlblwiOlwiIDQ5NjcgXCIsXCJuZXdQYXNzd29yZFwiOlwiTmV3cGFzczEyMyBcIn0iLAogICAgICAiYXQiOiAxNzkzNzMzNDUyMDg5CiAgICB9CiAgXSwKICAicmVzcG9uc2VzIjogWwogICAgewogICAgICAidXJsIjogImh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC9hcGkvZm9yZ290LXBhc3N3b3JkIiwKICAgICAgInN0YXR1cyI6IDIwMCwKICAgICAgImRhdGEiOiB7CiAgICAgICAgIm1lc3NhZ2UiOiAiTcOjIMSR4bq3dCBs4bqhaSBt4bqtdCBraOG6qXUgxJHDoyDEkcaw4bujYyB04bqhbyIsCiAgICAgICAgInJlc2V0VG9rZW4iOiAiNDk2NyIKICAgICAgfQogICAgfSwKICAgIHsKICAgICAgInVybCI6ICJodHRwOi8vbG9jYWxob3N0OjMwMDAvYXBpL3Jlc2V0LXBhc3N3b3JkIiwKICAgICAgInN0YXR1cyI6IDQwMCwKICAgICAgImRhdGEiOiB7CiAgICAgICAgImVycm9yIjogIkludmFsaWQgdG9rZW4gb3IgZW1haWwiCiAgICAgIH0KICAgIH0KICBdLAogICJleGVjdXRlZEF0IjogIjIwMjYtMTEtMDNUMTk6MTc6MzIuMzc3WiIKfQ=="
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/zinn/zinn/testing/hw03/checklist/automation/test-results/run-chrome-IA-02-21-The-OTP-field-accepts-a-pasted-value-/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/zinn/zinn/testing/hw03/checklist/automation/run-chrome.spec.js",
+                    "column": 31,
+                    "line": 145
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "d9e1a25bc5f030e9aedb-ccde3b0229e6a447077c",
+          "file": "run-chrome.spec.js",
+          "line": 22,
+          "column": 2
+        },
+        {
+          "title": "IA-04-19 The OTP in the info box can be selected and copied.",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 909,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T19:17:33.105Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "execution",
+                      "contentType": "application/json",
+                      "body": "ewogICJpZCI6ICJJQS0wNC0xOSIsCiAgImlhIjogIklBLTA0IEZlZWRiYWNrIC8gc3RhdGUiLAogICJyZXN1bHQiOiAiUGFzc2VkIiwKICAibWV0aG9kIjogIkvDqW8gY2jhu41uIGNo4buvIHPhu5EgT1RQIGLhurFuZyBtb3VzZTsgQ3RybCtDOyDEkeG7jWMgY2xpcGJvYXJkIHRo4bqtdCIsCiAgImFjdHVhbCI6ICJJc3N1ZWQ9NzY5MTsgY2xpcGJvYXJkPVwiNzY5MVwiOyBzZWxlY3RlZD03NjkxIiwKICAibm90ZXMiOiAiSXNzdWVkPTc2OTE7IGNsaXBib2FyZD1cIjc2OTFcIjsgc2VsZWN0ZWQ9NzY5MSIsCiAgInNjcmVlbnNob3QiOiAiIiwKICAiZW1haWwiOiAidGlhMDQxOS4xNzkzNzMzNDUzNDk0LjBAdGVzdC5sb2NhbCIsCiAgImRpYWxvZ3MiOiBbXSwKICAicmVxdWVzdHMiOiBbCiAgICB7CiAgICAgICJ1cmwiOiAiaHR0cDovL2xvY2FsaG9zdDozMDAwL2FwaS9mb3Jnb3QtcGFzc3dvcmQiLAogICAgICAibWV0aG9kIjogIlBPU1QiLAogICAgICAiZGF0YSI6ICJ7XCJlbWFpbFwiOlwidGlhMDQxOS4xNzkzNzMzNDUzNDk0LjBAdGVzdC5sb2NhbFwifSIsCiAgICAgICJhdCI6IDE3OTM3MzM0NTM5NDYKICAgIH0KICBdLAogICJyZXNwb25zZXMiOiBbCiAgICB7CiAgICAgICJ1cmwiOiAiaHR0cDovL2xvY2FsaG9zdDozMDAwL2FwaS9mb3Jnb3QtcGFzc3dvcmQiLAogICAgICAic3RhdHVzIjogMjAwLAogICAgICAiZGF0YSI6IHsKICAgICAgICAibWVzc2FnZSI6ICJNw6MgxJHhurd0IGzhuqFpIG3huq10IGto4bqpdSDEkcOjIMSRxrDhu6NjIHThuqFvIiwKICAgICAgICAicmVzZXRUb2tlbiI6ICI3NjkxIgogICAgICB9CiAgICB9CiAgXSwKICAiZXhlY3V0ZWRBdCI6ICIyMDI2LTExLTAzVDE5OjE3OjM0LjIyNFoiCn0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d9e1a25bc5f030e9aedb-8957631d0966697aabfa",
+          "file": "run-chrome.spec.js",
+          "line": 22,
+          "column": 2
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-03T19:17:29.817Z",
+    "duration": 4535.347,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}
