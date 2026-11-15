@@ -113,20 +113,20 @@ Tính bằng 2 cách, ra cùng kết quả: `skills/usability-eval/scripts/sus.p
 - **Ngưỡng theo số lần**: rule "> 3 phút" trên thực tế được áp dụng như "> 3 lần cùng cách" (theo đề xuất của pilot). Cần ghi điều này vào `plan.md`.
 - Chỉ có 1 device (Chrome desktop). Participant không phải người dùng thật của EShop.
 
-## 7. Đề xuất issue (chưa đăng, chờ duyệt)
+## 7. Issue đã đăng (#44–#52)
 
-Label: `type: usability` hoặc `usability`, `severity`, `priority`, `status: new`, `module`. Mỗi issue đính screenshot từ session.
+Label: `usability` (+ `type: bug` cho U8, U9), `severity`, `priority`, `status: new`, `module`. Mỗi issue đính screenshot từ session.
 
-| # | Title | Severity | Liên quan | Screenshot gợi ý |
-|---|---|---|---|---|
-| U1 | [USABILITY][register] 7/7 participants could not register: valid passwords rejected with the same unhelpful message | blocker | #15, #8 | `P6/screenshots/10-register-blocked.jpg` |
-| U2 | [USABILITY][forgot-password] Reset gives no feedback; 6/6 participants could not tell whether the password changed | blocker | #25, #21 | `P7/screenshots/19-reset-no-response-4.jpg` |
-| U3 | [USABILITY][forgot-password] New password still fails to log in after reset (account stays locked) | critical | #36 | `P6/screenshots/23-login-newpass2-fail-after-wait.jpg` |
-| U4 | [USABILITY][profile] Participants could not save phone/address (0-prefix rejected, data empty after reload) | critical | #23 | `P7/screenshots/28-profile-empty-after-reopen.jpg` (đăng sau khi kiểm mục 5) |
-| U5 | [USABILITY][login] Lockout is indistinguishable from a wrong password; 0/6 understood they were locked | major | #36 | `P1/screenshots/12-login-fail-4.jpg` |
-| U6 | [USABILITY][login] "Quên mật khẩu?" link is hard to find; 5/6 needed a prompt | major | mới | `P5/screenshots/05-login-fail-4th-same-generic-message.jpg` |
-| U7 | [USABILITY][forgot-password] OTP shown on the page lowers trust (6/6 mentioned it) | minor | mới | `P3/screenshots/08-forgot-otp-on-screen.jpg` |
-| U8 | [BUG][forgot-password] "← Quay lại" on step 2 returns to the email step instead of Login | trivial | #32 | `P3/screenshots/10-quay-lai-goes-to-step1.jpg` |
-| U9 | [BUG][login] Browser validation tooltip shown in English | trivial | mới | `P3/screenshots/12-english-validation-tooltip.jpg` |
+| # | Issue | Title | Severity | Liên quan | Screenshot |
+|---|---|---|---|---|---|
+| U1 | [#44](https://github.com/tzin1401/testing-hw03/issues/44) | [USABILITY][register] 7/7 participants could not register: valid passwords rejected with the same unhelpful message | blocker | #15, #8 | `P6/screenshots/10-register-blocked.jpg` |
+| U2 | [#45](https://github.com/tzin1401/testing-hw03/issues/45) | [USABILITY][forgot-password] Reset gives no feedback; 6/6 participants could not tell whether the password changed | blocker | #25, #21 | `P7/screenshots/19-reset-no-response-4.jpg` |
+| U3 | [#46](https://github.com/tzin1401/testing-hw03/issues/46) | [USABILITY][forgot-password] New password still fails to log in after reset (account stays locked) | critical | #36 | `P6/screenshots/23-login-newpass2-fail-after-wait.jpg` |
+| U4 | [#47](https://github.com/tzin1401/testing-hw03/issues/47) | [USABILITY][profile] Participants could not save phone/address (0-prefix rejected, data empty after reload) | critical | #23 | `P7/screenshots/28-profile-empty-after-reopen.jpg` (đã đăng; vẫn cần đối chiếu mục 5) |
+| U5 | [#48](https://github.com/tzin1401/testing-hw03/issues/48) | [USABILITY][login] Lockout is indistinguishable from a wrong password; 0/6 understood they were locked | major | #36 | `P1/screenshots/12-login-fail-4.jpg` |
+| U6 | [#49](https://github.com/tzin1401/testing-hw03/issues/49) | [USABILITY][login] "Quên mật khẩu?" link is hard to find; 5/6 needed a prompt | major | mới | `P5/screenshots/05-login-fail-4th-same-generic-message.jpg` |
+| U7 | [#50](https://github.com/tzin1401/testing-hw03/issues/50) | [USABILITY][forgot-password] OTP shown on the page lowers trust (6/6 mentioned it) | minor | mới | `P3/screenshots/08-forgot-otp-on-screen.jpg` |
+| U8 | [#51](https://github.com/tzin1401/testing-hw03/issues/51) | [BUG][forgot-password] "← Quay lại" on step 2 returns to the email step instead of Login | trivial | #32 | `P3/screenshots/10-quay-lai-goes-to-step1.jpg` |
+| U9 | [#52](https://github.com/tzin1401/testing-hw03/issues/52) | [BUG][login] Browser validation tooltip shown in English | trivial | mới | `P3/screenshots/12-english-validation-tooltip.jpg` |
 
 T7 và T10 đã có issue (#1, #2, #40). Chỉ cần comment link session vào các issue đó, không tạo issue mới.

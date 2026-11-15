@@ -49,3 +49,19 @@ Thống kê: `is:issue label:"type: bug"` trên https://github.com/tzin1401/test
 | [#41](https://github.com/tzin1401/testing-hw03/issues/41) | [BUG][ui] Feedback messages are not exposed to assistive technology | `type: bug` `severity: minor` `priority: P3` `status: new` `module: ui` |
 | [#42](https://github.com/tzin1401/testing-hw03/issues/42) | [BUG][ui] Server failure messages are inconsistent and raw | `type: bug` `severity: minor` `priority: P3` `status: new` `module: ui` |
 | [#43](https://github.com/tzin1401/testing-hw03/issues/43) | [BUG][navigation] Long user name pushes the logout button off-screen on Android Chrome (Task 3, chỉ Android) | `type: bug` `severity: major` `priority: P2` `status: new` `module: navigation` |
+
+## Usability issues (Task 2)
+
+Nguồn: 7 usability session (P1–P7), chi tiết `usability/findings.md`. Label `usability`.
+
+| Issue | Title | Labels |
+|---|---|---|
+| [#44](https://github.com/tzin1401/testing-hw03/issues/44) | [USABILITY][register] 7/7 participants could not register: valid passwords rejected with the same unhelpful message | `usability` `severity: blocker` `priority: P0` `status: new` `module: register` |
+| [#45](https://github.com/tzin1401/testing-hw03/issues/45) | [USABILITY][forgot-password] Reset gives no feedback; 6/6 participants could not tell whether the password changed | `usability` `severity: blocker` `priority: P0` `status: new` `module: forgot-password` |
+| [#46](https://github.com/tzin1401/testing-hw03/issues/46) | [USABILITY][forgot-password] New password still fails to log in after reset (account stays locked) | `usability` `severity: critical` `priority: P0` `status: new` `module: forgot-password` |
+| [#47](https://github.com/tzin1401/testing-hw03/issues/47) | [USABILITY][profile] Participants could not save phone/address (0-prefix rejected, data empty after reload) | `usability` `severity: critical` `priority: P1` `status: new` `module: profile` |
+| [#48](https://github.com/tzin1401/testing-hw03/issues/48) | [USABILITY][login] Lockout is indistinguishable from a wrong password; 0/6 understood they were locked | `usability` `severity: major` `priority: P1` `status: new` `module: login` |
+| [#49](https://github.com/tzin1401/testing-hw03/issues/49) | [USABILITY][login] "Quên mật khẩu?" link is hard to find; 5/6 needed a prompt | `usability` `severity: major` `priority: P2` `status: new` `module: login` |
+| [#50](https://github.com/tzin1401/testing-hw03/issues/50) | [USABILITY][forgot-password] OTP shown on the page lowers trust (6/6 mentioned it) | `usability` `severity: minor` `priority: P2` `status: new` `module: forgot-password` |
+| [#51](https://github.com/tzin1401/testing-hw03/issues/51) | [BUG][forgot-password] "← Quay lại" on step 2 returns to the email step instead of Login | `type: bug` `usability` `severity: trivial` `priority: P3` `status: new` `module: forgot-password` |
+| [#52](https://github.com/tzin1401/testing-hw03/issues/52) | [BUG][login] Browser validation tooltip shown in English | `type: bug` `usability` `severity: trivial` `priority: P3` `status: new` `module: login` |
