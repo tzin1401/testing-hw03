@@ -1,0 +1,93 @@
+# Observation notes — P5
+
+| Field                                | Value                                                                                                                                            |
+| ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Participant code                     | P5                                                                                                                                               |
+| Ngày | 14/11/2026 |
+| Device | Laptop Linux x86_64, Chrome 155.0.8059.84, viewport 1366×768 |
+| Start / End time | 09:30 / 10:00 (09:30:23 → 10:00:23) |
+| Consent ghi hình + ghi âm | Có |
+| Task completed                       | No (Register: blocker → dùng tài khoản dự phòng; Update Profile: blocker)                                                                  |
+| Time on task — Register             | 03:47                                                                                                                                            |
+| Time on task — Nhận ra bị lockout | 01:37                                                                                                                                            |
+| Time on task — Reset password       | 04:25                                                                                                                                            |
+| Time on task — Update Profile       | 06:11                                                                                                                                            |
+| Số lần moderator can thiệp        | 5 (3 × "Bạn thử đọc lại thông báo trên màn hình xem." + 1 × "Bạn cứ làm như khi ở nhà." + 1 lần đưa tài khoản dự phòng) |
+| SUS score | 32.5 |
+| Recording | Có (ghi âm + quay màn hình) |
+
+## Observations
+
+| Time (mm:ss) | Step/Screen      | Observation                                                                                                                                                                                             | Quote (nguyên văn)                                                                                                         | Type        | Moderator intervened? |
+| --- | --- | --- | --- | --- | --- |
+| 00:00 | Trang chủ       | Thấy menu góc phải, bấm "Đăng ký" ngay                                                                                                                                                           | "Bắt đầu từ nút Đăng ký góc trên." | success     | N                     |
+| 00:11 | Register         | Điền tên, email, mật khẩu `HoangNam74`; không đọc dòng chữ xám nhỏ dưới ô mật khẩu. Hiện khung đỏ "Mật khẩu quá yếu!…"                                                    | "Ba ô thôi: tên, email, rồi đặt mật khẩu." | error       | N                     |
+| 00:56 | Register         | Đọc khung đỏ, thêm `!` → `HoangNam74!`. Vẫn cùng thông báo                                                                                                                             | "Ơ, khung đỏ bảo thiếu ký tự đặc biệt. Thêm chấm than xem sao." | error       | N                     |
+| 01:28 | Register         | Bấm lại "Đăng Ký" y nguyên, vẫn báo yếu                                                                                                                                                        | "Có chấm than rồi mà vẫn báo yếu? Chắc mình bấm chưa ăn, bấm lại." | frustration | N                     |
+| 01:52 | Register         | Đổi sang `HoangNam@74`, vẫn báo yếu                                                                                                                                                           | "Ký tự này không tính à? Đổi sang @ như trong email vậy." | error       | N                     |
+| 02:15 | Register         | Lần thứ 4 cùng cách: `HoangNam#74`, vẫn báo yếu → coi như kẹt > 3 phút                                                                                                                  | "@ cũng bị chê? Vậy thử dấu # xem." | frustration | N                     |
+| 02:31 | Register         | Moderator nói câu trung lập. Participant đọc lại, thử `@HoangNam74` → vẫn báo yếu                                                                                                       | "8 ký tự, hoa, thường, số, đặc biệt… mình đủ hết mà. Hay phải để ký tự đặc biệt ở đầu?" | error       | Y                     |
+| 03:00 | Register         | Thử `HoangNam1974` → vẫn báo yếu                                                                                                                                                                  | "Thêm năm sinh vào, biết đâu nó nhận." | error       | N                     |
+| 03:34 | Register         | Thử `HoangNam@#74!` → vẫn báo yếu. Kẹt thêm 3 lần → bỏ chặng, **blocker**, moderator đưa tài khoản dự phòng + Task card 2                                                      | "Bực ghê. Nhét thêm mấy ký tự đặc biệt nữa coi sao." | frustration | Y                     |
+| 04:08 | Login            | Bấm "Đăng nhập" trên menu; trang mở ra có tiêu đề "Đăng Ký", ô "Username", nút "Sign In". Ngập ngừng rồi điền email vào ô Username                                                | "Ơ, trang này sao lộn xộn vậy? Thôi kệ, cứ điền email." | hesitation  | N                     |
+| 04:39 | Login            | Gõ `abc12345` theo card → "Đăng nhập thất bại. Vui lòng kiểm tra lại." Mật khẩu hiện chữ rõ trong ô                                                                                   | "Thất bại? Mình gõ đúng như sổ tay mà… mà sao mật khẩu hiện chữ rõ thế này." | error       | N                     |
+| 05:04 | Login            | Gõ lại `abc12345` → cùng thông báo                                                                                                                                                              | "Gõ lại cẩn thận xem." | error       | N                     |
+| 05:26 | Login            | Thử `Abc12345` → cùng thông báo                                                                                                                                                                  | "Hay hồi tạo mình viết hoa chữ đầu? Thử Abc viết hoa." | error       | N                     |
+| 05:49 | Login            | Lần thứ 4: `abc12345` → cùng thông báo, không có gì khác trên màn hình                                                                                                                   | "Chắc nó chưa lưu. Làm lại cái Quên mật khẩu." | frustration | N                     |
+| 06:02 | Login            | Moderator nói câu trung lập. Participant đọc lại, lúc này mới thấy link "Quên mật khẩu?" nhỏ bên phải, bấm vào                                                                        | "Kiểm tra lại… mình kiểm tra rồi mà. À có chữ Quên mật khẩu nhỏ xíu bên phải, chắc phải bấm cái này." | error       | Y                     |
+| 06:16 | Quên mật khẩu | Nhập email, bấm "Lấy mã OTP" → mã 4 số hiện ngay trên trang trong khung xanh                                                                                                                   | "Ơ, mã lại hiện chứ không gửi email? Tiện mà hơi lạ." | hesitation  | N                     |
+| 06:45 | Quên mật khẩu | Nhập mã + `HoangNam74!`, bấm "Đặt lại mật khẩu" → không có thông báo gì; bấm lần 2 cũng không                                                                                       | "Ơ, chẳng có thông báo gì… để mình bấm lại." | friction    | N                     |
+| 07:41 | Quên mật khẩu | Bấm "← Quay lại" → về bước nhập email, không về trang đăng nhập                                                                                                                            | "Ơ nút quay lại đưa về ô email, không phải trang đăng nhập. Thôi lên menu vậy." | friction    | N                     |
+| 08:04 | Login            | Đăng nhập `HoangNam74!` → thất bại, gõ lại lần 2 → thất bại                                                                                                                               | "Hả, vẫn thất bại? Mới đổi xong mà. Gõ lại lần nữa." | error       | N                     |
+| 08:49 | Quên mật khẩu | Làm lại reset lần 2 (mã mới), `HoangNam74!` → vẫn không có thông báo                                                                                                                       | "Chắc lúc nãy chưa đổi được. Làm lại cái Quên mật khẩu." | friction    | N                     |
+| 09:45 | Login            | Đăng nhập `HoangNam74!` lần 3, lần 4 → thất bại                                                                                                                                               | "Vẫn không được… gõ lại chậm từng chữ xem." | frustration | N                     |
+| 10:23 | Login            | Moderator nói câu trung lập. Participant hỏi "Hay nó khoá tài khoản em rồi?" → moderator: "Bạn cứ làm như khi ở nhà." Participant bỏ đi chờ (chờ thật 05:34, 09:40:46 → 09:46:20) | "Ở nhà thì mình để đó đi pha ly cà phê, 5 phút sau vào lại." | error       | Y                     |
+| 15:57 | Login            | Sau 5 phút, đăng nhập `HoangNam74!` → vẫn thất bại, cùng thông báo                                                                                                                         | "Uống cà phê xong rồi, vào lại thử." | error       | N                     |
+| 16:15 | Quên mật khẩu | Reset lần 3 với `HoangNam74@`. Không có thông báo, nhưng menu góc phải đổi thành "Chào, Hoàng Nam" / "Thoát". Participant bấm góc phải → vào trang Hồ sơ                            | "Ơ, bấm đặt lại xong nó ghi 'Chào, Hoàng Nam' luôn, vào được rồi à?" | hesitation  | N                     |
+| 16:42 | Hồ sơ          | Thấy trang "Hồ sơ của bạn". Ô Email hiện `backup5b.hw03@test.local`, khác email đã dùng (`backup5.hw03@test.local`); participant đọc lướt, không để ý                      | "Giờ điền số điện thoại với địa chỉ." | success     | N                     |
+| 18:21 | Hồ sơ          | Điền SĐT + địa chỉ, bấm "Cập nhật" → không thông báo; bấm lần 2                                                                                                                          | "Bấm Cập nhật mà không báo gì… bấm lại, rồi tải lại trang xem còn không." | friction    | N                     |
+| 19:06 | Hồ sơ          | Tải lại trang → SĐT và địa chỉ trống                                                                                                                                                           | "Tải lại thì trống trơn! Vậy là không lưu." | error       | N                     |
+| 19:33 | Hồ sơ          | Điền lại, bấm "Cập nhật", tải lại → vẫn trống                                                                                                                                                | "Điền lại, bấm Cập nhật lần nữa." | error       | N                     |
+| 20:27 | Hồ sơ          | Lần 4: điền xong bấm Enter, tải lại → vẫn trống                                                                                                                                                | "Lại mất. Lần này điền xong bấm Enter thử." | frustration | N                     |
+| 20:34 | Hồ sơ          | Moderator nói câu trung lập. Participant chỉ lưu SĐT → tải lại vẫn trống                                                                                                                     | "Màn hình không hiện gì sau khi bấm… Hay tại mình bấm chưa đúng? Thử lưu riêng số điện thoại thôi, xem có khác không." | error       | Y                     |
+| 21:30 | Login            | Bấm "Thoát" → trang "Vui lòng đăng nhập". Đăng nhập lại bằng `HoangNam74@` → thất bại                                                                                                  | "Trời, mật khẩu vừa đặt cũng bị từ chối." | error       | N                     |
+| 22:04 | Quên mật khẩu | Reset lần 4 (`HoangNam74@`) → lần này không tự đăng nhập, không thông báo. Kẹt thêm 3 lần sau câu nhắc → bỏ chặng, **blocker**                                              | "Lần này bấm xong không vào luôn như lúc nãy… mình chịu, không biết làm sao nữa." | frustration | N                     |
+| 22:53 | Kết thúc       | Dừng task, chuyển sang SUS + probe                                                                                                                                                                    | —                                                                                                                           | frustration | N                     |
+
+## Probe answers
+
+| # | Câu trả lời (tóm tắt + quote)                                                                                                                                                                                                                             |
+| - | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1 | Mình có đủ hết mà nó cứ bảo yếu, mình nghĩ chắc nó không nhận mấy ký tự đặc biệt của mình. |
+| 2 | Màn hình chỉ ghi 'thất bại, kiểm tra lại' hoài, không nói sai chỗ nào, mình đoán bị khoá thôi. |
+| 3 | Mình quen gõ lại trước đã, cái chữ quên mật khẩu nhỏ quá mình không thấy. |
+| 4 | Ở nhà chắc mình bỏ, hoặc lấy email khác tạo tài khoản mới, có tổng đài thì gọi. |
+| 5 | Lâu nhất là mấy chỗ bấm nút mà không biết được hay chưa, phải làm đi làm lại. |
+| 6 | Thiếu một câu 'đổi thành công'. Nút Quay lại cũng không đưa về chỗ đăng nhập. |
+| 7 | Ai biết email mình cũng lấy được mã ngay trên trang, vậy đổi mật khẩu của mình được luôn à? |
+| 8 | Lưu còn không được, mật khẩu thì hiện chữ rõ ở ô đăng nhập, mình không dám để số điện thoại thật. |
+| 9 | Lúc tạo mật khẩu thì chỉ rõ mình thiếu cái gì, còn bấm nút nào thì báo cho mình biết đã xong. |
+
+### SUS (P5, thang 1–5)
+
+| Câu   | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
+| ------ | - | - | - | - | - | - | - | - | - | -- |
+| Điểm | 3 | 3 | 2 | 4 | 2 | 5 | 3 | 4 | 3 | 4 |
+
+Tính theo công thức SUS chuẩn: câu lẻ (điểm − 1) = 2+1+1+2+2 = 8; câu chẵn (5 − điểm) = 2+1+0+1+1 = 5; tổng 13 × 2.5 = **32.5**.
+
+## Bug thấy trong session
+
+| Mô tả                                                                                                                                                                                                                   | Screenshot                                                                                                  | Issue |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | ----- |
+| Register: mật khẩu có đủ chữ hoa, chữ thường, số, ký tự đặc biệt, ≥ 8 ký tự (vd `HoangNam74!`, `HoangNam@74`, `HoangNam@#74!`) vẫn bị báo "Mật khẩu quá yếu!" — 7/7 lần bị từ chối | screenshots/01-register-weak-pw-with-special-char.jpg, screenshots/02-register-still-weak-after-7-tries.jpg |       |
+| Trang /login có tiêu đề "Đăng Ký", ô "Username", nút "Sign In" (lẫn Anh–Việt, tiêu đề sai)                                                                                                                 | screenshots/03-login-page-title-dang-ky.jpg                                                                 |       |
+| Ô mật khẩu ở trang đăng nhập hiện chữ rõ, không che                                                                                                                                                            | screenshots/04-login-fail-password-visible.jpg                                                              |       |
+| Đăng nhập sai nhiều lần chỉ hiện một câu chung "Đăng nhập thất bại. Vui lòng kiểm tra lại.", không nói lý do, không nói bị khoá hay phải chờ bao lâu (kể cả sau 5 phút chờ)                | screenshots/05-login-fail-4th-same-generic-message.jpg, screenshots/11-login-fail-after-5min-wait.jpg       |       |
+| Mã OTP hiện thẳng trên trang Quên mật khẩu                                                                                                                                                                         | screenshots/06-otp-shown-on-page.jpg                                                                        |       |
+| Bấm "Đặt lại mật khẩu" không có thông báo thành công hay lỗi                                                                                                                                                 | screenshots/07-reset-no-feedback.jpg, screenshots/15-reset-again-no-login-no-message.jpg                    |       |
+| Nút "← Quay lại" ở bước nhập OTP đưa về bước nhập email, không về trang đăng nhập                                                                                                                       | —                                                                                                          |       |
+| Sau khi đặt lại mật khẩu, đăng nhập bằng mật khẩu mới vẫn thất bại (`HoangNam74!`, `HoangNam74@`)                                                                                                      | screenshots/08-login-fail-after-reset.jpg, screenshots/14-relogin-new-password-fails.jpg                    |       |
+| Lần reset thứ 3 tự đăng nhập (menu đổi thành "Chào, Hoàng Nam") mà không có thông báo; lần reset thứ 4 cùng cách thì không đăng nhập — hành vi không nhất quán                                  | screenshots/09-reset-autologin-no-message.jpg, screenshots/15-reset-again-no-login-no-message.jpg           |       |
+| Trang Hồ sơ hiện email `backup5b.hw03@test.local`, khác email đã dùng để reset (`backup5.hw03@test.local`) — cần người kiểm tra lại, có thể do dữ liệu cũ còn sót                          | screenshots/10-profile-email-differs.jpg                                                                    |       |
+| Hồ sơ: bấm "Cập nhật" (hoặc Enter) không có thông báo; tải lại trang thì SĐT và địa chỉ trống (thử 5 lần)                                                                                            | screenshots/12-profile-save-no-feedback.jpg, screenshots/13-profile-empty-after-reload.jpg                  |       |
